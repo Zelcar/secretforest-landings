@@ -1,6 +1,28 @@
 {
   "es": {
     "id": 1,
+    "toast": {
+      "info1": "¡Gracias por registrarte!",
+      "info2": "¡Ahora regístrate en Kickstarter para estar entre los primeros en enterarte del lanzamiento de la campaña!",
+      "error": "Error interno del servidor",
+      "emailRegistered": "El correo electrónico ya está registrado",
+      "verifyCaptcha": "Por favor verifique con captcha",
+      "emailWrong": "El correo electrónico es incorrecto",
+      "counter1": "Únete a",
+      "counter2": "más personas!"
+    },
+    "nav": {
+      "navItem1": "Inicio",
+      "navItem2": "Razas",
+      "navItem3": "Profesiones",
+      "navItem4": "Combate",
+      "navItem5": "Exploracion",
+      "navItem6": "Arte conceptual",
+      "navItem7": "Biomas",
+      "navItem8": "Roadmap",
+      "navItem9": "Equipo",
+      "navItem10": "Redes sociales"
+    },
     "header": {
       "title1": "UN NUEVO Y DIFERENTE",
       "title2": "E INNOVADOR MMORPG",
@@ -81,6 +103,28 @@
   },
   "en": {
     "id": 2,
+    "toast": {
+      "info1": "Thank you for signing up!",
+      "info2": "Now sign up for Kickstarter to be among the first to know about the campaign launch!",
+      "error": "Internal Server Error",
+      "emailRegistered": "The email is already registered",
+      "verifyCaptcha": "Please verify with captcha",
+      "emailWrong": "The email is wrong",
+      "counter1": "Join",
+      "counter2": "more people!"
+    },
+    "nav": {
+      "navItem1": "Home",
+      "navItem2": "Races",
+      "navItem3": "Professions",
+      "navItem4": "Combat",
+      "navItem5": "Exploration",
+      "navItem6": "Concept art",
+      "navItem7": "Biomes",
+      "navItem8": "Roadmap",
+      "navItem9": "Team",
+      "navItem10": "Social medias"
+    },
     "header": {
       "title1": "A NEW DIFFERENT",
       "title2": "AND INNOVATIVE MMORPG",
@@ -161,6 +205,28 @@
   },
   "br": {
     "id": 3,
+    "toast": {
+      "info1": "Obrigado por se inscrever!",
+      "info2": "Agora inscreva-se no Kickstarter para ser um dos primeiros a saber sobre o lançamento da campanha!",
+      "error": "Erro interno do servidor",
+      "emailRegistered": "O e-mail já está cadastrado",
+      "verifyCaptcha": "Por favor verifique com captcha",
+      "emailWrong": "O e-mail está errado",
+      "counter1": "Junte-se a",
+      "counter2": "mais pessoas!"
+    },
+    "nav": {
+      "navItem1": "Página inicial",
+      "navItem2": "Raças",
+      "navItem3": "Profissões",
+      "navItem4": "Combate",
+      "navItem5": "Exploração",
+      "navItem6": "Arte conceitual",
+      "navItem7": "Biomas",
+      "navItem8": "Roadmap",
+      "navItem9": "Equipamento",
+      "navItem10": "Redes sociais"
+    },
     "header": {
       "title1": "UM NOVO DIFERENTE",
       "title2": "E INOVADOR MMORPG",

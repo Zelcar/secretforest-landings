@@ -3,6 +3,11 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
+  overflow: hidden;
+  position: relative;
+  z-index: 500;
+  background-color: #331052;
+  width: 100%;
 }
 .spinner {
   width: 44px;
@@ -12,7 +17,7 @@
 }
 
 .spinner > div {
-  background-color: #473F6F;
+  background-color: #473f6f;
   height: 100%;
   position: absolute;
   width: 100%;
