@@ -172,34 +172,64 @@ const Index = ({ lang }) => {
               initialSlide={5}
             >
               <SwiperSlide>
-                <img className={styles.racesImg} src="/races/aquan.png"></img>
+                <img
+                  className={styles.racesImg}
+                  src="/races/mobileAquan.png"
+                ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img className={styles.racesImg} src="/races/axolotl.png"></img>
+                <img
+                  className={styles.racesImg}
+                  src="/races/mobileAxolotl.png"
+                ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img className={styles.racesImg} src="/races/cat.png"></img>
+                <img
+                  className={styles.racesImg}
+                  src="/races/mobileCat.png"
+                ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img className={styles.racesImg} src="/races/dog.png"></img>
+                <img
+                  className={styles.racesImg}
+                  src="/races/mobileDog.png"
+                ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img className={styles.racesImg} src="/races/elve.png"></img>
+                <img
+                  className={styles.racesImg}
+                  src="/races/mobileElve.png"
+                ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img className={styles.racesImg} src="/races/embear.png"></img>
+                <img
+                  className={styles.racesImg}
+                  src="/races/mobileEmbear.png"
+                ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img className={styles.racesImg} src="/races/fairan.png"></img>
+                <img
+                  className={styles.racesImg}
+                  src="/races/mobileFairan.png"
+                ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img className={styles.racesImg} src="/races/foxy.png"></img>
+                <img
+                  className={styles.racesImg}
+                  src="/races/mobileFoxy.png"
+                ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img className={styles.racesImg} src="/races/goblin.png"></img>
+                <img
+                  className={styles.racesImg}
+                  src="/races/mobileGoblin.png"
+                ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img className={styles.racesImg} src="/races/troll.png"></img>
+                <img
+                  className={styles.racesImg}
+                  src="/races/mobileTroll.png"
+                ></img>
               </SwiperSlide>
             </Swiper>
           </div>

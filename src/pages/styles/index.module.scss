@@ -248,16 +248,13 @@ $subtitle: 700;
           }
         }
         .mySwiper {
-          width: 300px;
+          width: 388px;
           // background: red;
         }
         .myMobileSwiper,
         .myMobile2Swiper {
-          width: 300px;
+          width: 388px;
           display: none;
-        }
-        .racesImg {
-          // height: 400px;
         }
       }
     }
@@ -729,10 +726,9 @@ $subtitle: 700;
   .container {
     .races {
       .racesMainContainer {
-        .racesImagesContainer {
-          .mySwiper {
-            width: 250px;
-          }
+        .racesTitle {
+          position: relative;
+          z-index: 4;
         }
       }
     }
@@ -850,7 +846,7 @@ $subtitle: 700;
           flex-direction: column;
         }
         .racesImagesContainer {
-          left: 0;
+          left: 30px;
           width: 100%;
         }
       }
@@ -1032,13 +1028,7 @@ $subtitle: 700;
             display: none;
           }
           .myMobileSwiper {
-            // background: red;;
-            position: relative;
-            left: 8vw;
             display: flex;
-          }
-          .racesImg {
-            width: 220px;
           }
         }
       }
@@ -1173,16 +1163,16 @@ $subtitle: 700;
         display: none;
       }
     }
-    .footer{
+    .footer {
       padding-bottom: 10px;
-      .footerMain{
+      .footerMain {
         margin-top: 20px;
-        h4{
+        h4 {
           font-size: 30px;
         }
-        button{
+        button {
           width: 200px;
-          height: 75px ;
+          height: 75px;
         }
       }
     }
@@ -1203,14 +1193,6 @@ $subtitle: 700;
           }
           h3:last-child {
             font-size: 100px;
-          }
-        }
-        .racesImagesContainer {
-          .myMobileSwiper {
-            left: 65px;
-          }
-          .racesImg {
-            width: 175px;
           }
         }
       }
@@ -1345,7 +1327,7 @@ $subtitle: 700;
           }
           .myMobile2Swiper {
             position: relative;
-            left: 60px;
+            left: 80px;
             display: flex;
           }
         }

@@ -2,75 +2,81 @@
   "es": {
     "id": 1,
     "header": {
-      "title1": "A NEW DIFFERENT",
-      "title2": "AND INNOVATIVE MMORPG",
-      "subtitle": "Get ready for Secret Forest",
-      "label": "Help us and be the first to play the beta when it comes out!",
-      "email": "Email:",
-      "placeholder": "your@email.com",
-      "signUp": "Sign up",
-      "text1": "Discover a vibrant realm brimming with wonders, where incredible races come to life.",
-      "text2pre": "Master a",
-      "text2mid": "unique combat system",
-      "text2final": "and challenge epic foes in your quest for glory."
+      "title1": "UN NUEVO Y DIFERENTE",
+      "title2": "E INNOVADOR MMORPG",
+      "subtitle": "Prepárate para Secret Forest",
+      "label": "¡Ayúdanos y sé el primero en jugar la beta cuando salga!",
+      "email": "Correo electrónico:",
+      "placeholder": "tu@correo.com",
+      "signUp": "Regístrate",
+      "text1": "Descubre un reino vibrante lleno de maravillas, donde increíbles razas cobran vida.",
+      "text2pre": "Domina un",
+      "text2mid": "sistema de combate único",
+      "text2final": "y enfrenta enemigos épicos en tu búsqueda de gloria."
     },
     "races": {
-      "title": "RACES",
-      "text1": "You become what you specialize in:",
-      "text2": "There won't be a predeterminated class system;",
-      "text3": "you determine your class through your upgrades, armor, and weapons."
+      "title": "RAZAS",
+      "text1": "Te conviertes en lo que te especializas:",
+      "text2": "No habrá un sistema de clases predeterminado;",
+      "text3": "determinas tu clase a través de tus mejoras, armaduras y armas."
     },
     "biomes": {
-      "title": "FANTASY BIOMES",
-      "text1": "Private property to use and decorate as you like: ",
-      "text2": " Create an alchemy potion bar,",
-      "text3": "use our lake for fish farming,",
-      "text4": "have the biggest harvest, and more!"
+      "title1": "BIOMAS",
+      "title2": "DE FANTASÍA",
+      "text1": "Propiedad privada para usar y decorar a tu gusto:",
+      "text2": " Crea un bar de pociones de alquimia,",
+      "text3": "utiliza nuestro lago para la piscicultura,",
+      "text4": "ten la mayor cosecha, ¡y más!"
+    },
+    "professions": {
+      "text1": "Tendrá todo lo que un MMORPG debe tener:",
+      "text2": "grupos, gremios, facciones, enemigos, jefes,",
+      "text3": "coleccionables, fabricables, zonas PvP, zonas PvE, comercio, ¡etc.!"
     },
     "skills": {
-      "title1": "MIXED",
-      "title2": "SKILL",
-      "title3": "TREES"
+      "title1": "ÁRBOLES",
+      "title2": "DE HABILIDADES",
+      "title3": "MIXTAS"
     },
     "world": {
-      "title1": "SQUARRE",
-      "title2": "KILOMETERS OF",
-      "title3": "OPEN WORLD"
+      "title1": "KILÓMETROS",
+      "title2": "CUADRADOS DE",
+      "title3": "MUNDO ABIERTO"
     },
     "gameplay": {
-      "title1": "OVER",
-      "title2": "HOURS",
-      "title3": "OF GAMEPLAY!"
+      "title1": "MÁS DE",
+      "title2": "HORAS",
+      "title3": "DE JUEGO!"
     },
     "elements": {
-      "title": "ELEMENTS",
-      "light": "LIGHT",
-      "darkness": "DARKNESS",
-      "water": "WATER",
-      "fire": "FIRE",
-      "earth": "EARTH",
-      "plant": "PLANT",
-      "ice": "ICE",
-      "poison": "POISON",
-      "text1": "We want to give the best gaming experience, so:",
-      "text2": "there will be no pay to win, not autoplay."
+      "title": "ELEMENTOS",
+      "light": "LUZ",
+      "darkness": "OSCURIDAD",
+      "water": "AGUA",
+      "fire": "FUEGO",
+      "earth": "TIERRA",
+      "plant": "PLANTA",
+      "ice": "HIELO",
+      "poison": "VENENO",
+      "text1": "Queremos ofrecer la mejor experiencia de juego, así que:",
+      "text2": "no habrá pago para ganar, ni autolevel."
     },
     "mounts": {
-      "title": "FLYING MOUNTS!",
-      "text1": "Engaging guest,",
-      "text2": "not just farming,",
-      "text3": "and much more!"
+      "title": "¡MONTURAS VOLADORAS!",
+      "text1": "Misiones envolventes,",
+      "text2": "no solo farmeo,",
+      "text3": "¡y mucho más!"
     },
     "form": {
-      "text1": "Help us and be",
-      "text2": "the first to play the beta",
-      "text3": "when it comes out!",
-      "email": "Email:",
-      "placeholder": "your@email.com",
-      "signUp": "Sign up"
+      "text1": "Ayúdanos y sé",
+      "text2": "el primero en jugar la beta",
+      "text3": "cuando salga!",
+      "email": "Correo electrónico:",
+      "placeholder": "tu@correo.com",
+      "signUp": "Regístrate"
     },
     "footer": {
-      "title": "Follow us!"
+      "title": "¡Síguenos!"
     }
   },
   "en": {
@@ -103,9 +109,9 @@
       "text4": "have the biggest harvest, and more!"
     },
     "professions": {
-        "text1": "It will have everything an MMORPG should have: ",
-        "text2": "parties, guilds, factions, enemies, bosses,",
-        "text3": "collectibles, craftables, PvP zones, PvE zones, trade, etc.!"
+      "text1": "It will have everything an MMORPG should have: ",
+      "text2": "parties, guilds, factions, enemies, bosses,",
+      "text3": "collectibles, craftables, PvP zones, PvE zones, trade, etc.!"
     },
     "skills": {
       "title1": "MIXED",
@@ -156,75 +162,81 @@
   "br": {
     "id": 3,
     "header": {
-      "title1": "A NEW DIFFERENT",
-      "title2": "AND INNOVATIVE MMORPG",
-      "subtitle": "Get ready for Secret Forest",
-      "label": "Help us and be the first to play the beta when it comes out!",
+      "title1": "UM NOVO DIFERENTE",
+      "title2": "E INOVADOR MMORPG",
+      "subtitle": "Prepare-se para Secret Forest",
+      "label": "Ajude-nos e seja o primeiro a jogar a beta quando for lançada!",
       "email": "Email:",
-      "placeholder": "your@email.com",
-      "signUp": "Sign up",
-      "text1": "Discover a vibrant realm brimming with wonders, where incredible races come to life.",
-      "text2pre": "Master a",
-      "text2mid": "unique combat system",
-      "text2final": "and challenge epic foes in your quest for glory."
+      "placeholder": "seu@email.com",
+      "signUp": "Inscreva-se",
+      "text1": "Descubra um reino vibrante repleto de maravilhas, onde raças incríveis ganham vida.",
+      "text2pre": "Domine um",
+      "text2mid": "sistema de combate único",
+      "text2final": "e desafie inimigos épicos em sua busca pela glória."
     },
     "races": {
-      "title": "RACES",
-      "text1": "You become what you specialize in:",
-      "text2": "There won't be a predeterminated class system;",
-      "text3": "you determine your class through your upgrades, armor, and weapons."
+      "title": "RAÇAS",
+      "text1": "Você se torna o que você se especializa:",
+      "text2": "Não haverá um sistema de classes predeterminado;",
+      "text3": "você determina sua classe através de seus upgrades, armaduras e armas."
     },
     "biomes": {
-      "title": "FANTASY BIOMES",
-      "text1": "Private property to use and decorate as you like: ",
-      "text2": " Create an alchemy potion bar,",
-      "text3": "use our lake for fish farming,",
-      "text4": "have the biggest harvest, and more!"
+      "title1": "BIOMAS",
+      "title2": "FANTÁSTICOS",
+      "text1": "Propriedade privada para usar e decorar como você quiser:",
+      "text2": " Crie um bar de poções alquímicas,",
+      "text3": "use nosso lago para piscicultura,",
+      "text4": "tenha a maior colheita, e mais!"
+    },
+    "professions": {
+      "text1": "Terá tudo o que um MMORPG deve ter:",
+      "text2": "grupos, guildas, facções, inimigos, chefes,",
+      "text3": "colecionáveis, itens fabricáveis, zonas PvP, zonas PvE, comércio, etc.!"
     },
     "skills": {
-      "title1": "MIXED",
-      "title2": "SKILL",
-      "title3": "TREES"
+      "title1": "ÁRVORES",
+      "title2": "DE HABILIDADES",
+      "title3": "MISTAS"
     },
     "world": {
-      "title1": "SQUARRE",
-      "title2": "KILOMETERS OF",
-      "title3": "OPEN WORLD"
+      "title1": "QUILÔMETROS",
+      "title2": "QUADRADOS DE",
+      "title3": "MUNDO ABERTO"
     },
     "gameplay": {
-      "title1": "OVER",
-      "title2": "HOURS",
-      "title3": "OF GAMEPLAY!"
+      "title1": "MAIS DE",
+      "title2": "HORAS",
+      "title3": "DE JOGABILIDADE!"
     },
     "elements": {
-      "title": "ELEMENTS",
-      "light": "LIGHT",
-      "darkness": "DARKNESS",
-      "water": "WATER",
-      "fire": "FIRE",
-      "earth": "EARTH",
-      "plant": "PLANT",
-      "ice": "ICE",
-      "poison": "POISON",
-      "text1": "We want to give the best gaming experience, so:",
-      "text2": "there will be no pay to win, not autoplay."
+      "title": "ELEMENTOS",
+      "light": "LUZ",
+      "darkness": "ESCURIDÃO",
+      "water": "ÁGUA",
+      "fire": "FOGO",
+      "earth": "TERRA",
+      "plant": "PLANTA",
+      "ice": "GELO",
+      "poison": "VENENO",
+      "text1": "Queremos proporcionar a melhor experiência de jogo, então:",
+      "text2": "não haverá pagar para ganhar, nem auto-level."
     },
     "mounts": {
-      "title": "FLYING MOUNTS!",
-      "text1": "Engaging guest,",
-      "text2": "not just farming,",
-      "text3": "and much more!"
+      "title": "MONTARIAS VOADORAS!",
+      "text1": "Missões envolventes,",
+      "text2": "não apenas farm,",
+      "text3": "e muito mais!"
     },
     "form": {
-      "text1": "Help us and be",
-      "text2": "the first to play the beta",
-      "text3": "when it comes out!",
+      "text1": "Ajude-nos e seja",
+      "text2": "o primeiro a jogar a beta",
+      "text3": "quando for lançada!",
       "email": "Email:",
-      "placeholder": "your@email.com",
-      "signUp": "Sign up"
+      "placeholder": "seu@email.com",
+      "signUp": "Inscreva-se"
     },
     "footer": {
-      "title": "Follow us!"
+      "title": "Siga-nos!"
     }
   }
 }
