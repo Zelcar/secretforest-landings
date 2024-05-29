@@ -1,0 +1,230 @@
+{
+  "es": {
+    "id": 1,
+    "header": {
+      "title1": "A NEW DIFFERENT",
+      "title2": "AND INNOVATIVE MMORPG",
+      "subtitle": "Get ready for Secret Forest",
+      "label": "Help us and be the first to play the beta when it comes out!",
+      "email": "Email:",
+      "placeholder": "your@email.com",
+      "signUp": "Sign up",
+      "text1": "Discover a vibrant realm brimming with wonders, where incredible races come to life.",
+      "text2pre": "Master a",
+      "text2mid": "unique combat system",
+      "text2final": "and challenge epic foes in your quest for glory."
+    },
+    "races": {
+      "title": "RACES",
+      "text1": "You become what you specialize in:",
+      "text2": "There won't be a predeterminated class system;",
+      "text3": "you determine your class through your upgrades, armor, and weapons."
+    },
+    "biomes": {
+      "title": "FANTASY BIOMES",
+      "text1": "Private property to use and decorate as you like: ",
+      "text2": " Create an alchemy potion bar,",
+      "text3": "use our lake for fish farming,",
+      "text4": "have the biggest harvest, and more!"
+    },
+    "skills": {
+      "title1": "MIXED",
+      "title2": "SKILL",
+      "title3": "TREES"
+    },
+    "world": {
+      "title1": "SQUARRE",
+      "title2": "KILOMETERS OF",
+      "title3": "OPEN WORLD"
+    },
+    "gameplay": {
+      "title1": "OVER",
+      "title2": "HOURS",
+      "title3": "OF GAMEPLAY!"
+    },
+    "elements": {
+      "title": "ELEMENTS",
+      "light": "LIGHT",
+      "darkness": "DARKNESS",
+      "water": "WATER",
+      "fire": "FIRE",
+      "earth": "EARTH",
+      "plant": "PLANT",
+      "ice": "ICE",
+      "poison": "POISON",
+      "text1": "We want to give the best gaming experience, so:",
+      "text2": "there will be no pay to win, not autoplay."
+    },
+    "mounts": {
+      "title": "FLYING MOUNTS!",
+      "text1": "Engaging guest,",
+      "text2": "not just farming,",
+      "text3": "and much more!"
+    },
+    "form": {
+      "text1": "Help us and be",
+      "text2": "the first to play the beta",
+      "text3": "when it comes out!",
+      "email": "Email:",
+      "placeholder": "your@email.com",
+      "signUp": "Sign up"
+    },
+    "footer": {
+      "title": "Follow us!"
+    }
+  },
+  "en": {
+    "id": 2,
+    "header": {
+      "title1": "A NEW DIFFERENT",
+      "title2": "AND INNOVATIVE MMORPG",
+      "subtitle": "Get ready for Secret Forest",
+      "label": "Help us and be the first to play the beta when it comes out!",
+      "email": "Email:",
+      "placeholder": "your@email.com",
+      "signUp": "Sign up",
+      "text1": "Discover a vibrant realm brimming with wonders, where incredible races come to life.",
+      "text2pre": "Master a",
+      "text2mid": "unique combat system",
+      "text2final": "and challenge epic foes in your quest for glory."
+    },
+    "races": {
+      "title": "RACES",
+      "text1": "You become what you specialize in:",
+      "text2": "There won't be a predeterminated class system;",
+      "text3": "you determine your class through your upgrades, armor, and weapons."
+    },
+    "biomes": {
+      "title1": "FANTASY",
+      "title2": "BIOMES",
+      "text1": "Private property to use and decorate as you like: ",
+      "text2": " Create an alchemy potion bar,",
+      "text3": "use our lake for fish farming,",
+      "text4": "have the biggest harvest, and more!"
+    },
+    "professions": {
+        "text1": "It will have everything an MMORPG should have: ",
+        "text2": "parties, guilds, factions, enemies, bosses,",
+        "text3": "collectibles, craftables, PvP zones, PvE zones, trade, etc.!"
+    },
+    "skills": {
+      "title1": "MIXED",
+      "title2": "SKILL",
+      "title3": "TREES"
+    },
+    "world": {
+      "title1": "SQUARRE",
+      "title2": "KILOMETERS OF",
+      "title3": "OPEN WORLD"
+    },
+    "gameplay": {
+      "title1": "OVER",
+      "title2": "HOURS",
+      "title3": "OF GAMEPLAY!"
+    },
+    "elements": {
+      "title": "ELEMENTS",
+      "light": "LIGHT",
+      "darkness": "DARKNESS",
+      "water": "WATER",
+      "fire": "FIRE",
+      "earth": "EARTH",
+      "plant": "PLANT",
+      "ice": "ICE",
+      "poison": "POISON",
+      "text1": "We want to give the best gaming experience, so:",
+      "text2": "there will be no pay to win, not autoplay."
+    },
+    "mounts": {
+      "title": "FLYING MOUNTS!",
+      "text1": "Engaging guest,",
+      "text2": "not just farming,",
+      "text3": "and much more!"
+    },
+    "form": {
+      "text1": "Help us and be",
+      "text2": "the first to play the beta",
+      "text3": "when it comes out!",
+      "email": "Email:",
+      "placeholder": "your@email.com",
+      "signUp": "Sign up"
+    },
+    "footer": {
+      "title": "Follow us!"
+    }
+  },
+  "br": {
+    "id": 3,
+    "header": {
+      "title1": "A NEW DIFFERENT",
+      "title2": "AND INNOVATIVE MMORPG",
+      "subtitle": "Get ready for Secret Forest",
+      "label": "Help us and be the first to play the beta when it comes out!",
+      "email": "Email:",
+      "placeholder": "your@email.com",
+      "signUp": "Sign up",
+      "text1": "Discover a vibrant realm brimming with wonders, where incredible races come to life.",
+      "text2pre": "Master a",
+      "text2mid": "unique combat system",
+      "text2final": "and challenge epic foes in your quest for glory."
+    },
+    "races": {
+      "title": "RACES",
+      "text1": "You become what you specialize in:",
+      "text2": "There won't be a predeterminated class system;",
+      "text3": "you determine your class through your upgrades, armor, and weapons."
+    },
+    "biomes": {
+      "title": "FANTASY BIOMES",
+      "text1": "Private property to use and decorate as you like: ",
+      "text2": " Create an alchemy potion bar,",
+      "text3": "use our lake for fish farming,",
+      "text4": "have the biggest harvest, and more!"
+    },
+    "skills": {
+      "title1": "MIXED",
+      "title2": "SKILL",
+      "title3": "TREES"
+    },
+    "world": {
+      "title1": "SQUARRE",
+      "title2": "KILOMETERS OF",
+      "title3": "OPEN WORLD"
+    },
+    "gameplay": {
+      "title1": "OVER",
+      "title2": "HOURS",
+      "title3": "OF GAMEPLAY!"
+    },
+    "elements": {
+      "title": "ELEMENTS",
+      "light": "LIGHT",
+      "darkness": "DARKNESS",
+      "water": "WATER",
+      "fire": "FIRE",
+      "earth": "EARTH",
+      "plant": "PLANT",
+      "ice": "ICE",
+      "poison": "POISON",
+      "text1": "We want to give the best gaming experience, so:",
+      "text2": "there will be no pay to win, not autoplay."
+    },
+    "mounts": {
+      "title": "FLYING MOUNTS!",
+      "text1": "Engaging guest,",
+      "text2": "not just farming,",
+      "text3": "and much more!"
+    },
+    "form": {
+      "text1": "Help us and be",
+      "text2": "the first to play the beta",
+      "text3": "when it comes out!",
+      "email": "Email:",
+      "placeholder": "your@email.com",
+      "signUp": "Sign up"
+    },
+    "footer": {
+      "title": "Follow us!"
+    }
+  }
+}

@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  // background: black;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  background-color: #331052;
+}
+img {
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+@keyframes balance {
+  25% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+}
+@keyframes bounce {
+  0% {
+    width: 52px;
+  }
+  25% {
+    width: 70px;
+  }
+  100% {
+    width: 52px;
+  }
+}
+@keyframes flip {
+  25% {
+    transform: rotateY(180deg);
+  }
+  75% {
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes appearIcon {
+  0% {
+    filter: grayscale(100%);
+  }
+  100% {
+    filter: grayscale(0%);
+  }
+}
+
+@keyframes coinFlip {
+  0% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(0deg);
+  }
+}
+
+/* Eliminar sombra de Swiper */
+.swiper-slide-shadow,
+.swiper-slide-shadow-cards {
+  display: none !important;
+}

@@ -1,0 +1,856 @@
+$title: 900;
+$text: 400;
+$subtitle: 700;
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  .upBtn {
+    width: 35px;
+    position: fixed;
+    bottom: 25px;
+    z-index: 100;
+    cursor: pointer;
+    height: 25px;
+    background: transparent;
+    border: none;
+    img {
+      width: 100%;
+    }
+    transition: all 500ms;
+    &:hover {
+      transform: rotateY(360deg);
+    }
+  }
+  .header {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("../../../public/header/bg2.png");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      z-index: 1; /* Asegúrate de que la imagen esté encima del fondo */
+    }
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../../public/header/bg1.png");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 20px;
+    align-items: center;
+    flex-direction: column;
+
+    img,
+    h1,
+    h3,
+    p,
+    div {
+      position: relative;
+      z-index: 8;
+    }
+    .headerAxolotl {
+      position: absolute;
+      width: 350px;
+      bottom: 0;
+      left: 0;
+      z-index: 2;
+    }
+    .headerCat {
+      position: absolute;
+      width: 350px;
+      bottom: 0;
+      right: 0;
+      z-index: 2;
+    }
+    img {
+      width: 20vw;
+    }
+    h1 {
+      font-size: 50px;
+      text-align: center;
+      line-height: 0.8;
+      font-weight: $title;
+    }
+    h3 {
+      margin-top: 10px;
+      font-size: 40px;
+      font-style: italic;
+      font-weight: $title;
+    }
+    p {
+      margin-top: 25px;
+      font-size: 28px;
+      width: 45%;
+      text-align: center;
+      font-weight: $text;
+    }
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+      margin-top: 20px;
+      width: 30%;
+      label {
+        font-size: 25px;
+        font-weight: $text;
+      }
+      input {
+        width: 80%;
+        margin: 5px 0 10px 0;
+        outline: 1px solid #665872;
+        border: none;
+        background-color: #150622;
+        padding: 10px 0;
+        border-radius: 5px;
+
+        &::placeholder {
+          padding-left: 15px;
+          font-size: 120%;
+          font-family: "Montserrat";
+        }
+      }
+      button {
+        align-self: center;
+        border: none;
+        cursor: pointer;
+        color: white;
+        font-family: Montserrat;
+        width: 150px;
+        border-radius: 15px;
+        margin-top: 10px;
+        padding: 8px 0;
+        font-weight: $title;
+        letter-spacing: 1px;
+        transition: all 500ms;
+        background: rgb(255, 190, 0);
+        // background: linear-gradient(
+        //   90deg,
+        //   rgba(255, 190, 0, 1) 0%,
+        //   rgba(255, 154, 0, 1) 100%
+        // );
+        &:hover {
+          background: rgb(61, 13, 132);
+          //   background: linear-gradient(
+          //     90deg,
+          //     rgba(61, 13, 132, 1) 0%,
+          //     rgba(97, 16, 130, 1) 100%
+          //   );
+        }
+      }
+    }
+    .headerFade {
+      width: 100%;
+      position: absolute;
+      bottom: -1px;
+      z-index: 5;
+      background-image: red;
+    }
+  }
+  .combatSystem {
+    background-color: #331052;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0 0 0;
+    margin-bottom: 25px;
+    div {
+      width: 60%;
+      p {
+        font-weight: 700;
+        text-align: center;
+        font-size: 30px;
+        strong {
+          font-weight: $title;
+        }
+      }
+    }
+  }
+  .races {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../public/races/bg.png");
+    background-position: 0% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px 0 75px 0;
+    .racesMainContainer {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: row;
+      position: relative;
+      top: 25px;
+      .racesTitle {
+        width: 30%;
+        // margin-top: 10px;
+        h3:first-child {
+          font-size: 250px;
+          text-align: center;
+          font-weight: $title;
+          text-shadow: 3px 3px 10px black;
+        }
+        h3:last-child {
+          position: relative;
+          top: -70px;
+          font-size: 100px;
+          font-weight: $title;
+          text-align: center;
+          text-shadow: 3px 3px 10px black;
+        }
+      }
+      .racesImagesContainer {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        .racesArrows {
+          width: 15px;
+          height: 15px;
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          img {
+            width: 100%;
+          }
+          transition: all 250ms;
+          &:hover {
+            transform: translateX(-5px);
+          }
+          &:last-child {
+            transform: rotateY(180deg);
+            &:hover {
+              transform: rotateY(180deg) translateX(-5px);
+            }
+          }
+        }
+        .mySwiper {
+          width: 300px;
+        }
+        .racesImg {
+          height: 400px;
+        }
+      }
+    }
+
+    .racesText {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 25px;
+      font-weight: $subtitle;
+      margin-bottom: 25px;
+    }
+  }
+  .biomes {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../public/biomes/bg.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    .biomesTitle {
+      padding-right: 50px;
+      margin-top: 5vw;
+      h3:first-child {
+        font-size: 250px;
+        text-align: center;
+        font-weight: $title;
+        text-shadow: 3px 3px 10px black;
+      }
+      h3:nth-child(2),
+      h3:last-child {
+        position: relative;
+        top: -70px;
+        font-size: 100px;
+        font-weight: $title;
+        text-align: center;
+        text-shadow: black;
+        text-shadow: 3px 3px 10px black;
+      }
+      h3:last-child {
+        top: -110px;
+        text-shadow: 3px 3px 10px black;
+      }
+    }
+    .biomesText {
+      align-self: center;
+      text-align: center;
+      margin-bottom: 2vw;
+      font-size: 25px;
+      font-weight: $subtitle;
+    }
+  }
+  .professions {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    img {
+      width: 100%;
+      height: 50%;
+    }
+    .professionsMobileImage {
+      display: none;
+    }
+    .professionsTexts {
+      width: 100%;
+      padding: 70px 0;
+      background-image: url("../../../public/professions/bg.png");
+      background-position: center center; /* Centra la imagen en el contenedor */
+      background-size: cover; /* Cubre completamente el contenedor sin distorsionar la imagen */
+      background-repeat: no-repeat;
+      text-align: center;
+      font-size: 25px;
+      font-weight: $subtitle;
+    }
+  }
+  .skills {
+    width: 100%;
+    height: 70vh;
+    background-image: url("../../../public/skills/bg.png");
+    background-position: 0% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .skillTitle {
+      h3 {
+        font-size: 150px;
+        line-height: 0.8;
+        padding-right: 100px;
+        font-weight: $title;
+        text-align: center;
+      }
+    }
+  }
+  .world {
+    width: 100%;
+    height: 70vh;
+    background-image: url("../../../public/world/bg.png");
+    background-position: 0% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .worldTitle {
+      padding-left: 80px;
+      h3 {
+        font-size: 125px;
+        line-height: 0.8;
+        font-weight: $title;
+        text-align: center;
+        text-shadow: black;
+        text-shadow: 3px 3px 10px black;
+      }
+      h4 {
+        font-weight: $text;
+        font-size: 50px;
+        text-align: center;
+        text-shadow: 3px 3px 10px black;
+      }
+      h4:nth-child(3) {
+        padding-top: 20px;
+      }
+    }
+  }
+  .gameplay {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../../public/gameplay/bg.jpg");
+    background-position: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    .gameplayAlufis {
+      //   background: red;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      img {
+        width: 90%;
+        height: 100%;
+      }
+    }
+    .gameplayTitle {
+      width: 50%;
+      padding-right: 10vw;
+      h3 {
+        // font-size: 200px;
+        font-size: 10vw;
+        line-height: 0.8;
+        font-weight: $title;
+        text-align: center;
+        text-shadow: black;
+        text-shadow: 3px 3px 10px black;
+      }
+      h4 {
+        font-weight: $text;
+        // font-size: 50px;
+        font-size: 2.2vw;
+        text-align: center;
+        text-shadow: 3px 3px 10px black;
+      }
+      div {
+        margin: 0 auto;
+        width: 50%;
+
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        svg {
+          width: 75px;
+          height: 75px;
+        }
+      }
+    }
+  }
+  .elements {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../public/elements/bg.jpg");
+    background-position: 0% 0%;
+    background-size: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    .elementsTitle {
+      text-align: center;
+      h3:first-child {
+        font-size: 100px;
+        font-weight: $title;
+        text-shadow: 3px 3px 10px black;
+      }
+      h3:last-child {
+        position: relative;
+        top: -30px;
+        font-weight: $title;
+        font-size: 80px;
+        text-shadow: 3px 3px 10px black;
+      }
+    }
+    .elementsContainer {
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      gap: 2vw;
+      width: 100%;
+      div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        gap: 6vw;
+        .element {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 0;
+          transition: all 250ms;
+          &:hover {
+            transform: rotateY(30deg);
+          }
+          img {
+            width: 14vw;
+          }
+          p {
+            font-size: 20px;
+            position: relative;
+            top: -15px;
+            font-weight: 800;
+          }
+        }
+      }
+    }
+    .mobileElementsContainer {
+      display: none;
+    }
+    .elementsText {
+      width: 100%;
+      font-size: 30px;
+      text-align: center;
+      font-weight: $subtitle;
+      margin: 30px 0;
+      text-shadow: 10px 10px 10px black;
+    }
+  }
+}
+@media (max-width: 1300px) {
+  .container {
+    .gameplay {
+      .gameplayAlufis {
+        img {
+          width: 90% !important;
+          height: 90% !important;
+        }
+      }
+      .gameplayTitle {
+        h3 {
+          font-size: 12vw !important;
+        }
+        h4 {
+          font-size: 3vw;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .container {
+    .header {
+      div {
+        input {
+          width: 100%;
+        }
+      }
+    }
+    .gameplay {
+      height: 80vh;
+      .gameplayAlufis {
+        img {
+          width: 100% !important;
+          height: auto !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    .header {
+      height: 80vh;
+      .headerAxolotl,
+      .headerCat {
+        display: none;
+      }
+      p {
+        width: 50%;
+      }
+      div {
+        width: 50%;
+      }
+    }
+    .combatSystem {
+      div {
+        width: 90%;
+      }
+    }
+    .biomes {
+      .biomesTitle {
+        h3:first-child {
+          font-size: 100px;
+        }
+        h3:nth-child(2),
+        h3:last-child {
+          font-size: 70px;
+          top: -35px;
+        }
+        h3:last-child {
+          top: -60px;
+        }
+      }
+      .biomesText {
+        font-size: 20px;
+      }
+    }
+    .professions {
+      .professionsTexts {
+        padding: 70px 50px;
+      }
+    }
+    .skills {
+      .skillTitle {
+        h3 {
+          font-size: 100px;
+          padding-right: 50px;
+          text-shadow: 3px 3px 10px black;
+        }
+      }
+    }
+    .world {
+      .worldTitle {
+        h3 {
+          font-size: 100px;
+        }
+        h4 {
+          font-size: 40px;
+        }
+      }
+    }
+    .gameplay {
+      height: 70vh;
+    }
+    .elements {
+      .elementsContainer {
+        div {
+          .element {
+            p {
+              top: -12px;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+      .elementsText {
+        font-size: 25px;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    .gameplay {
+      height: 60vh;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    .biomes {
+      background-position: center 70%;
+      justify-content: flex-end !important;
+      height: 100vh;
+      background-image: url("../../../public/biomes/mobileBg.png");
+      padding-bottom: 10px;
+    }
+    .professions {
+      .professionsImage {
+        display: none;
+      }
+      .professionsMobileImage {
+        display: block;
+      }
+      .professionsTexts {
+        background-image: url("../../../public/professions/mobileBg.png");
+      }
+    }
+    .skills {
+      height: 80vh;
+      align-items: flex-end;
+      padding-bottom: 20px;
+      background-image: url("../../../public/skills/mobileBg.png");
+    }
+    .world {
+      height: 80vh;
+      background-image: url("../../../public/world/mobileBg.png");
+      .worldTitle {
+        padding-left: 15px;
+      }
+    }
+    .gameplay {
+      background-image: url("../../../public/gameplay/mobileBg.png");
+      height: 110vh;
+      justify-content: center;
+      align-items: flex-end;
+      background-position: center 10%;
+      padding-bottom: 20px;
+      .gameplayAlufis {
+        display: none;
+      }
+      .gameplayTitle {
+        width: 100%;
+        padding-right: 0;
+        h3 {
+          font-size: 125px;
+          line-height: 0.8;
+        }
+        h4 {
+          font-size: 40px;
+          width: 100%;
+        }
+      }
+    }
+    .elements {
+      padding-top: 50px;
+      .elementsContainer {
+        display: none;
+      }
+      .mobileElementsContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        div {
+          width: 90%;
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+          .element {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0 !important;
+            transition: all 250ms;
+            img {
+              width: 60%;
+            }
+            p {
+              font-size: 25px;
+              position: relative;
+              top: -17px;
+              font-weight: 800;
+            }
+          }
+        }
+      }
+      .elementsText {
+        width: 80%;
+        text-shadow: none;
+      }
+    }
+  }
+}
+@media (max-width: 590px) {
+  .container {
+    .world {
+      .worldTitle {
+        h3 {
+          font-size: 70px;
+        }
+        h4 {
+          font-size: 30px;
+        }
+      }
+    }
+    .gameplay {
+      height: 85vh !important;
+    }
+    .elements {
+      .elementsTitle {
+        h3:first-child {
+          font-size: 100px;
+        }
+        h3:last-child {
+          font-size: 70px;
+        }
+      }
+      .mobileElementsContainer {
+        div {
+          .element {
+            p {
+              font-size: 15px;
+              top: -10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 420px) {
+  .container {
+    .combatSystem {
+      padding-top: 10px;
+      div {
+        p {
+          font-size: 15px;
+        }
+      }
+    }
+    .biomes {
+      overflow: hidden;
+      .biomesTitle {
+        position: relative;
+        right: -30px;
+        h3:first-child {
+          font-size: 100px !important;
+        }
+        h3:nth-child(2),
+        h3:last-child {
+          font-size: 50px !important;
+          top: -30px !important;
+        }
+        h3:last-child {
+          top: -50px !important;
+        }
+      }
+      .biomesText {
+        font-size: 15px !important;
+      }
+    }
+    .professions {
+      .professionsTexts {
+        height: 100% !important;
+        padding: 30px !important;
+        font-size: 15px !important;
+      }
+    }
+    .skills {
+      .skillTitle {
+        h3 {
+          font-size: 80px;
+          padding-right: 20px;
+        }
+      }
+    }
+    .world {
+      height: 50vh;
+      .worldTitle {
+        h3 {
+          font-size: 50px;
+        }
+        h4 {
+          font-size: 20px;
+        }
+      }
+    }
+    .gameplay {
+      height: 75vh !important;
+      .gameplayTitle {
+        h3 {
+          font-size: 80px;
+        }
+        h4 {
+          font-size: 30px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .elements {
+      .elementsTitle {
+        h3:first-child {
+          font-size: 80px;
+        }
+        h3:last-child {
+          font-size: 50px !important;
+        }
+      }
+    }
+  }
+}
