@@ -87,3 +87,26 @@ img {
 .swiper-slide-shadow-cards {
   display: none !important;
 }
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #01135D;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #FFBE00;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a67c00;
+
+}

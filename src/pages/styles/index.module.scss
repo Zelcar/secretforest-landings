@@ -449,14 +449,37 @@ $subtitle: 700;
   .elements {
     width: 100%;
     height: 100%;
-    background-image: url("../../../public/elements/bg.jpg");
-    background-position: 0% 0%;
-    background-size: center;
+    background-image: url("../../../public/elements/Sin blurbg.jpg");
+    background-position: center;
+    background-size: fill;
     background-repeat: no-repeat;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    .elementsUpFade {
+      width: 100%;
+      height: 100px;
+      background: rgb(39, 47, 96);
+      background: linear-gradient(
+        0deg,
+        rgba(39, 47, 96, 0) 0%,
+        rgba(1, 19, 93, 1) 81%,
+        rgba(1, 19, 93, 1) 100%,
+        rgba(39, 47, 96, 1) 100%
+      );
+    }
+    .elementsDownFade {
+      width: 100%;
+      height: 100px;
+      background: rgb(1, 19, 93);
+      background: linear-gradient(
+        0deg,
+        rgba(1, 19, 93, 1) 0%,
+        rgba(255, 200, 115, 0) 100%
+      );
+    }
+
     .elementsTitle {
       text-align: center;
       h3:first-child {
@@ -517,7 +540,191 @@ $subtitle: 700;
       text-shadow: 10px 10px 10px black;
     }
   }
+  .mounts {
+    width: 100%;
+    height: 1414px;
+    background-image: url("../../../public/mounts/bg.jpg");
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    .mountsTitle {
+      position: relative;
+      top: 150px;
+      h3 {
+        font-size: 100px;
+        text-align: center;
+        font-weight: $title;
+        text-shadow: 3px 3px 10px black;
+      }
+    }
+    .mountsText {
+      position: relative;
+      right: 100px;
+      bottom: 50px;
+      align-self: flex-end;
+      text-align: center;
+      margin-bottom: 2vw;
+      font-size: 60px;
+      font-weight: $title;
+    }
+  }
+  .form {
+    display: flex;
+    width: 100%;
+    height: 80vh;
+    justify-content: flex-end;
+    align-items: space-between;
+    flex-direction: row;
+    background-image: url("../../../public/form/bg.jpg");
+    background-position: center;
+    background-size: fill;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .formLeft {
+      width: 50%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      flex-direction: column;
+      z-index: 5;
+      .formLeftTitleContainer {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        h3 {
+          text-align: center;
+          font-size: 40px;
+          font-weight: $subtitle;
+        }
+      }
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-top: 20px;
+        width: 80%;
+        label {
+          font-size: 25px;
+          font-weight: $text;
+        }
+        input {
+          width: 100%;
+          margin: 5px 0 10px 0;
+          outline: 1px solid #665872;
+          border: none;
+          background-color: #150622;
+          padding: 10px 0;
+          border-radius: 5px;
+
+          &::placeholder {
+            padding-left: 15px;
+            font-size: 120%;
+            font-family: "Montserrat";
+          }
+        }
+        button {
+          align-self: center;
+          border: none;
+          cursor: pointer;
+          color: white;
+          font-family: Montserrat;
+          width: 150px;
+          border-radius: 15px;
+          margin-top: 10px;
+          padding: 8px 0;
+          font-weight: $title;
+          letter-spacing: 1px;
+          transition: all 500ms;
+          background: rgb(255, 190, 0);
+          &:hover {
+            background: rgb(61, 13, 132);
+          }
+        }
+      }
+    }
+    .formRight {
+      width: 40%;
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      z-index: 2;
+      img {
+        height: auto;
+      }
+    }
+    .formUpFade {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100px;
+      background: rgb(39, 47, 96);
+      background: linear-gradient(
+        0deg,
+        rgba(39, 47, 96, 0) 0%,
+        rgba(1, 19, 93, 1) 81%,
+        rgba(1, 19, 93, 1) 100%,
+        rgba(39, 47, 96, 1) 100%
+      );
+    }
+    .formOverlay {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      z-index: 1;
+    }
+  }
+  .footer {
+    background-color: #0e296e;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+    .footerMain {
+      margin-top: 50px;
+      border-radius: 10px;
+      outline: 1px solid rgb(179, 179, 179);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+      width: 70%;
+      padding: 30px;
+      h4 {
+        font-weight: $title;
+        font-size: 50px;
+      }
+      button {
+        width: 320px;
+        height: 120px;
+        background-color: transparent;
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
 }
+
 @media (max-width: 1450px) {
   .container {
     .races {
@@ -712,6 +919,34 @@ $subtitle: 700;
         font-size: 25px;
       }
     }
+    .mounts {
+      height: 2200px;
+      background-image: url("../../../public/mounts/mobileBg.jpg");
+      background-position: 0% 0%;
+      background-size: cover;
+      .mountsTitle {
+        h3 {
+          font-size: 85px;
+        }
+      }
+      .mountsText {
+        right: 20px;
+        font-size: 50px;
+      }
+    }
+    .form {
+      // display: none !important;
+      .formLeft {
+        align-items: center;
+        width: 60%;
+      }
+      .formRight {
+        align-items: flex-end;
+        img {
+          height: 90%;
+        }
+      }
+    }
   }
 }
 @media (max-width: 850px) {
@@ -719,6 +954,15 @@ $subtitle: 700;
     .header {
       h1 {
         font-size: 30px;
+      }
+    }
+    .mounts {
+      height: 1920px;
+      .mountsText {
+        p {
+          text-shadow: 3px 3px 10px black;
+          font-size: 40px;
+        }
       }
     }
   }
@@ -805,6 +1049,25 @@ $subtitle: 700;
       height: 100vh;
       background-image: url("../../../public/biomes/mobileBg.png");
       padding-bottom: 10px;
+      .biomesTitle {
+        padding-right: 10px;
+        position: relative;
+        top: 50px;
+        h3:first-child {
+          font-size: 100px;
+        }
+        h3:nth-child(2),
+        h3:last-child {
+          font-size: 70px;
+          top: -35px;
+        }
+        h3:last-child {
+          top: -60px;
+        }
+      }
+      .biomesText {
+        font-size: 20px;
+      }
     }
     .professions {
       .professionsImage {
@@ -822,6 +1085,7 @@ $subtitle: 700;
       align-items: flex-end;
       padding-bottom: 20px;
       background-image: url("../../../public/skills/mobileBg.png");
+      background-position: center;
     }
     .world {
       height: 60vh;
@@ -854,7 +1118,6 @@ $subtitle: 700;
       }
     }
     .elements {
-      padding-top: 50px;
       .elementsContainer {
         display: none;
       }
@@ -891,11 +1154,43 @@ $subtitle: 700;
         text-shadow: none;
       }
     }
+    .mounts {
+      .mountsTitle {
+        top: 30px;
+      }
+    }
+    .form {
+      height: 60vh;
+      justify-content: center;
+      align-items: center;
+      .formLeft {
+        width: 90%;
+        .formLeftTitleContainer {
+          width: 100%;
+        }
+      }
+      .formRight {
+        display: none;
+      }
+    }
+    .footer{
+      padding-bottom: 10px;
+      .footerMain{
+        margin-top: 20px;
+        h4{
+          font-size: 30px;
+        }
+        button{
+          width: 200px;
+          height: 75px ;
+        }
+      }
+    }
   }
 }
 @media (max-width: 590px) {
   .container {
-    .header{
+    .header {
       height: 65vh;
     }
     .races {
@@ -923,6 +1218,13 @@ $subtitle: 700;
         font-size: 20px;
       }
     }
+    .skills {
+      .skillTitle {
+        h3 {
+          font-size: 70px;
+        }
+      }
+    }
     .world {
       height: 45vh;
       .worldTitle {
@@ -935,7 +1237,15 @@ $subtitle: 700;
       }
     }
     .gameplay {
-      height: 85vh !important;
+      height: 95vh !important;
+      .gameplayTitle {
+        h3 {
+          font-size: 95px !important;
+        }
+        h4 {
+          font-size: 40px;
+        }
+      }
     }
     .elements {
       .elementsTitle {
@@ -957,8 +1267,36 @@ $subtitle: 700;
         }
       }
     }
+    .mounts {
+      background-image: url("../../../public/mounts/mobile2Bg.jpg");
+      background-position: center !important;
+      background-size: fill !important;
+      height: 1920px;
+      .mountsTitle {
+        top: 0px;
+        h3 {
+          font-size: 78px;
+          width: 90%;
+          margin: 0 auto;
+        }
+      }
+      .mountsText {
+        bottom: 10px;
+      }
+    }
+    .form {
+      height: 50vh;
+      .formLeft {
+        .formLeftTitleContainer {
+          h3 {
+            font-size: 35px;
+          }
+        }
+      }
+    }
   }
 }
+
 @media (max-width: 420px) {
   .container {
     .header {
@@ -1020,8 +1358,6 @@ $subtitle: 700;
     .biomes {
       overflow: hidden;
       .biomesTitle {
-        position: relative;
-        right: -30px;
         h3:first-child {
           font-size: 100px !important;
         }
@@ -1085,6 +1421,40 @@ $subtitle: 700;
           font-size: 50px !important;
         }
       }
+    }
+    .mounts {
+      .mountsTitle {
+        h3 {
+          font-size: 60px;
+        }
+      }
+      .mountsText {
+        bottom: 20px;
+        p {
+          font-size: 25px;
+        }
+      }
+    }
+    .form {
+      .formLeft {
+        .formLeftTitleContainer {
+          h3 {
+            font-size: 25px;
+          }
+        }
+        div {
+          label {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-height: 700px) {
+  .container {
+    .header {
+      height: 80vh;
     }
   }
 }

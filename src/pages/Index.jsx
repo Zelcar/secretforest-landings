@@ -1,13 +1,8 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import Loader from "../components/Loader";
 import styles from "./styles/index.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
-import {
-  EffectCards,
-  EffectCoverflow,
-  Navigation,
-  Pagination,
-} from "swiper/modules";
+import { EffectCards } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/effect-cards";
@@ -79,6 +74,7 @@ const Index = ({ lang }) => {
               slidesPerView={"auto"}
               cardsEffect={{
                 perSlideOffset: 35,
+                rotate: true,
               }}
               modules={[EffectCards]}
               initialSlide={5}
@@ -314,6 +310,8 @@ const Index = ({ lang }) => {
         </div>
       </section>
       <section className={styles.elements}>
+        <div className={styles.elementsUpFade}></div>
+
         <div className={styles.elementsMain}>
           <div className={styles.elementsTitle}>
             <h3>8</h3>
@@ -403,8 +401,46 @@ const Index = ({ lang }) => {
         <p className={styles.elementsText}>
           {lang.elements.text1} <br /> {lang.elements.text2}{" "}
         </p>
+        <div className={styles.elementsDownFade}></div>
       </section>
-      <section>asdasd</section>
+      <section className={styles.mounts}>
+        <div className={styles.mountsTitle}>
+          <h3>{lang.mounts.title}</h3>
+        </div>
+        <div className={styles.mountsText}>
+          <p>
+            {lang.mounts.text1} <br /> {lang.mounts.text2} <br />{" "}
+            {lang.mounts.text3}{" "}
+          </p>
+        </div>
+      </section>
+      <section className={styles.form}>
+        <div className={styles.formLeft}>
+          <div className={styles.formLeftTitleContainer}>
+            <h3>{lang.form.text1}</h3>
+            <h3>{lang.form.text2}</h3>
+            <h3>{lang.form.text3}</h3>
+          </div>
+          <div>
+            <label>{lang.form.email}</label>
+            <input type="text" placeholder={lang.form.placeholder} />
+            <button>{lang.form.signUp}</button>
+          </div>
+        </div>
+        <div className={styles.formRight}>
+          <img src="/form/aquan.png" alt="" />
+        </div>
+        <div className={styles.formUpFade}></div>
+        <img src="/form/overlay.png" className={styles.formOverlay} alt="" />
+      </section>
+      <footer className={styles.footer}>
+        <div className={styles.footerMain}>
+          <h4>{lang.footer.title}</h4>
+          <button>
+            <img src="/btnDiscord.png" alt="" />
+          </button>
+        </div>
+      </footer>
     </main>
   );
 };
