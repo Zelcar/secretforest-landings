@@ -1,33 +1,27 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Loader from "../components/Loader";
 import styles from "./styles/index.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCards, Navigation } from "swiper/modules";
+import {
+  EffectCards,
+  EffectCoverflow,
+  Navigation,
+  Pagination,
+} from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/effect-cards";
 
 const Index = ({ lang }) => {
   const [loader, setLoader] = useState(true);
-
   let selectedLang = lang.id == 1 ? "es" : lang.id == 2 ? "en" : "br";
   React.useEffect(() => {
     // setTimeout(() => {
-      setLoader(false);
+    setLoader(false);
     // }, 3000);
   }, []);
 
   const swiperRef = useRef(null);
-  const handlePrev = () => {
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slidePrev();
-    }
-  };
-  const handleNext = () => {
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slideNext();
-    }
-  };
 
   return (
     <main className={styles.container}>
@@ -43,7 +37,11 @@ const Index = ({ lang }) => {
         />
         <img src="/header/cat.png" className={styles.headerCat} alt="" />
 
-        <img src="/header/logo.png" alt="Secret Forest Logo" />
+        <img
+          src="/header/logo.png"
+          className={styles.headerLogo}
+          alt="Secret Forest Logo"
+        />
         <h1>{lang.header.title1}</h1>
         <h1>{lang.header.title2}</h1>
         <h3>{lang.header.subtitle}</h3>
@@ -64,24 +62,26 @@ const Index = ({ lang }) => {
           </p>
         </div>
       </section>
-      {/* <section className={styles.races}>
+      <section className={styles.races}>
         <div className={styles.racesMainContainer}>
           <div className={styles.racesTitle}>
             <h3>10</h3>
             <h3>{lang.races.title}</h3>
           </div>
           <div className={styles.racesImagesContainer}>
-            <button className={styles.racesArrows} onClick={handlePrev}>
-              <img src="/arrow.png" alt="" />
-            </button>
             <Swiper
+              spaceBetween={50}
               ref={swiperRef}
-              effect={"cards"}
               grabCursor={true}
               className={styles.mySwiper}
+              centeredSlides={true}
+              effect={"cards"}
+              slidesPerView={"auto"}
+              cardsEffect={{
+                perSlideOffset: 35,
+              }}
               modules={[EffectCards]}
               initialSlide={5}
-              spaceBetween={100}
             >
               <SwiperSlide>
                 <img className={styles.racesImg} src="/races/aquan.png"></img>
@@ -114,15 +114,104 @@ const Index = ({ lang }) => {
                 <img className={styles.racesImg} src="/races/troll.png"></img>
               </SwiperSlide>
             </Swiper>
-            <button className={styles.racesArrows} onClick={handleNext}>
-              <img src="/arrow.png" alt="" />
-            </button>
+            <Swiper
+              spaceBetween={50}
+              ref={swiperRef}
+              grabCursor={true}
+              className={styles.myMobileSwiper}
+              effect={"cards"}
+              slidesPerView={"auto"}
+              cardsEffect={{
+                perSlideOffset: 20,
+                slideShadows: false,
+                centeredSlides: true,
+              }}
+              modules={[EffectCards]}
+              initialSlide={5}
+            >
+              <SwiperSlide>
+                <img className={styles.racesImg} src="/races/aquan.png"></img>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img className={styles.racesImg} src="/races/axolotl.png"></img>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img className={styles.racesImg} src="/races/cat.png"></img>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img className={styles.racesImg} src="/races/dog.png"></img>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img className={styles.racesImg} src="/races/elve.png"></img>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img className={styles.racesImg} src="/races/embear.png"></img>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img className={styles.racesImg} src="/races/fairan.png"></img>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img className={styles.racesImg} src="/races/foxy.png"></img>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img className={styles.racesImg} src="/races/goblin.png"></img>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img className={styles.racesImg} src="/races/troll.png"></img>
+              </SwiperSlide>
+            </Swiper>
+            <Swiper
+              spaceBetween={50}
+              ref={swiperRef}
+              grabCursor={true}
+              className={styles.myMobile2Swiper}
+              effect={"cards"}
+              slidesPerView={"auto"}
+              cardsEffect={{
+                perSlideOffset: 15,
+                slideShadows: false,
+                centeredSlides: true,
+              }}
+              modules={[EffectCards]}
+              initialSlide={5}
+            >
+              <SwiperSlide>
+                <img className={styles.racesImg} src="/races/aquan.png"></img>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img className={styles.racesImg} src="/races/axolotl.png"></img>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img className={styles.racesImg} src="/races/cat.png"></img>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img className={styles.racesImg} src="/races/dog.png"></img>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img className={styles.racesImg} src="/races/elve.png"></img>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img className={styles.racesImg} src="/races/embear.png"></img>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img className={styles.racesImg} src="/races/fairan.png"></img>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img className={styles.racesImg} src="/races/foxy.png"></img>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img className={styles.racesImg} src="/races/goblin.png"></img>
+              </SwiperSlide>
+              <SwiperSlide>
+                <img className={styles.racesImg} src="/races/troll.png"></img>
+              </SwiperSlide>
+            </Swiper>
           </div>
         </div>
         <p className={styles.racesText}>
           {lang.races.text1} <br /> {lang.races.text2} <br /> {lang.races.text3}{" "}
         </p>
-      </section> */}
+      </section>
       <section className={styles.biomes}>
         <div className={styles.biomesTitle}>
           <h3>10</h3>

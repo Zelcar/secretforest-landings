@@ -201,11 +201,12 @@ $subtitle: 700;
       flex-direction: row;
       position: relative;
       top: 25px;
+      overflow: hidden;
       .racesTitle {
         width: 30%;
         // margin-top: 10px;
         h3:first-child {
-          font-size: 250px;
+          font-size: 350px;
           text-align: center;
           font-weight: $title;
           text-shadow: 3px 3px 10px black;
@@ -213,7 +214,7 @@ $subtitle: 700;
         h3:last-child {
           position: relative;
           top: -70px;
-          font-size: 100px;
+          font-size: 120px;
           font-weight: $title;
           text-align: center;
           text-shadow: 3px 3px 10px black;
@@ -225,6 +226,7 @@ $subtitle: 700;
         justify-content: center;
         align-items: center;
         flex-direction: row;
+        // overflow: hidden;
         .racesArrows {
           width: 15px;
           height: 15px;
@@ -247,9 +249,15 @@ $subtitle: 700;
         }
         .mySwiper {
           width: 300px;
+          // background: red;
+        }
+        .myMobileSwiper,
+        .myMobile2Swiper {
+          width: 300px;
+          display: none;
         }
         .racesImg {
-          height: 400px;
+          // height: 400px;
         }
       }
     }
@@ -510,6 +518,19 @@ $subtitle: 700;
     }
   }
 }
+@media (max-width: 1450px) {
+  .container {
+    .races {
+      .racesMainContainer {
+        .racesImagesContainer {
+          .mySwiper {
+            width: 250px;
+          }
+        }
+      }
+    }
+  }
+}
 @media (max-width: 1300px) {
   .container {
     .gameplay {
@@ -528,11 +549,41 @@ $subtitle: 700;
         }
       }
     }
+    .races {
+      .racesMainContainer {
+        justify-content: flex-start;
+        .racesTitle {
+          margin-left: 30px;
+          h3 {
+            line-height: 0.8;
+          }
+          h3:first-child {
+            font-size: 250px;
+          }
+          h3:last-child {
+            font-size: 100px;
+            top: 0 !important;
+          }
+        }
+        .racesImagesContainer {
+          width: 20%;
+          position: relative;
+          left: 300px;
+        }
+      }
+    }
   }
 }
 @media (max-width: 1100px) {
   .container {
     .header {
+      .headerLogo {
+        width: 30vw;
+      }
+      .headerCat,
+      .headerAxolotl {
+        width: 200px;
+      }
       div {
         input {
           width: 100%;
@@ -554,12 +605,16 @@ $subtitle: 700;
   .container {
     .header {
       height: 80vh;
-      .headerAxolotl,
-      .headerCat {
-        display: none;
+
+      h1 {
+        font-size: 32px;
+      }
+      h3 {
+        font-size: 25px;
       }
       p {
-        width: 50%;
+        width: 45%;
+        font-size: 20px;
       }
       div {
         width: 50%;
@@ -568,6 +623,33 @@ $subtitle: 700;
     .combatSystem {
       div {
         width: 90%;
+        p {
+          font-weight: 600;
+          font-size: 25px;
+        }
+      }
+    }
+    .races {
+      padding-bottom: 20px;
+      padding-top: 50px;
+      background-position: center;
+
+      .racesMainContainer {
+        flex-direction: column;
+        justify-content: center;
+        .racesTitle {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+        }
+        .racesImagesContainer {
+          left: 0;
+          width: 100%;
+        }
+      }
+      .racesText {
+        width: 90%;
+        margin-bottom: 0;
       }
     }
     .biomes {
@@ -632,8 +714,34 @@ $subtitle: 700;
     }
   }
 }
+@media (max-width: 850px) {
+  .container {
+    .header {
+      h1 {
+        font-size: 30px;
+      }
+    }
+  }
+}
 @media (max-width: 800px) {
   .container {
+    .header {
+      h1 {
+        font-size: 25px;
+      }
+      h3 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 15px;
+      }
+      div {
+        width: 45%;
+        label {
+          font-size: 20px;
+        }
+      }
+    }
     .gameplay {
       height: 60vh;
     }
@@ -642,6 +750,55 @@ $subtitle: 700;
 
 @media (max-width: 720px) {
   .container {
+    .header {
+      .headerAxolotl,
+      .headerCat {
+        display: none;
+      }
+      .headerLogo {
+        width: 220px !important;
+      }
+      h1 {
+        font-size: 25px;
+      }
+      h3 {
+        font-size: 20px;
+      }
+      p {
+        width: 350px;
+        margin-top: 10px;
+        font-size: 18px;
+      }
+      div {
+        width: 320px;
+      }
+    }
+    .combatSystem {
+      padding: 20px 0 0 0;
+      div {
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+    .races {
+      .racesMainContainer {
+        .racesImagesContainer {
+          .mySwiper {
+            display: none;
+          }
+          .myMobileSwiper {
+            // background: red;;
+            position: relative;
+            left: 8vw;
+            display: flex;
+          }
+          .racesImg {
+            width: 220px;
+          }
+        }
+      }
+    }
     .biomes {
       background-position: center 70%;
       justify-content: flex-end !important;
@@ -738,6 +895,34 @@ $subtitle: 700;
 }
 @media (max-width: 590px) {
   .container {
+    .header{
+      height: 65vh;
+    }
+    .races {
+      .racesMainContainer {
+        .racesTitle {
+          width: 100%;
+          margin: 0;
+          h3:first-child {
+            font-size: 200px;
+          }
+          h3:last-child {
+            font-size: 100px;
+          }
+        }
+        .racesImagesContainer {
+          .myMobileSwiper {
+            left: 65px;
+          }
+          .racesImg {
+            width: 175px;
+          }
+        }
+      }
+      .racesText {
+        font-size: 20px;
+      }
+    }
     .world {
       .worldTitle {
         h3 {
@@ -775,12 +960,60 @@ $subtitle: 700;
 }
 @media (max-width: 420px) {
   .container {
+    .header {
+      height: 55vh;
+      .headerLogo {
+        width: 200px !important;
+      }
+      h1 {
+        font-size: 20px;
+      }
+      h3 {
+        font-size: 17px;
+      }
+      p {
+        width: 300px;
+        margin-top: 10px;
+        font-size: 15px;
+      }
+      div {
+        width: 300px;
+      }
+    }
     .combatSystem {
       padding-top: 10px;
       div {
         p {
           font-size: 15px;
         }
+      }
+    }
+    .races {
+      padding-top: 20px;
+      .racesMainContainer {
+        .racesTitle {
+          padding-bottom: 20px;
+          h3:first-child {
+            font-size: 80px;
+          }
+          h3:last-child {
+            font-size: 60px;
+          }
+        }
+        .racesImagesContainer {
+          .myMobileSwiper {
+            display: none;
+          }
+          .myMobile2Swiper {
+            position: relative;
+            left: 60px;
+            display: flex;
+          }
+        }
+      }
+      .racesText {
+        font-size: 13px;
+        width: 90%;
       }
     }
     .biomes {
