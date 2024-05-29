@@ -11,18 +11,6 @@
       "counter1": "Únete a",
       "counter2": "más personas!"
     },
-    "nav": {
-      "navItem1": "Inicio",
-      "navItem2": "Razas",
-      "navItem3": "Profesiones",
-      "navItem4": "Combate",
-      "navItem5": "Exploracion",
-      "navItem6": "Arte conceptual",
-      "navItem7": "Biomas",
-      "navItem8": "Roadmap",
-      "navItem9": "Equipo",
-      "navItem10": "Redes sociales"
-    },
     "header": {
       "title1": "UN NUEVO Y DIFERENTE",
       "title2": "E INNOVADOR MMORPG",
@@ -56,8 +44,8 @@
       "text3": "coleccionables, fabricables, zonas PvP, zonas PvE, comercio, ¡etc.!"
     },
     "skills": {
-      "title1": "ÁRBOLES",
-      "title2": "DE HABILIDADES",
+      "title1": "ÁRBOL DE",
+      "title2": "HABILIDADES",
       "title3": "MIXTAS"
     },
     "world": {
@@ -66,9 +54,9 @@
       "title3": "MUNDO ABIERTO"
     },
     "gameplay": {
-      "title1": "MÁS DE",
-      "title2": "HORAS",
-      "title3": "DE JUEGO!"
+      "title1": "HORAS",
+      "title2": "DE JUEGO",
+      "title3": "O MÁS!"
     },
     "elements": {
       "title": "ELEMENTOS",
@@ -112,18 +100,6 @@
       "emailWrong": "The email is wrong",
       "counter1": "Join",
       "counter2": "more people!"
-    },
-    "nav": {
-      "navItem1": "Home",
-      "navItem2": "Races",
-      "navItem3": "Professions",
-      "navItem4": "Combat",
-      "navItem5": "Exploration",
-      "navItem6": "Concept art",
-      "navItem7": "Biomes",
-      "navItem8": "Roadmap",
-      "navItem9": "Team",
-      "navItem10": "Social medias"
     },
     "header": {
       "title1": "A NEW DIFFERENT",
@@ -248,7 +224,7 @@
     },
     "biomes": {
       "title1": "BIOMAS",
-      "title2": "FANTÁSTICOS",
+      "title2": "DE FANTASÍA",
       "text1": "Propriedade privada para usar e decorar como você quiser:",
       "text2": " Crie um bar de poções alquímicas,",
       "text3": "use nosso lago para piscicultura,",
@@ -261,8 +237,8 @@
     },
     "skills": {
       "title1": "ÁRVORES",
-      "title2": "DE HABILIDADES",
-      "title3": "MISTAS"
+      "title2": "DE ",
+      "title3": "HABILIDADES"
     },
     "world": {
       "title1": "QUILÔMETROS",

@@ -37,7 +37,7 @@ const Index = ({ lang }) => {
         })
         .catch((error) => {
           console.error("Error al enviar el email:", error);
-          toast.error("The email is already registered", {
+          toast.error(lang.toast.emailRegistered, {
             position: "top-center",
             autoClose: 5000,
             hideProgressBar: false,
@@ -50,7 +50,7 @@ const Index = ({ lang }) => {
         });
     } else {
       if (captchaState == false) {
-        toast.error("Please verify with captcha.", {
+        toast.error(lang.toast.verifyCaptcha, {
           position: "top-center",
           autoClose: 5000,
           hideProgressBar: false,
@@ -62,7 +62,7 @@ const Index = ({ lang }) => {
         });
       }
       if (isValidEmail(emailInput) == false || emailInput == "") {
-        toast.error("The email is wrong.", {
+        toast.error(lang.toast.emailWrong, {
           position: "top-center",
           autoClose: 5000,
           hideProgressBar: false,
@@ -83,7 +83,7 @@ const Index = ({ lang }) => {
       )
       .then(() => {
         getEmailsCounter();
-        toast.success("Thank you for signing up!", {
+        toast.success(lang.toast.info1, {
           position: "top-center",
           autoClose: 2500,
           hideProgressBar: false,
@@ -116,7 +116,7 @@ const Index = ({ lang }) => {
         setFooterEmailInput("");
       })
       .catch((error) => {
-        toast.error("Internal server error sending email!", {
+        toast.error(lang.toast.error, {
           position: "top-center",
           autoClose: 2500,
           hideProgressBar: false,
@@ -224,7 +224,7 @@ const Index = ({ lang }) => {
             {lang.header.signUp}
           </button>
           <label className={styles.headerJoinNumber}>
-            Join {fixedNumber} other people!
+            {lang.toast.counter1} {fixedNumber} {lang.toast.counter2}
           </label>
         </div>
         <Fade up></Fade>
@@ -488,7 +488,9 @@ const Index = ({ lang }) => {
       </section>
       <section className={styles.skills}>
         <Fade right>
-          <div className={styles.skillTitle}>
+          {/* <div className={styles.skillTitle}> */}
+          <div className={selectedLang !== "en" ? styles.skillNoEnglishTitle : styles.skillTitle}>
+
             <h3>{lang.skills.title1}</h3>
             <h3>{lang.skills.title2}</h3>
             <h3>{lang.skills.title3}</h3>
@@ -672,7 +674,9 @@ const Index = ({ lang }) => {
           </div>
         </Fade>
         <Fade up>
-          <div className={styles.mountsText}>
+          {/* <div className={styles.mountsText}> */}
+          <div className={selectedLang !== "en" ? styles.mountsNoEnglishText : styles.mountsText}>
+
             <p>
               {lang.mounts.text1} <br /> {lang.mounts.text2} <br />{" "}
               {lang.mounts.text3}{" "}
@@ -706,7 +710,7 @@ const Index = ({ lang }) => {
                 {lang.form.signUp}
               </button>
               <label className={styles.headerJoinNumber}>
-                Join {fixedNumber} other people!
+                {lang.toast.counter1} {fixedNumber} {lang.toast.counter2}
               </label>
             </div>
           </div>
