@@ -763,6 +763,14 @@ $subtitle: 700;
     }
   }
 }
+@media(max-height:800px){
+  .container {
+    .header {
+      height: 120vh !important;
+    }
+  }
+
+}
 @media (max-height: 700px) {
   .container {
     .header {

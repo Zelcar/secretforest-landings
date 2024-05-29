@@ -16,7 +16,6 @@ const Index = ({ lang }) => {
   const [loader, setLoader] = useState(false);
   const [emailCounter, setEmailCounter] = useState(0);
   const [captchaState, setCaptchaState] = useState(true);
-  const [modalState, setModalState] = useState(false);
   const [fixedNumber, setFixedNumber] = useState(null);
   const [headerEmailInput, setHeaderEmailInput] = useState("");
   const [footerEmailInput, setFooterEmailInput] = useState("");
@@ -83,6 +82,7 @@ const Index = ({ lang }) => {
       )
       .then(() => {
         getEmailsCounter();
+        fetchFixedNumber();
         toast.success(lang.toast.info1, {
           position: "top-center",
           autoClose: 2500,
@@ -164,7 +164,7 @@ const Index = ({ lang }) => {
     fetchFixedNumber();
     setTimeout(() => {
       setLoader(false);
-    }, 1000);
+    }, 3000);
   }, []);
 
   return (
