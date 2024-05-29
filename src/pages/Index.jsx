@@ -1,27 +1,186 @@
-import React, { useRef, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Loader from "../components/Loader";
 import styles from "./styles/index.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards } from "swiper/modules";
-
+import "react-toastify/dist/ReactToastify.css";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import Navbar from "../components/Navbar";
-import { Fade, Roll } from "react-reveal";
+import { Fade } from "react-reveal";
+import ReCAPTCHA from "react-google-recaptcha";
+import { ToastContainer, toast } from "react-toastify";
+import axios from "axios";
 
 const Index = ({ lang }) => {
-  const [loader, setLoader] = useState(true);
+  const [loader, setLoader] = useState(false);
+  const [emailCounter, setEmailCounter] = useState(0);
+  const [captchaState, setCaptchaState] = useState(false);
+  const [modalState, setModalState] = useState(false);
+  const [fixedNumber, setFixedNumber] = useState(null);
+  const [headerEmailInput, setHeaderEmailInput] = useState("");
+  const [footerEmailInput, setFooterEmailInput] = useState("");
+  const swiperRef = useRef(null);
   let selectedLang = lang.id == 1 ? "es" : lang.id == 2 ? "en" : "br";
-  React.useEffect(() => {
+
+  const sendFirstEmail = (e, emailInput) => {
+    e.preventDefault();
+    console.log("IsValidEmail: ", isValidEmail(emailInput));
+    if (captchaState && isValidEmail(emailInput)) {
+      axios
+        .post(
+          `https://starfish-app-licfp.ondigitalocean.app/api/auth/register`,
+          { email: emailInput }
+        )
+        .then(() => {
+          sendSecondEmail(emailInput);
+        })
+        .catch((error) => {
+          console.error("Error al enviar el email:", error);
+          toast.error("The email is already registered", {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
+        });
+    } else {
+      if (captchaState == false) {
+        toast.error("Please verify with captcha.", {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
+      }
+      if (isValidEmail(emailInput) == false || emailInput == "") {
+        toast.error("The email is wrong.", {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
+      }
+    }
+  };
+  const sendSecondEmail = (emailInput) => {
+    axios
+      .post(
+        "https://starfish-app-licfp.ondigitalocean.app/api/secretForestEmails/sendEmail",
+        { emailTo: emailInput }
+      )
+      .then(() => {
+        getEmailsCounter();
+        toast.success("Thank you for signing up!", {
+          position: "top-center",
+          autoClose: 2500,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
+        // setTimeout(() => {
+        //   toast.info(
+        //     "Now sign up for Kickstarter to be among the first to know about the campaign launch!",
+        //     {
+        //       position: "top-center",
+        //       autoClose: 4000,
+        //       hideProgressBar: false,
+        //       closeOnClick: true,
+        //       pauseOnHover: true,
+        //       draggable: true,
+        //       progress: undefined,
+        //       theme: "dark",
+        //     }
+        //   );
+        // }, 2000);
+        // setTimeout(() => {
+        //   window.location.href =
+        //     "https://www.kickstarter.com/projects/secretforest/secretforest";
+        // }, 7500);
+        setHeaderEmailInput("");
+        setFooterEmailInput("");
+      })
+      .catch((error) => {
+        toast.error("Internal server error sending email!", {
+          position: "top-center",
+          autoClose: 2500,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
+        console.error(error);
+      });
+  };
+  const getEmailsCounter = () => {
+    axios
+      .get(`https://starfish-app-licfp.ondigitalocean.app/api/auth/cuantity`)
+      .then((response) => {
+        setEmailCounter(response.data.emailCuantity - 8775);
+      });
+  };
+  const isValidEmail = (email) => {
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return emailPattern.test(email);
+  };
+  const fetchFixedNumber = () => {
+    const API_URL =
+      "https://starfish-app-licfp.ondigitalocean.app/api/auth/cuantity";
+
+    axios
+      .get(API_URL)
+      .then((response) => {
+        setFixedNumber(response.data.emailCuantity - 8775);
+      })
+      .catch((error) => {});
+  };
+  function onChange(value) {
+    console.log("Captcha value:", value);
+    setCaptchaState(true);
+
+    if (isValidEmail(emailFront)) {
+      setInputSubmit(false);
+    }
+  }
+  useEffect(() => {
+    getEmailsCounter();
+    fetchFixedNumber();
     setTimeout(() => {
       setLoader(false);
-    }, 3000);
+    }, 1000);
   }, []);
-
-  const swiperRef = useRef(null);
 
   return (
     <main className={styles.container}>
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
       <Loader loader={loader}></Loader>
       <Navbar lang={lang} isHome={true} />
       <a href="#header" className={styles.upBtn}>
@@ -49,13 +208,28 @@ const Index = ({ lang }) => {
         <p>{lang.header.label}</p>
         <div>
           <label>{lang.header.email}</label>
-          <input type="text" placeholder={lang.header.placeholder} />
-          <button>{lang.header.signUp}</button>
+          <input
+            type="text"
+            placeholder={lang.header.placeholder}
+            value={headerEmailInput}
+            onChange={(e) => setHeaderEmailInput(e.target.value)}
+          />
+          <ReCAPTCHA
+            size="normal"
+            className={styles.headerCaptcha}
+            sitekey="6LcKs2MoAAAAANbEb8FgM_zGq-AZx2SegfCCegkn"
+            onChange={onChange}
+          />
+          <button onClick={(e) => sendFirstEmail(e, headerEmailInput)}>
+            {lang.header.signUp}
+          </button>
+          <label className={styles.headerJoinNumber}>
+            Join {fixedNumber} other people!
+          </label>
         </div>
         <Fade up></Fade>
         <img className={styles.headerFade} src="/header/fade.png" alt="" />
       </header>
-
       <section className={styles.combatSystem}>
         <Fade up>
           <div>
@@ -516,8 +690,24 @@ const Index = ({ lang }) => {
             </div>
             <div>
               <label>{lang.form.email}</label>
-              <input type="text" placeholder={lang.form.placeholder} />
-              <button>{lang.form.signUp}</button>
+              <input
+                type="text"
+                placeholder={lang.form.placeholder}
+                value={footerEmailInput}
+                onChange={(e) => setFooterEmailInput(e.target.value)}
+              />
+              <ReCAPTCHA
+                size="normal"
+                className={styles.headerCaptcha}
+                sitekey="6LcKs2MoAAAAANbEb8FgM_zGq-AZx2SegfCCegkn"
+                onChange={onChange}
+              />
+              <button onClick={(e) => sendFirstEmail(e, footerEmailInput)}>
+                {lang.form.signUp}
+              </button>
+              <label className={styles.headerJoinNumber}>
+                Join {fixedNumber} other people!
+              </label>
             </div>
           </div>
         </Fade>

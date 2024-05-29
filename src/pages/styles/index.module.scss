@@ -104,6 +104,10 @@ $subtitle: 700;
       flex-direction: column;
       margin-top: 20px;
       width: 30%;
+      .headerCaptcha {
+        position: relative;
+        top: -50px;
+      }
       label {
         font-size: 25px;
         font-weight: $text;
@@ -116,7 +120,10 @@ $subtitle: 700;
         background-color: #150622;
         padding: 10px 0;
         border-radius: 5px;
-
+        padding-left: 15px;
+        color: white;
+        position: relative;
+        z-index: 10;
         &::placeholder {
           padding-left: 15px;
           font-size: 120%;
@@ -137,6 +144,8 @@ $subtitle: 700;
         letter-spacing: 1px;
         transition: all 500ms;
         background: rgb(255, 190, 0);
+        position: relative;
+        top: -20px;
         // background: linear-gradient(
         //   90deg,
         //   rgba(255, 190, 0, 1) 0%,
@@ -150,6 +159,9 @@ $subtitle: 700;
           //     rgba(97, 16, 130, 1) 100%
           //   );
         }
+      }
+      .headerJoinNumber {
+        align-self: center;
       }
     }
     .headerFade {
@@ -609,19 +621,29 @@ $subtitle: 700;
         flex-direction: column;
         margin-top: 20px;
         width: 80%;
+        .headerCaptcha {
+          position: relative;
+          top: -50px;
+        }
+        .headerJoinNumber {
+          align-self: center;
+        }
         label {
           font-size: 25px;
           font-weight: $text;
         }
         input {
-          width: 100%;
+          width: 80%;
           margin: 5px 0 10px 0;
           outline: 1px solid #665872;
           border: none;
           background-color: #150622;
           padding: 10px 0;
           border-radius: 5px;
-
+          padding-left: 15px;
+          color: white;
+          position: relative;
+          z-index: 10;
           &::placeholder {
             padding-left: 15px;
             font-size: 120%;
@@ -642,8 +664,20 @@ $subtitle: 700;
           letter-spacing: 1px;
           transition: all 500ms;
           background: rgb(255, 190, 0);
+          position: relative;
+          top: -20px;
+          // background: linear-gradient(
+          //   90deg,
+          //   rgba(255, 190, 0, 1) 0%,
+          //   rgba(255, 154, 0, 1) 100%
+          // );
           &:hover {
             background: rgb(61, 13, 132);
+            //   background: linear-gradient(
+            //     90deg,
+            //     rgba(61, 13, 132, 1) 0%,
+            //     rgba(97, 16, 130, 1) 100%
+            //   );
           }
         }
       }
@@ -721,7 +755,13 @@ $subtitle: 700;
     }
   }
 }
-
+@media (max-height: 700px) {
+  .container {
+    .header {
+      height: 130vh !important;
+    }
+  }
+}
 @media (max-width: 1450px) {
   .container {
     .races {
@@ -1175,6 +1215,13 @@ $subtitle: 700;
           height: 75px;
         }
       }
+    }
+  }
+}
+@media (max-height: 700px) {
+  .container {
+    .header {
+      height: 100vh !important;
     }
   }
 }
