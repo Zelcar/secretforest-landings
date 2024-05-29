@@ -12,9 +12,9 @@ const Index = ({ lang }) => {
 
   let selectedLang = lang.id == 1 ? "es" : lang.id == 2 ? "en" : "br";
   React.useEffect(() => {
-    // setTimeout(() => {
-    setLoader(false);
-    // }, 1500);
+    setTimeout(() => {
+      setLoader(false);
+    }, 3000);
   }, []);
 
   const swiperRef = useRef(null);
