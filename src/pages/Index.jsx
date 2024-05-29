@@ -15,7 +15,7 @@ import axios from "axios";
 const Index = ({ lang }) => {
   const [loader, setLoader] = useState(false);
   const [emailCounter, setEmailCounter] = useState(0);
-  const [captchaState, setCaptchaState] = useState(false);
+  const [captchaState, setCaptchaState] = useState(true);
   const [modalState, setModalState] = useState(false);
   const [fixedNumber, setFixedNumber] = useState(null);
   const [headerEmailInput, setHeaderEmailInput] = useState("");
