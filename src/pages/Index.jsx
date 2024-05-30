@@ -270,13 +270,13 @@ const Index = ({ lang }) => {
                   <img className={styles.racesImg} src="/races/dog.png"></img>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className={styles.racesImg} src="/races/cat.png"></img>
-                </SwiperSlide>
-                <SwiperSlide>
                   <img
                     className={styles.racesImg}
                     src="/races/embear.png"
                   ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img className={styles.racesImg} src="/races/cat.png"></img>
                 </SwiperSlide>
                 <SwiperSlide>
                   <img className={styles.racesImg} src="/races/aquan.png"></img>
@@ -328,13 +328,13 @@ const Index = ({ lang }) => {
                   <img className={styles.racesImg} src="/races/dog.png"></img>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className={styles.racesImg} src="/races/cat.png"></img>
-                </SwiperSlide>
-                <SwiperSlide>
                   <img
                     className={styles.racesImg}
                     src="/races/embear.png"
                   ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img className={styles.racesImg} src="/races/cat.png"></img>
                 </SwiperSlide>
                 <SwiperSlide>
                   <img className={styles.racesImg} src="/races/aquan.png"></img>
@@ -391,13 +391,13 @@ const Index = ({ lang }) => {
                 <SwiperSlide>
                   <img
                     className={styles.racesImg}
-                    src="/races/mobileCat.png"
+                    src="/races/mobileEmbear.png"
                   ></img>
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     className={styles.racesImg}
-                    src="/races/mobileEmbear.png"
+                    src="/races/mobileCat.png"
                   ></img>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -712,7 +712,7 @@ const Index = ({ lang }) => {
               />
               <ReCAPTCHA
                 size="normal"
-                className={styles.headerCaptcha}
+                className={styles.formCaptcha}
                 sitekey="6LcKs2MoAAAAANbEb8FgM_zGq-AZx2SegfCCegkn"
                 onChange={onChange}
               />
