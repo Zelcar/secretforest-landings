@@ -1231,6 +1231,17 @@ $subtitle: 700;
         .formLeftTitleContainer {
           width: 100%;
         }
+        div {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          label:first-child {
+            align-self: flex-start;
+          }
+          input {
+            margin: 10px auto;
+          }
+        }
       }
       .formRight {
         display: none;
@@ -1480,7 +1491,6 @@ $subtitle: 700;
         h3 {
           // font-size: 75px !important;
           font-size: 15vw !important;
-
         }
         h4 {
           font-size: 30px;

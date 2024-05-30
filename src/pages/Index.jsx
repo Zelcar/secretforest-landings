@@ -267,6 +267,18 @@ const Index = ({ lang }) => {
                 initialSlide={5}
               >
                 <SwiperSlide>
+                  <img className={styles.racesImg} src="/races/dog.png"></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img className={styles.racesImg} src="/races/cat.png"></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    className={styles.racesImg}
+                    src="/races/embear.png"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
                   <img className={styles.racesImg} src="/races/aquan.png"></img>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -276,19 +288,7 @@ const Index = ({ lang }) => {
                   ></img>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className={styles.racesImg} src="/races/cat.png"></img>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img className={styles.racesImg} src="/races/dog.png"></img>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img className={styles.racesImg} src="/races/elve.png"></img>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    className={styles.racesImg}
-                    src="/races/embear.png"
-                  ></img>
+                  <img className={styles.racesImg} src="/races/foxy.png"></img>
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
@@ -297,16 +297,16 @@ const Index = ({ lang }) => {
                   ></img>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className={styles.racesImg} src="/races/foxy.png"></img>
+                  <img className={styles.racesImg} src="/races/elve.png"></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img className={styles.racesImg} src="/races/troll.png"></img>
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     className={styles.racesImg}
                     src="/races/goblin.png"
                   ></img>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img className={styles.racesImg} src="/races/troll.png"></img>
                 </SwiperSlide>
               </Swiper>
               <Swiper
@@ -325,6 +325,18 @@ const Index = ({ lang }) => {
                 initialSlide={5}
               >
                 <SwiperSlide>
+                  <img className={styles.racesImg} src="/races/dog.png"></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img className={styles.racesImg} src="/races/cat.png"></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    className={styles.racesImg}
+                    src="/races/embear.png"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
                   <img className={styles.racesImg} src="/races/aquan.png"></img>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -334,19 +346,7 @@ const Index = ({ lang }) => {
                   ></img>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className={styles.racesImg} src="/races/cat.png"></img>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img className={styles.racesImg} src="/races/dog.png"></img>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img className={styles.racesImg} src="/races/elve.png"></img>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    className={styles.racesImg}
-                    src="/races/embear.png"
-                  ></img>
+                  <img className={styles.racesImg} src="/races/foxy.png"></img>
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
@@ -355,16 +355,16 @@ const Index = ({ lang }) => {
                   ></img>
                 </SwiperSlide>
                 <SwiperSlide>
-                  <img className={styles.racesImg} src="/races/foxy.png"></img>
+                  <img className={styles.racesImg} src="/races/elve.png"></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img className={styles.racesImg} src="/races/troll.png"></img>
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     className={styles.racesImg}
                     src="/races/goblin.png"
                   ></img>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img className={styles.racesImg} src="/races/troll.png"></img>
                 </SwiperSlide>
               </Swiper>
               <Swiper
@@ -385,6 +385,24 @@ const Index = ({ lang }) => {
                 <SwiperSlide>
                   <img
                     className={styles.racesImg}
+                    src="/races/mobileDog.png"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    className={styles.racesImg}
+                    src="/races/mobileCat.png"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    className={styles.racesImg}
+                    src="/races/mobileEmbear.png"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    className={styles.racesImg}
                     src="/races/mobileAquan.png"
                   ></img>
                 </SwiperSlide>
@@ -397,25 +415,7 @@ const Index = ({ lang }) => {
                 <SwiperSlide>
                   <img
                     className={styles.racesImg}
-                    src="/races/mobileCat.png"
-                  ></img>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    className={styles.racesImg}
-                    src="/races/mobileDog.png"
-                  ></img>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    className={styles.racesImg}
-                    src="/races/mobileElve.png"
-                  ></img>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    className={styles.racesImg}
-                    src="/races/mobileEmbear.png"
+                    src="/races/mobileFoxy.png"
                   ></img>
                 </SwiperSlide>
                 <SwiperSlide>
@@ -427,19 +427,19 @@ const Index = ({ lang }) => {
                 <SwiperSlide>
                   <img
                     className={styles.racesImg}
-                    src="/races/mobileFoxy.png"
-                  ></img>
-                </SwiperSlide>
-                <SwiperSlide>
-                  <img
-                    className={styles.racesImg}
-                    src="/races/mobileGoblin.png"
+                    src="/races/mobileElve.png"
                   ></img>
                 </SwiperSlide>
                 <SwiperSlide>
                   <img
                     className={styles.racesImg}
                     src="/races/mobileTroll.png"
+                  ></img>
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img
+                    className={styles.racesImg}
+                    src="/races/mobileGoblin.png"
                   ></img>
                 </SwiperSlide>
               </Swiper>
@@ -489,8 +489,13 @@ const Index = ({ lang }) => {
       <section className={styles.skills}>
         <Fade right>
           {/* <div className={styles.skillTitle}> */}
-          <div className={selectedLang !== "en" ? styles.skillNoEnglishTitle : styles.skillTitle}>
-
+          <div
+            className={
+              selectedLang !== "en"
+                ? styles.skillNoEnglishTitle
+                : styles.skillTitle
+            }
+          >
             <h3>{lang.skills.title1}</h3>
             <h3>{lang.skills.title2}</h3>
             <h3>{lang.skills.title3}</h3>
@@ -675,8 +680,13 @@ const Index = ({ lang }) => {
         </Fade>
         <Fade up>
           {/* <div className={styles.mountsText}> */}
-          <div className={selectedLang !== "en" ? styles.mountsNoEnglishText : styles.mountsText}>
-
+          <div
+            className={
+              selectedLang !== "en"
+                ? styles.mountsNoEnglishText
+                : styles.mountsText
+            }
+          >
             <p>
               {lang.mounts.text1} <br /> {lang.mounts.text2} <br />{" "}
               {lang.mounts.text3}{" "}
