@@ -372,7 +372,7 @@ $subtitle: 700;
     .skillNoEnglishTitle {
       h3 {
         font-size: 80px;
-        line-height: 0.8;
+        line-height: 1;
         padding-right: 100px;
         font-weight: $title;
         text-align: center;
@@ -399,7 +399,6 @@ $subtitle: 700;
         text-align: center;
         text-shadow: black;
         text-shadow: 3px 3px 10px black;
-        word-break: break-all;
       }
       h4 {
         font-weight: $text;
@@ -583,7 +582,6 @@ $subtitle: 700;
         text-align: center;
         font-weight: $title;
         text-shadow: 3px 3px 10px black;
-        word-break: break-all;
       }
     }
     .mountsText,
@@ -763,13 +761,12 @@ $subtitle: 700;
     }
   }
 }
-@media(max-height:800px){
+@media (max-height: 800px) {
   .container {
     .header {
       height: 120vh !important;
     }
   }
-
 }
 @media (max-height: 700px) {
   .container {
@@ -1043,6 +1040,13 @@ $subtitle: 700;
     .gameplay {
       height: 60vh;
     }
+    .world {
+      .worldTitle {
+        h3 {
+          font-size: 10vw;
+        }
+      }
+    }
   }
 }
 
@@ -1213,6 +1217,9 @@ $subtitle: 700;
     .mounts {
       .mountsTitle {
         top: 30px;
+        h3 {
+          font-size: 6vw;
+        }
       }
     }
     .form {
@@ -1280,8 +1287,9 @@ $subtitle: 700;
         width: 100%;
         margin-bottom: 50px;
         h3 {
-          left: 70px;
-          font-size: 45px;
+          padding-right: 0 !important;
+          font-size: 40px;
+          left: 0;
         }
       }
     }
@@ -1289,10 +1297,12 @@ $subtitle: 700;
       height: 45vh;
       .worldTitle {
         h3 {
-          font-size: 70px;
+          // font-size: 70px;
+          font-size: 12vw;
         }
         h4 {
-          font-size: 30px;
+          // font-size: 30px;
+          font-size: 5vw;
         }
       }
     }
@@ -1335,7 +1345,7 @@ $subtitle: 700;
       .mountsTitle {
         top: 0px;
         h3 {
-          font-size: 78px;
+          font-size: 12vw;
           width: 90%;
           margin: 0 auto;
         }
@@ -1463,20 +1473,14 @@ $subtitle: 700;
     }
     .world {
       height: 50vh;
-      .worldTitle {
-        h3 {
-          font-size: 50px;
-        }
-        h4 {
-          font-size: 20px;
-        }
-      }
     }
     .gameplay {
       height: 75vh !important;
       .gameplayTitle {
         h3 {
-          font-size: 75px !important;
+          // font-size: 75px !important;
+          font-size: 15vw !important;
+
         }
         h4 {
           font-size: 30px;
@@ -1495,11 +1499,6 @@ $subtitle: 700;
       }
     }
     .mounts {
-      .mountsTitle {
-        h3 {
-          font-size: 60px;
-        }
-      }
       .mountsText,
       .mountsNoEnglishText {
         bottom: 20px;

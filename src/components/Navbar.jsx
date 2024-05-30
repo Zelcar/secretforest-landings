@@ -27,6 +27,30 @@ const Navbar = ({ lang, isHome }) => {
           <li>
             <a href="/br">Portuguese</a>
           </li>
+          <li>
+            <a href="/kr">Korean</a>
+          </li>
+          <li>
+            <a href="/ja">Japanese</a>
+          </li>
+          <li>
+            <a href="/de">German</a>
+          </li>
+          <li>
+            <a href="/nl">Dutch</a>
+          </li>
+          <li>
+            <a href="/ru">Russian</a>
+          </li>
+          <li>
+            <a href="/fr">French</a>
+          </li>
+          <li>
+            <a href="/zh">Chinese</a>
+          </li>
+          <li>
+            <a href="/it">Italian</a>
+          </li>
         </ul>
       </div>
     </nav>

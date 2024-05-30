@@ -139,7 +139,7 @@
       "title3": "TREES"
     },
     "world": {
-      "title1": "SQUARRE",
+      "title1": "SQUARE",
       "title2": "KILOMETERS OF",
       "title3": "OPEN WORLD"
     },
@@ -279,6 +279,720 @@
     },
     "footer": {
       "title": "Siga-nos!"
+    }
+  },
+  "ko": {
+    "id": 4,
+    "toast": {
+      "info1": "가입해 주셔서 감사합니다!",
+      "info2": "이제 Kickstarter에 등록하여 캠페인 출시 소식을 가장 먼저 받아보세요!",
+      "error": "내부 서버 오류",
+      "emailRegistered": "이미 등록된 이메일입니다",
+      "verifyCaptcha": "캡차를 확인해 주세요",
+      "emailWrong": "이메일이 잘못되었습니다",
+      "counter1": "가입하세요",
+      "counter2": "더 많은 사람들!"
+    },
+    "header": {
+      "title1": "새롭고 다른",
+      "title2": "혁신적인 MMORPG",
+      "subtitle": "Secret Forest에 대비하세요",
+      "label": "도와주고 베타 버전이 출시될 때 가장 먼저 플레이하세요!",
+      "email": "이메일:",
+      "placeholder": "your@email.com",
+      "signUp": "가입하기",
+      "text1": "경이로움으로 가득한 생동감 넘치는 왕국을 발견하고 놀라운 종족들이 살아납니다.",
+      "text2pre": "독특한 전투 시스템을",
+      "text2mid": "숙달하고",
+      "text2final": "영광을 추구하며 서사적 적들에게 도전하세요."
+    },
+    "races": {
+      "title": "종족",
+      "text1": "전문 분야에 따라 변합니다:",
+      "text2": "사전 정의된 클래스 시스템은 없습니다;",
+      "text3": "업그레이드, 갑옷 및 무기를 통해 클래스를 결정합니다."
+    },
+    "biomes": {
+      "title1": "판타지",
+      "title2": "바이옴",
+      "text1": "개인 소유지 사용 및 장식:",
+      "text2": " 연금술 물약 바를 만들고,",
+      "text3": "양식장을 사용하며,",
+      "text4": "가장 큰 수확을 하고, 더 많은 것을!"
+    },
+    "professions": {
+      "text1": "MMORPG가 가져야 할 모든 것을 갖추게 될 것입니다:",
+      "text2": "파티, 길드, 파벌, 적, 보스,",
+      "text3": "수집품, 제작품, PvP 존, PvE 존, 거래 등!"
+    },
+    "skills": {
+      "title1": "혼합",
+      "title2": "기술",
+      "title3": "트리"
+    },
+    "world": {
+      "title1": "제곱 킬로미터",
+      "title2": "오픈 월드의",
+      "title3": "크기"
+    },
+    "gameplay": {
+      "title1": "이상의",
+      "title2": "시간",
+      "title3": "게임플레이!"
+    },
+    "elements": {
+      "title": "요소",
+      "light": "빛",
+      "darkness": "어둠",
+      "water": "물",
+      "fire": "불",
+      "earth": "지구",
+      "plant": "식물",
+      "ice": "얼음",
+      "poison": "독",
+      "text1": "최고의 게임 경험을 제공하고 싶습니다, 따라서:",
+      "text2": "페이 투 윈, 자동 레벨업이 없습니다."
+    },
+    "mounts": {
+      "title": "비행 탈것!",
+      "text1": "몰입감 있는 퀘스트,",
+      "text2": "단순한 농사만이 아닌,",
+      "text3": "그리고 더 많은 것들!"
+    },
+    "form": {
+      "text1": "도와주고",
+      "text2": "베타를 가장 먼저 플레이하세요",
+      "text3": "출시되면!",
+      "email": "이메일:",
+      "placeholder": "your@email.com",
+      "signUp": "가입하기"
+    },
+    "footer": {
+      "title": "팔로우 하세요!"
+    }
+  },
+  "ja": {
+    "id": 5,
+    "toast": {
+      "info1": "ご登録ありがとうございます!",
+      "info2": "キャンペーンの開始情報をいち早く知るために、Kickstarterに登録してください!",
+      "error": "内部サーバーエラー",
+      "emailRegistered": "このメールアドレスは既に登録されています",
+      "verifyCaptcha": "キャプチャを確認してください",
+      "emailWrong": "メールアドレスが間違っています",
+      "counter1": "参加する",
+      "counter2": "他の人たちと!"
+    },
+    "header": {
+      "title1": "新しく異なる",
+      "title2": "革新的なMMORPG",
+      "subtitle": "Secret Forestの準備をしましょう",
+      "label": "手伝って、ベータ版が公開されたら真っ先にプレイしよう！",
+      "email": "メールアドレス:",
+      "placeholder": "your@email.com",
+      "signUp": "サインアップ",
+      "text1": "驚異に満ちた生き生きとした王国を発見し、驚くべき種族が命を吹き込まれます。",
+      "text2pre": "ユニークな戦闘システムを",
+      "text2mid": "マスターして",
+      "text2final": "栄光を求めて壮大な敵に挑みましょう。"
+    },
+    "races": {
+      "title": "種族",
+      "text1": "専門化に応じて変わります:",
+      "text2": "既定のクラスシステムはありません;",
+      "text3": "アップグレード、アーマー、および武器を通じてクラスを決定します。"
+    },
+    "biomes": {
+      "title1": "ファンタジー",
+      "title2": "バイオーム",
+      "text1": "自由に使用・装飾できる私有地:",
+      "text2": " 錬金ポーションバーを作成し、",
+      "text3": "魚の養殖を行い、",
+      "text4": "最大の収穫を得て、さらに多くのことを！"
+    },
+    "professions": {
+      "text1": "MMORPGが持つべきすべてのものが含まれます:",
+      "text2": "パーティー、ギルド、派閥、敵、ボス、",
+      "text3": "コレクションアイテム、クラフトアイテム、PvPゾーン、PvEゾーン、取引など!"
+    },
+    "skills": {
+      "title1": "混合",
+      "title2": "スキル",
+      "title3": "ツリー"
+    },
+    "world": {
+      "title1": "平方キロメートルの",
+      "title2": "オープンワールド",
+      "title3": "の広さ"
+    },
+    "gameplay": {
+      "title1": "以上の",
+      "title2": "時間",
+      "title3": "のゲームプレイ!"
+    },
+    "elements": {
+      "title": "要素",
+      "light": "光",
+      "darkness": "闇",
+      "water": "水",
+      "fire": "火",
+      "earth": "地",
+      "plant": "植物",
+      "ice": "氷",
+      "poison": "毒",
+      "text1": "最高のゲーム体験を提供したいので:",
+      "text2": "ペイ・トゥ・ウィンや自動レベルアップはありません。"
+    },
+    "mounts": {
+      "title": "飛行マウント!",
+      "text1": "没入型のクエスト、",
+      "text2": "単なる農業だけでなく、",
+      "text3": "さらに多くのことを！"
+    },
+    "form": {
+      "text1": "助けて、",
+      "text2": "ベータ版を最初にプレイしよう",
+      "text3": "リリースされたら！",
+      "email": "メールアドレス:",
+      "placeholder": "your@email.com",
+      "signUp": "サインアップ"
+    },
+    "footer": {
+      "title": "フォローしてください!"
+    }
+  },
+  "de": {
+    "id": 6,
+    "toast": {
+      "info1": "Vielen Dank für Ihre Anmeldung!",
+      "info2": "Melden Sie sich jetzt bei Kickstarter an, um zu den Ersten zu gehören, die vom Kampagnenstart erfahren!",
+      "error": "Interner Serverfehler",
+      "emailRegistered": "E-Mail ist bereits registriert",
+      "verifyCaptcha": "Bitte überprüfen Sie das Captcha",
+      "emailWrong": "E-Mail ist falsch",
+      "counter1": "Treten Sie bei",
+      "counter2": "mehr Leute!"
+    },
+    "header": {
+      "title1": "EIN NEUES UND ANDERES",
+      "title2": "INNOVATIVES MMORPG",
+      "subtitle": "Bereiten Sie sich auf Secret Forest vor",
+      "label": "Helfen Sie uns und spielen Sie als Erster die Beta, wenn sie erscheint!",
+      "email": "E-Mail:",
+      "placeholder": "dein@email.com",
+      "signUp": "Anmelden",
+      "text1": "Entdecken Sie ein lebendiges Königreich voller Wunder, in dem erstaunliche Rassen zum Leben erwachen.",
+      "text2pre": "Beherrschen Sie ein",
+      "text2mid": "einzigartiges Kampfsystem",
+      "text2final": "und stellen Sie sich epischen Feinden auf Ihrer Suche nach Ruhm."
+    },
+    "races": {
+      "title": "RASSEN",
+      "text1": "Sie werden zu dem, worauf Sie sich spezialisieren:",
+      "text2": "Es wird kein vordefiniertes Klassensystem geben;",
+      "text3": "Sie bestimmen Ihre Klasse durch Ihre Upgrades, Rüstungen und Waffen."
+    },
+    "biomes": {
+      "title1": "FANTASIE",
+      "title2": "BIOME",
+      "text1": "Privatgrundstücke zur Nutzung und Dekoration nach Ihrem Geschmack:",
+      "text2": " Erstellen Sie eine Alchemie-Trankbar,",
+      "text3": "nutzen Sie unseren See für die Fischzucht,",
+      "text4": "haben Sie die größte Ernte, und mehr!"
+    },
+    "professions": {
+      "text1": "Es wird alles haben, was ein MMORPG haben muss:",
+      "text2": "Gruppen, Gilden, Fraktionen, Feinde, Bosse,",
+      "text3": "Sammelbares, Handwerksmaterialien, PvP-Zonen, PvE-Zonen, Handel, usw.!"
+    },
+    "skills": {
+      "title1": "MIXED",
+      "title2": "FÄHIGKEITS",
+      "title3": "BAUM"
+    },
+    "world": {
+      "title1": "KM",
+      "title2": "OFFENE WELT"
+    },
+    "gameplay": {
+      "title1": "STUNDEN",
+      "title2": "SPIELZEIT",
+      "title3": "ODER MEHR!"
+    },
+    "elements": {
+      "title": "ELEMENTE",
+      "light": "LICHT",
+      "darkness": "DUNKELHEIT",
+      "water": "WASSER",
+      "fire": "FEUER",
+      "earth": "ERDE",
+      "plant": "PFLANZE",
+      "ice": "EIS",
+      "poison": "GIFT",
+      "text1": "Wir wollen das beste Spielerlebnis bieten, daher:",
+      "text2": "kein Pay-to-Win, kein Autolevel."
+    },
+    "mounts": {
+      "title": "FLIEGENDE REITTIER!",
+      "text1": "Immersive Quests,",
+      "text2": "nicht nur einfaches Farming,",
+      "text3": "und vieles mehr!"
+    },
+    "form": {
+      "text1": "Helfen Sie uns und",
+      "text2": "spielen Sie als Erster die Beta",
+      "text3": "wenn sie veröffentlicht wird!",
+      "email": "E-Mail:",
+      "placeholder": "dein@email.com",
+      "signUp": "Anmelden"
+    },
+    "footer": {
+      "title": "Folgen Sie uns!"
+    }
+  },
+  "nl": {
+    "id": 7,
+    "toast": {
+      "info1": "Bedankt voor je inschrijving!",
+      "info2": "Schrijf je nu in op Kickstarter om als eerste op de hoogte te zijn van de lancering van de campagne!",
+      "error": "Interne serverfout",
+      "emailRegistered": "E-mailadres is al geregistreerd",
+      "verifyCaptcha": "Verifieer met captcha alstublieft",
+      "emailWrong": "E-mailadres is onjuist",
+      "counter1": "Doe mee met",
+      "counter2": "meer mensen!"
+    },
+    "header": {
+      "title1": "EEN NIEUWE EN ANDERE",
+      "title2": "INNOVATIEVE MMORPG",
+      "subtitle": "Bereid je voor op Secret Forest",
+      "label": "Help ons en speel als eerste de bèta wanneer deze uitkomt!",
+      "email": "E-mailadres:",
+      "placeholder": "jouw@email.com",
+      "signUp": "Aanmelden",
+      "text1": "Ontdek een levendig koninkrijk vol wonderen, waar verbazingwekkende rassen tot leven komen.",
+      "text2pre": "Beheers een",
+      "text2mid": "uniek gevechtssysteem",
+      "text2final": "en neem het op tegen epische vijanden in je zoektocht naar glorie."
+    },
+    "races": {
+      "title": "RASSEN",
+      "text1": "Je wordt wat je specialiseert:",
+      "text2": "Er zal geen vooraf gedefinieerd klassensysteem zijn;",
+      "text3": "je bepaalt je klasse via je upgrades, bepantsering en wapens."
+    },
+    "biomes": {
+      "title1": "FANTASIE",
+      "title2": "BIOMEN",
+      "text1": "Eigen grond om te gebruiken en naar wens in te richten:",
+      "text2": " Maak een alchemie-drankjesbar,",
+      "text3": "gebruik ons meer voor viskwekerij,",
+      "text4": "heb de grootste oogst, en meer!"
+    },
+    "professions": {
+      "text1": "Het zal alles hebben wat een MMORPG moet hebben:",
+      "text2": "groepen, gilden, facties, vijanden, bazen,",
+      "text3": "verzamelobjecten, maakbare voorwerpen, PvP-zones, PvE-zones, handel, enz.!"
+    },
+    "skills": {
+      "title1": "MIXED",
+      "title2": "VAARDIGHEDEN",
+      "title3": "BOOM"
+    },
+    "world": {
+      "title1": "VIERKANTE KILOMETERS",
+      "title2": "OPEN WERELD"
+    },
+    "gameplay": {
+      "title1": "UREN",
+      "title2": "SPELTIJD",
+      "title3": "OF MEER!"
+    },
+    "elements": {
+      "title": "ELEMENTEN",
+      "light": "LICHT",
+      "darkness": "DUISTERNIS",
+      "water": "WATER",
+      "fire": "VUUR",
+      "earth": "AARDE",
+      "plant": "PLANT",
+      "ice": "IJS",
+      "poison": "GIF",
+      "text1": "We willen de beste spelervaring bieden, dus:",
+      "text2": "geen pay-to-win, geen autolevel."
+    },
+    "mounts": {
+      "title": "VLIEGENDE RIJDIEREN!",
+      "text1": "Meeslepende quests,",
+      "text2": "niet alleen eenvoudige landbouw,",
+      "text3": "en nog veel meer!"
+    },
+    "form": {
+      "text1": "Help ons en",
+      "text2": "speel als eerste de bèta",
+      "text3": "wanneer deze wordt uitgebracht!",
+      "email": "E-mailadres:",
+      "placeholder": "jouw@email.com",
+      "signUp": "Aanmelden"
+    },
+    "footer": {
+      "title": "Volg ons!"
+    }
+  },
+  "ru": {
+    "id": 8,
+    "toast": {
+      "info1": "Спасибо за регистрацию!",
+      "info2": "Зарегистрируйтесь на Kickstarter, чтобы быть в числе первых, кто узнает о запуске кампании!",
+      "error": "Внутренняя ошибка сервера",
+      "emailRegistered": "Электронная почта уже зарегистрирована",
+      "verifyCaptcha": "Пожалуйста, пройдите проверку капчи",
+      "emailWrong": "Неправильный адрес электронной почты",
+      "counter1": "Присоединяйтесь к",
+      "counter2": "другим людям!"
+    },
+    "header": {
+      "title1": "НОВЫЙ И ОТЛИЧАЮЩИЙСЯ",
+      "title2": "ИННОВАЦИОННЫЙ MMORPG",
+      "subtitle": "Готовьтесь к Secret Forest",
+      "label": "Помогите нам и первыми сыграйте в бета-версию, когда она выйдет!",
+      "email": "Электронная почта:",
+      "placeholder": "your@email.com",
+      "signUp": "Зарегистрироваться",
+      "text1": "Откройте для себя живое королевство, полное чудес, где удивительные расы оживают.",
+      "text2pre": "Освойте уникальную",
+      "text2mid": "боевую систему",
+      "text2final": "и сразитесь с эпическими врагами на пути к славе."
+    },
+    "races": {
+      "title": "РАСЫ",
+      "text1": "Вы становитесь тем, на что специализируетесь:",
+      "text2": "не будет предопределённой системы классов;",
+      "text3": "вы определяете свой класс через улучшения, доспехи и оружие."
+    },
+    "biomes": {
+      "title1": "ФАНТАЗИЙНЫЕ",
+      "title2": "БИОМЫ",
+      "text1": "Частная собственность для использования и украшения по вашему вкусу:",
+      "text2": " Создайте алхимический бар,",
+      "text3": "используйте озеро для рыболовства,",
+      "text4": "соберите самый большой урожай и многое другое!"
+    },
+    "professions": {
+      "text1": "Здесь будет всё, что должен иметь MMORPG:",
+      "text2": "группы, гильдии, фракции, враги, боссы,",
+      "text3": "коллекционные предметы, предметы для крафта, PvP-зоны, PvE-зоны, торговля и многое другое!"
+    },
+    "skills": {
+      "title1": "СМЕШАННЫЙ",
+      "title2": "НАВЫКОВЫЙ",
+      "title3": "ДЕРЕВО"
+    },
+    "world": {
+      "title1": "КВАДРАТНЫХ КИЛОМЕТРОВ",
+      "title2": "ОТКРЫТОГО МИРА"
+    },
+    "gameplay": {
+      "title1": "ЧАСОВ",
+      "title2": "ГЕЙМПЛЕЯ",
+      "title3": "ИЛИ БОЛЬШЕ!"
+    },
+    "elements": {
+      "title": "ЭЛЕМЕНТЫ",
+      "light": "СВЕТ",
+      "darkness": "ТЬМА",
+      "water": "ВОДА",
+      "fire": "ОГОНЬ",
+      "earth": "ЗЕМЛЯ",
+      "plant": "РАСТЕНИЕ",
+      "ice": "ЛЁД",
+      "poison": "ЯД",
+      "text1": "Мы хотим предложить лучший игровой опыт, поэтому:",
+      "text2": "никаких pay-to-win и автоматического повышения уровня."
+    },
+    "mounts": {
+      "title": "ЛЕТАЮЩИЕ МОНТЫ!",
+      "text1": "Иммерсивные квесты,",
+      "text2": "не просто фарминг,",
+      "text3": "и многое другое!"
+    },
+    "form": {
+      "text1": "Помогите нам и",
+      "text2": "играйте в бета-версию первыми",
+      "text3": "когда она выйдет!",
+      "email": "Электронная почта:",
+      "placeholder": "your@email.com",
+      "signUp": "Зарегистрироваться"
+    },
+    "footer": {
+      "title": "Следуйте за нами!"
+    }
+  },
+  "fr": {
+    "id": 9,
+    "toast": {
+      "info1": "Merci pour votre inscription!",
+      "info2": "Inscrivez-vous maintenant sur Kickstarter pour être parmi les premiers à être informé du lancement de la campagne!",
+      "error": "Erreur interne du serveur",
+      "emailRegistered": "E-mail déjà enregistré",
+      "verifyCaptcha": "Veuillez vérifier le captcha",
+      "emailWrong": "E-mail incorrect",
+      "counter1": "Rejoignez",
+      "counter2": "plus de gens!"
+    },
+    "header": {
+      "title1": "UN NOUVEAU ET DIFFÉRENT",
+      "title2": "MMORPG INNOVANT",
+      "subtitle": "Préparez-vous pour Secret Forest",
+      "label": "Aidez-nous et soyez les premiers à jouer à la bêta lorsqu'elle sera disponible!",
+      "email": "E-mail:",
+      "placeholder": "votre@email.com",
+      "signUp": "S'inscrire",
+      "text1": "Découvrez un royaume vivant et plein de merveilles où des races étonnantes prennent vie.",
+      "text2pre": "Maîtrisez un système de combat",
+      "text2mid": "unique",
+      "text2final": "et affrontez des ennemis épiques dans votre quête de gloire."
+    },
+    "races": {
+      "title": "RACES",
+      "text1": "Vous devenez ce que vous vous spécialisez:",
+      "text2": "Il n'y aura pas de système de classes prédéfini;",
+      "text3": "vous déterminez votre classe par vos améliorations, armures et armes."
+    },
+    "biomes": {
+      "title1": "BIOMES",
+      "title2": "DE FANTASIE",
+      "text1": "Terrains privés à utiliser et décorer selon vos goûts:",
+      "text2": " Créez un bar à potions alchimiques,",
+      "text3": "utilisez notre lac pour l'élevage de poissons,",
+      "text4": "ayez la plus grande récolte, et plus encore!"
+    },
+    "professions": {
+      "text1": "Il aura tout ce qu'un MMORPG doit avoir:",
+      "text2": "des groupes, des guildes, des factions, des ennemis, des boss,",
+      "text3": "des objets de collection, des objets d'artisanat, des zones PvP, des zones PvE, du commerce, et plus encore!"
+    },
+    "skills": {
+      "title1": "MIXTE",
+      "title2": "ARBRE",
+      "title3": "DE COMPÉTENCES"
+    },
+    "world": {
+      "title1": "KILOMÈTRES CARRÉS",
+      "title2": "DE MONDE OUVERT"
+    },
+    "gameplay": {
+      "title1": "HEURES",
+      "title2": "DE JEU",
+      "title3": "OU PLUS!"
+    },
+    "elements": {
+      "title": "ÉLÉMENTS",
+      "light": "LUMIÈRE",
+      "darkness": "OBSCURITÉ",
+      "water": "EAU",
+      "fire": "FEU",
+      "earth": "TERRE",
+      "plant": "PLANTE",
+      "ice": "GLACE",
+      "poison": "POISON",
+      "text1": "Nous voulons offrir la meilleure expérience de jeu, donc:",
+      "text2": "pas de pay-to-win, pas de montée de niveau automatique."
+    },
+    "mounts": {
+      "title": "MONTURES VOLANTES!",
+      "text1": "Des quêtes immersives,",
+      "text2": "pas seulement du farming,",
+      "text3": "et bien plus encore!"
+    },
+    "form": {
+      "text1": "Aidez-nous et",
+      "text2": "soyez les premiers à jouer à la bêta",
+      "text3": "lorsqu'elle sera publiée!",
+      "email": "E-mail:",
+      "placeholder": "votre@email.com",
+      "signUp": "S'inscrire"
+    },
+    "footer": {
+      "title": "Suivez-nous!"
+    }
+  },
+  "zh": {
+    "id": 10,
+    "toast": {
+      "info1": "感谢您的注册!",
+      "info2": "现在在Kickstarter上注册，以便在活动启动时率先获得消息!",
+      "error": "内部服务器错误",
+      "emailRegistered": "电子邮件已注册",
+      "verifyCaptcha": "请验证验证码",
+      "emailWrong": "电子邮件错误",
+      "counter1": "加入",
+      "counter2": "更多人!"
+    },
+    "header": {
+      "title1": "全新与不同的",
+      "title2": "创新型MMORPG",
+      "subtitle": "准备迎接秘密森林",
+      "label": "帮助我们并在测试版发布时第一时间体验!",
+      "email": "电子邮件:",
+      "placeholder": "your@email.com",
+      "signUp": "注册",
+      "text1": "发现一个充满奇迹的生动王国，惊人的种族在其中焕发生机。",
+      "text2pre": "掌握独特的",
+      "text2mid": "战斗系统",
+      "text2final": "并在追求荣耀的过程中挑战史诗敌人。"
+    },
+    "races": {
+      "title": "种族",
+      "text1": "你将成为你所专精的:",
+      "text2": "没有预定义的职业系统;",
+      "text3": "通过升级、盔甲和武器决定你的职业。"
+    },
+    "biomes": {
+      "title1": "幻想",
+      "title2": "生物群系",
+      "text1": "私人领地可根据您的喜好使用和装饰:",
+      "text2": " 创建一个炼金酒吧，",
+      "text3": "使用我们的湖泊进行养鱼，",
+      "text4": "拥有最大的收成，还有更多!"
+    },
+    "professions": {
+      "text1": "它将拥有一个MMORPG所需的一切:",
+      "text2": "团队、公会、派系、敌人、首领，",
+      "text3": "可收集物品、手工材料、PvP区域、PvE区域、交易等!"
+    },
+    "skills": {
+      "title1": "混合",
+      "title2": "技能",
+      "title3": "树"
+    },
+    "world": {
+      "title1": "平方公里",
+      "title2": "开放世界"
+    },
+    "gameplay": {
+      "title1": "小时",
+      "title2": "游戏时间",
+      "title3": "或更多!"
+    },
+    "elements": {
+      "title": "元素",
+      "light": "光",
+      "darkness": "暗",
+      "water": "水",
+      "fire": "火",
+      "earth": "地",
+      "plant": "植物",
+      "ice": "冰",
+      "poison": "毒",
+      "text1": "我们希望提供最好的游戏体验，因此:",
+      "text2": "没有赢的付费，没有自动升级。"
+    },
+    "mounts": {
+      "title": "飞行坐骑!",
+      "text1": "沉浸式任务，",
+      "text2": "不仅仅是简单的耕作，",
+      "text3": "还有更多!"
+    },
+    "form": {
+      "text1": "帮助我们并",
+      "text2": "成为第一个玩到测试版的人",
+      "text3": "当它发布时!",
+      "email": "电子邮件:",
+      "placeholder": "your@email.com",
+      "signUp": "注册"
+    },
+    "footer": {
+      "title": "关注我们!"
+    }
+  },
+  "it": {
+    "id": 11,
+    "toast": {
+      "info1": "Grazie per esserti registrato!",
+      "info2": "Iscriviti ora su Kickstarter per essere tra i primi a sapere del lancio della campagna!",
+      "error": "Errore interno del server",
+      "emailRegistered": "L'email è già registrata",
+      "verifyCaptcha": "Verifica con captcha",
+      "emailWrong": "L'email è sbagliata",
+      "counter1": "Unisciti a",
+      "counter2": "altre persone!"
+    },
+    "header": {
+      "title1": "UN NUOVO E DIVERSO",
+      "title2": "MMORPG INNOVATIVO",
+      "subtitle": "Preparati per Secret Forest",
+      "label": "Aiutaci ed essere il primo a giocare alla beta quando sarà disponibile!",
+      "email": "Email:",
+      "placeholder": "tu@email.com",
+      "signUp": "Iscriviti",
+      "text1": "Scopri un regno vibrante pieno di meraviglie, dove razze incredibili prendono vita.",
+      "text2pre": "Padroneggia un sistema di combattimento",
+      "text2mid": "unico",
+      "text2final": "e affronta nemici epici nella tua ricerca di gloria."
+    },
+    "races": {
+      "title": "RAZZE",
+      "text1": "Diventi ciò in cui ti specializzi:",
+      "text2": "Non ci sarà un sistema di classi predefinito;",
+      "text3": "determini la tua classe attraverso i tuoi miglioramenti, armature e armi."
+    },
+    "biomes": {
+      "title1": "BIOMI",
+      "title2": "DI FANTASIA",
+      "text1": "Proprietà privata da utilizzare e decorare a proprio piacimento:",
+      "text2": " Crea un bar per pozioni alchemiche,",
+      "text3": "usa il nostro lago per l'acquacoltura,",
+      "text4": "ottieni il raccolto più grande e molto altro ancora!"
+    },
+    "professions": {
+      "text1": "Avrà tutto ciò che un MMORPG deve avere:",
+      "text2": "gruppi, gilde, fazioni, nemici, boss,",
+      "text3": "collezionabili, creabili, zone PvP, zone PvE, commercio, ecc.!"
+    },
+    "skills": {
+      "title1": "ALBERI",
+      "title2": "DI",
+      "title3": "ABILITÀ MISTE"
+    },
+    "world": {
+      "title1": "CHILOMETRI QUADRATI",
+      "title2": "DI MONDO APERTO"
+    },
+    "gameplay": {
+      "title1": "ORE",
+      "title2": "DI GIOCO",
+      "title3": "O PIÙ!"
+    },
+    "elements": {
+      "title": "ELEMENTI",
+      "light": "LUCE",
+      "darkness": "OSCURITÀ",
+      "water": "ACQUA",
+      "fire": "FUOCO",
+      "earth": "TERRA",
+      "plant": "PIANTA",
+      "ice": "GHIACCIO",
+      "poison": "VELENO",
+      "text1": "Vogliamo offrire la migliore esperienza di gioco, quindi:",
+      "text2": "niente pay-to-win, niente autolevel."
+    },
+    "mounts": {
+      "title": "MONTATURE VOLANTI!",
+      "text1": "Missioni coinvolgenti,",
+      "text2": "non solo farming,",
+      "text3": "e molto altro!"
+    },
+    "form": {
+      "text1": "Aiutaci ed essere",
+      "text2": "il primo a giocare alla beta",
+      "text3": "quando sarà disponibile!",
+      "email": "Email:",
+      "placeholder": "tu@email.com",
+      "signUp": "Iscriviti"
+    },
+    "footer": {
+      "title": "Seguici!"
     }
   }
 }
