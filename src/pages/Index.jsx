@@ -289,7 +289,9 @@ const Index = ({ lang }) => {
             {lang.toast.counter1} {fixedNumber} {lang.toast.counter2}
           </label>
         </div>
-        <Fade up></Fade>
+        <Fade up>
+        <img className={styles.headerGame} src="/header/game.png" alt="" />
+        </Fade>
         <img className={styles.headerFade} src="/header/fade.png" alt="" />
       </header>
       <section className={styles.combatSystem}>
