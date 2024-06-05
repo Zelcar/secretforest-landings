@@ -20,7 +20,9 @@ const Index = ({ lang }) => {
   const [headerEmailInput, setHeaderEmailInput] = useState("");
   const [footerEmailInput, setFooterEmailInput] = useState("");
   const [modalKickstarter, setModalKickstarter] = useState(false);
-  const swiperRef = useRef(null);
+  const swiperRef1 = useRef(null);
+  const swiperRef2 = useRef(null);
+  const swiperRef3 = useRef(null);
   let selectedLang = lang.id == 1 ? "es" : lang.id == 2 ? "en" : "br";
 
   const sendFirstEmail = (e, emailInput) => {
@@ -170,7 +172,29 @@ const Index = ({ lang }) => {
       setLoader(false);
     }, 3000);
   }, []);
+  const handlePrev = () => {
+    if (swiperRef1.current && swiperRef1.current.swiper) {
+      swiperRef1.current.swiper.slidePrev();
+    }
+    if (swiperRef2.current && swiperRef2.current.swiper) {
+      swiperRef2.current.swiper.slidePrev();
+    }
+    if (swiperRef3.current && swiperRef3.current.swiper) {
+      swiperRef3.current.swiper.slidePrev();
+    }
+  };
 
+  const handleNext = () => {
+    if (swiperRef1.current && swiperRef1.current.swiper) {
+      swiperRef1.current.swiper.slideNext();
+    }
+    if (swiperRef2.current && swiperRef2.current.swiper) {
+      swiperRef2.current.swiper.slideNext();
+    }
+    if (swiperRef3.current && swiperRef3.current.swiper) {
+      swiperRef3.current.swiper.slideNext();
+    }
+  };
   return (
     <main className={styles.container}>
       <ToastContainer
@@ -290,7 +314,7 @@ const Index = ({ lang }) => {
           </label>
         </div>
         <Fade up>
-        <img className={styles.headerGame} src="/header/game.png" alt="" />
+          <img className={styles.headerGame} src="/header/game.png" alt="" />
         </Fade>
         <img className={styles.headerFade} src="/header/fade.png" alt="" />
       </header>
@@ -315,9 +339,12 @@ const Index = ({ lang }) => {
           </Fade>
           <Fade up>
             <div className={styles.racesImagesContainer}>
+              <button className={styles.racesArrows} onClick={handlePrev}>
+                <img src="/arrow.png" alt="" />
+              </button>
               <Swiper
                 spaceBetween={50}
-                ref={swiperRef}
+                ref={swiperRef1}
                 grabCursor={true}
                 className={styles.mySwiper}
                 centeredSlides={true}
@@ -375,7 +402,7 @@ const Index = ({ lang }) => {
               </Swiper>
               <Swiper
                 spaceBetween={50}
-                ref={swiperRef}
+                ref={swiperRef2}
                 grabCursor={true}
                 className={styles.myMobileSwiper}
                 effect={"cards"}
@@ -433,7 +460,7 @@ const Index = ({ lang }) => {
               </Swiper>
               <Swiper
                 spaceBetween={50}
-                ref={swiperRef}
+                ref={swiperRef3}
                 grabCursor={true}
                 className={styles.myMobile2Swiper}
                 effect={"cards"}
@@ -507,6 +534,9 @@ const Index = ({ lang }) => {
                   ></img>
                 </SwiperSlide>
               </Swiper>
+              <button className={styles.racesArrows} onClick={handleNext}>
+                <img src="/arrow.png" alt="" />
+              </button>
             </div>
           </Fade>
         </div>

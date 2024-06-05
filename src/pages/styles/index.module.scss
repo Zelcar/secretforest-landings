@@ -292,7 +292,7 @@ $subtitle: 700;
       z-index: 5;
       background-image: red;
     }
-    .headerGame{
+    .headerGame {
       width: 500px;
     }
   }
@@ -331,6 +331,7 @@ $subtitle: 700;
     padding: 150px 0 75px 0;
     .racesMainContainer {
       width: 100%;
+
       display: flex;
       justify-content: space-evenly;
       align-items: center;
@@ -341,6 +342,8 @@ $subtitle: 700;
       .racesTitle {
         width: 30%;
         // margin-top: 10px;
+        position: relative;
+        z-index: 4;
         h3:first-child {
           font-size: 350px;
           text-align: center;
@@ -358,16 +361,17 @@ $subtitle: 700;
       }
       .racesImagesContainer {
         width: 40%;
+
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
-        // overflow: hidden;
         .racesArrows {
-          width: 15px;
-          height: 15px;
+          width: 40px;
+          height: 40px;
           background-color: transparent;
           border: none;
+          z-index: 10;
           cursor: pointer;
           img {
             width: 100%;
@@ -796,7 +800,8 @@ $subtitle: 700;
           cursor: pointer;
           color: white;
           font-family: Montserrat;
-          width: 150px;
+          width: 300px;
+          height: 50px;
           border-radius: 15px;
           margin-top: 10px;
           padding: 8px 0;
@@ -900,18 +905,6 @@ $subtitle: 700;
     }
   }
 }
-@media (max-width: 1450px) {
-  .container {
-    .races {
-      .racesMainContainer {
-        .racesTitle {
-          position: relative;
-          z-index: 4;
-        }
-      }
-    }
-  }
-}
 @media (max-width: 1300px) {
   .container {
     .gameplay {
@@ -947,9 +940,9 @@ $subtitle: 700;
           }
         }
         .racesImagesContainer {
-          width: 20%;
+          width: 50%;
           position: relative;
-          left: 300px;
+          left: 100px;
         }
       }
     }
@@ -1046,8 +1039,11 @@ $subtitle: 700;
           flex-direction: column;
         }
         .racesImagesContainer {
-          left: 30px;
-          width: 100%;
+          left: 0px;
+          width: 90%;
+          .mySwiper {
+            left: 50px;
+          }
         }
       }
       .racesText {
@@ -1242,11 +1238,14 @@ $subtitle: 700;
     .races {
       .racesMainContainer {
         .racesImagesContainer {
+          width: 90%;
+          left: 0;
           .mySwiper {
             display: none;
           }
           .myMobileSwiper {
             display: flex;
+            left: 50px;
           }
         }
       }
@@ -1391,6 +1390,9 @@ $subtitle: 700;
           display: flex;
           justify-content: center;
           align-items: center;
+          .formCaptcha {
+            left: 0;
+          }
           label:first-child {
             align-self: flex-start;
           }
@@ -1433,6 +1435,14 @@ $subtitle: 700;
 // }
 @media (max-width: 590px) {
   .container {
+    .header {
+      div {
+        button {
+          width: 100%;
+          height: 50px;
+        }
+      }
+    }
     .races {
       .racesMainContainer {
         .racesTitle {
@@ -1443,6 +1453,14 @@ $subtitle: 700;
           }
           h3:last-child {
             font-size: 100px;
+          }
+        }
+        .racesImagesContainer {
+          width: 100%;
+          // background: red;
+          .racesArrows {
+            width: 40px;
+            height: 40px;
           }
         }
       }
@@ -1542,6 +1560,11 @@ $subtitle: 700;
             font-size: 35px;
           }
         }
+        div {
+          button {
+            width: 100%;
+          }
+        }
       }
     }
   }
@@ -1600,7 +1623,8 @@ $subtitle: 700;
           }
           .myMobile2Swiper {
             position: relative;
-            left: 80px;
+            left: 40px;
+            width: 250px;
             display: flex;
           }
         }
@@ -1686,10 +1710,12 @@ $subtitle: 700;
       }
     }
     .form {
+      padding: 50px 0;
+      height: 100%;
       .formLeft {
         .formLeftTitleContainer {
           h3 {
-            font-size: 25px;
+            // font-size: 25px;
           }
         }
         div {
