@@ -576,7 +576,8 @@ $subtitle: 700;
         text-align: center;
         text-shadow: black;
         text-shadow: 3px 3px 10px black;
-        word-break: break-all;
+        // word-break: break-all;
+        font-size: 8vw;
       }
       h4 {
         font-weight: $text;
@@ -930,7 +931,7 @@ $subtitle: 700;
       }
       .gameplayTitle {
         h3 {
-          font-size: 12vw !important;
+          // font-size: 12vw !important;
         }
         h4 {
           font-size: 3vw;
@@ -1337,12 +1338,13 @@ $subtitle: 700;
         width: 100%;
         padding-right: 0;
         h3 {
-          font-size: 125px;
+          // font-size: 125px;
+          font-size: 15vw;
           line-height: 0.8;
         }
         h4 {
           font-size: 40px;
-          width: 100%;
+          width: 100%;g
         }
       }
     }
