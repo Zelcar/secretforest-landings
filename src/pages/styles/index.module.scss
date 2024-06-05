@@ -764,14 +764,13 @@ $subtitle: 700;
       div {
         display: flex;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         flex-direction: column;
         margin-top: 20px;
         width: 80%;
         .formCaptcha {
           position: relative;
           top: -50px;
-          left: -30px;
         }
         .headerJoinNumber {
           align-self: center;
