@@ -12,7 +12,7 @@ import { ToastContainer, toast } from "react-toastify";
 import axios from "axios";
 
 const Index = ({ lang }) => {
-  const [loader, setLoader] = useState(false);
+  const [loader, setLoader] = useState(true);
   const [emailCounter, setEmailCounter] = useState(0);
   const [captchaState, setCaptchaState] = useState(false);
   const [fixedNumber, setFixedNumber] = useState(null);
@@ -212,7 +212,7 @@ const Index = ({ lang }) => {
         <>
           <div className={styles.kickstarterXl}>
             <div>
-              <img loading="lazy"  src="/modal/xl.jpg" alt="" />
+              <img loading="lazy" src="/modal/xl.jpg" alt="" />
               <button onClick={() => setModalKickstarter(false)}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -272,13 +272,20 @@ const Index = ({ lang }) => {
         <img loading="lazy" src="/btnUp.png" alt="" />
       </a>
       <header id="header" className={styles.header}>
-        <img loading="lazy"
+        <img
+          loading="lazy"
           src="/header/axolotl.png"
           className={styles.headerAxolotl}
           alt=""
         />
-        <img loading="lazy" src="/header/cat.png" className={styles.headerCat} alt="" />
-        <img loading="lazy"
+        <img
+          loading="lazy"
+          src="/header/cat.png"
+          className={styles.headerCat}
+          alt=""
+        />
+        <img
+          loading="lazy"
           src="/header/logo.png"
           className={styles.headerLogo}
           alt="Secret Forest Logo"
@@ -308,8 +315,18 @@ const Index = ({ lang }) => {
             {lang.toast.counter1} {fixedNumber} {lang.toast.counter2}
           </label>
         </div>
-        <img loading="lazy" className={styles.headerGame} src="/header/game.png" alt="" />
-        <img loading="lazy" className={styles.headerFade} src="/header/fade.png" alt="" />
+        <img
+          loading="lazy"
+          className={styles.headerGame}
+          src="/header/game.png"
+          alt=""
+        />
+        <img
+          loading="lazy"
+          className={styles.headerFade}
+          src="/header/fade.png"
+          alt=""
+        />
       </header>
       <section className={styles.combatSystem}>
         <div>
@@ -346,34 +363,34 @@ const Index = ({ lang }) => {
               initialSlide={5}
             >
               <SwiperSlide>
-                <img loading="lazy" className={styles.racesImg} src="/races/dog.png"></img>
+                <img className={styles.racesImg} src="/races/dog.png"></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img loading="lazy" className={styles.racesImg} src="/races/embear.png"></img>
+                <img className={styles.racesImg} src="/races/embear.png"></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img loading="lazy" className={styles.racesImg} src="/races/cat.png"></img>
+                <img className={styles.racesImg} src="/races/cat.png"></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img loading="lazy" className={styles.racesImg} src="/races/aquan.png"></img>
+                <img className={styles.racesImg} src="/races/aquan.png"></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img loading="lazy" className={styles.racesImg} src="/races/axolotl.png"></img>
+                <img className={styles.racesImg} src="/races/axolotl.png"></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img loading="lazy" className={styles.racesImg} src="/races/foxy.png"></img>
+                <img className={styles.racesImg} src="/races/foxy.png"></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img loading="lazy" className={styles.racesImg} src="/races/fairan.png"></img>
+                <img className={styles.racesImg} src="/races/fairan.png"></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img loading="lazy" className={styles.racesImg} src="/races/elve.png"></img>
+                <img className={styles.racesImg} src="/races/elve.png"></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img loading="lazy" className={styles.racesImg} src="/races/troll.png"></img>
+                <img className={styles.racesImg} src="/races/troll.png"></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img loading="lazy" className={styles.racesImg} src="/races/goblin.png"></img>
+                <img className={styles.racesImg} src="/races/goblin.png"></img>
               </SwiperSlide>
             </Swiper>
             <Swiper
@@ -392,34 +409,34 @@ const Index = ({ lang }) => {
               initialSlide={5}
             >
               <SwiperSlide>
-                <img loading="lazy" className={styles.racesImg} src="/races/dog.png"></img>
+                <img className={styles.racesImg} src="/races/dog.png"></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img loading="lazy" className={styles.racesImg} src="/races/embear.png"></img>
+                <img className={styles.racesImg} src="/races/embear.png"></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img loading="lazy" className={styles.racesImg} src="/races/cat.png"></img>
+                <img className={styles.racesImg} src="/races/cat.png"></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img loading="lazy" className={styles.racesImg} src="/races/aquan.png"></img>
+                <img className={styles.racesImg} src="/races/aquan.png"></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img loading="lazy" className={styles.racesImg} src="/races/axolotl.png"></img>
+                <img className={styles.racesImg} src="/races/axolotl.png"></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img loading="lazy" className={styles.racesImg} src="/races/foxy.png"></img>
+                <img className={styles.racesImg} src="/races/foxy.png"></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img loading="lazy" className={styles.racesImg} src="/races/fairan.png"></img>
+                <img className={styles.racesImg} src="/races/fairan.png"></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img loading="lazy" className={styles.racesImg} src="/races/elve.png"></img>
+                <img className={styles.racesImg} src="/races/elve.png"></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img loading="lazy" className={styles.racesImg} src="/races/troll.png"></img>
+                <img className={styles.racesImg} src="/races/troll.png"></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img loading="lazy" className={styles.racesImg} src="/races/goblin.png"></img>
+                <img className={styles.racesImg} src="/races/goblin.png"></img>
               </SwiperSlide>
             </Swiper>
             <Swiper
@@ -438,68 +455,68 @@ const Index = ({ lang }) => {
               initialSlide={5}
             >
               <SwiperSlide>
-                <img loading="lazy"
+                <img
                   className={styles.racesImg}
                   src="/races/mobileDog.png"
                 ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img loading="lazy"
+                <img
                   className={styles.racesImg}
                   src="/races/mobileEmbear.png"
                 ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img loading="lazy"
+                <img
                   className={styles.racesImg}
                   src="/races/mobileCat.png"
                 ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img loading="lazy"
+                <img
                   className={styles.racesImg}
                   src="/races/mobileAquan.png"
                 ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img loading="lazy"
+                <img
                   className={styles.racesImg}
                   src="/races/mobileAxolotl.png"
                 ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img loading="lazy"
+                <img
                   className={styles.racesImg}
                   src="/races/mobileFoxy.png"
                 ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img loading="lazy"
+                <img
                   className={styles.racesImg}
                   src="/races/mobileFairan.png"
                 ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img loading="lazy"
+                <img
                   className={styles.racesImg}
                   src="/races/mobileElve.png"
                 ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img loading="lazy"
+                <img
                   className={styles.racesImg}
                   src="/races/mobileTroll.png"
                 ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img loading="lazy"
+                <img
                   className={styles.racesImg}
                   src="/races/mobileGoblin.png"
                 ></img>
               </SwiperSlide>
             </Swiper>
             <button className={styles.racesArrows} onClick={handleNext}>
-              <img loading="lazy" src="/arrow.png" alt="" />
+              <img src="/arrow.png" alt="" />
             </button>
           </div>
         </div>
@@ -521,12 +538,14 @@ const Index = ({ lang }) => {
         </div>
       </section>
       <section className={styles.professions}>
-        <img loading="lazy"
+        <img
+          loading="lazy"
           src="/professions/image.png"
           alt=""
           className={styles.professionsImage}
         />
-        <img loading="lazy"
+        <img
+          loading="lazy"
           src="/professions/mobileImage.png"
           alt=""
           className={styles.professionsMobileImage}
@@ -761,7 +780,12 @@ const Index = ({ lang }) => {
           <img loading="lazy" src="/form/aquan.png" alt="" />
         </div>
         <div className={styles.formUpFade}></div>
-        <img loading="lazy" src="/form/overlay.png" className={styles.formOverlay} alt="" />
+        <img
+          loading="lazy"
+          src="/form/overlay.png"
+          className={styles.formOverlay}
+          alt=""
+        />
       </section>
       <footer className={styles.footer}>
         <div className={styles.footerMain}>

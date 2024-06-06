@@ -1586,6 +1586,25 @@ $subtitle: 700;
   }
 }
 
+@media (max-width: 450px) {
+  .container {
+    .races {
+      .racesMainContainer {
+        .racesImagesContainer {
+          .myMobileSwiper {
+            display: none;
+          }
+          .myMobile2Swiper {
+            position: relative;
+            left: 40px;
+            width: 250px;
+            display: flex;
+          }
+        }
+      }
+    }
+  }
+}
 @media (max-width: 420px) {
   .container {
     .kickstarterMd {
@@ -1631,17 +1650,6 @@ $subtitle: 700;
           }
           h3:last-child {
             font-size: 60px;
-          }
-        }
-        .racesImagesContainer {
-          .myMobileSwiper {
-            display: none;
-          }
-          .myMobile2Swiper {
-            position: relative;
-            left: 40px;
-            width: 250px;
-            display: flex;
           }
         }
       }
