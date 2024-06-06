@@ -1591,14 +1591,16 @@ $subtitle: 700;
     .races {
       .racesMainContainer {
         .racesImagesContainer {
-          .myMobileSwiper {
-            display: none;
-          }
-          .myMobile2Swiper {
+          width: 115%;
+          .racesArrows {
             position: relative;
-            left: 40px;
-            width: 250px;
-            display: flex;
+            left: 35px;
+            &:last-child {
+              left: -35px;
+            }
+          }
+          .myMobileSwiper{
+            left: 15px;
           }
         }
       }
@@ -1650,6 +1652,17 @@ $subtitle: 700;
           }
           h3:last-child {
             font-size: 60px;
+          }
+        }
+        .racesImagesContainer {
+          .myMobileSwiper {
+            display: none;
+          }
+          .myMobile2Swiper {
+            position: relative;
+            left: 40px;
+            width: 250px;
+            display: flex;
           }
         }
       }

@@ -447,7 +447,7 @@ const Index = ({ lang }) => {
               effect={"cards"}
               slidesPerView={"auto"}
               cardsEffect={{
-                perSlideOffset: 15,
+                perSlideOffset: 25,
                 slideShadows: false,
                 centeredSlides: true,
               }}
