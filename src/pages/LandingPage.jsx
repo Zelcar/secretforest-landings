@@ -10,8 +10,9 @@ import Navbar from "../components/Navbar";
 import ReCAPTCHA from "react-google-recaptcha";
 import { ToastContainer, toast } from "react-toastify";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
-const Index = ({ lang }) => {
+const LandingPage = ({ lang }) => {
   const [loader, setLoader] = useState(true);
   const [emailCounter, setEmailCounter] = useState(0);
   const [captchaState, setCaptchaState] = useState(false);
@@ -22,6 +23,7 @@ const Index = ({ lang }) => {
   const swiperRef1 = useRef(null);
   const swiperRef2 = useRef(null);
   const swiperRef3 = useRef(null);
+  const navigate = useNavigate();
   let selectedLang = lang.id == 1 ? "es" : lang.id == 2 ? "en" : "br";
 
   const sendFirstEmail = (e, emailInput) => {
@@ -212,7 +214,7 @@ const Index = ({ lang }) => {
         <>
           <div className={styles.kickstarterXl}>
             <div>
-              <img loading="lazy" src="/modal/xl.jpg" alt="" />
+              <img loading="lazy" src="/landingPage/modal/xl.jpg" alt="" />
               <button onClick={() => setModalKickstarter(false)}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -230,7 +232,7 @@ const Index = ({ lang }) => {
           </div>
           <div className={styles.kickstarterMd}>
             <div>
-              <img loading="lazy" src="/modal/md.jpg" alt="" />
+              <img loading="lazy" src="/landingPage/modal/md.jpg" alt="" />
               <button onClick={() => setModalKickstarter(false)}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -248,7 +250,7 @@ const Index = ({ lang }) => {
           </div>
           <div className={styles.kickstarterXs}>
             <div>
-              <img loading="lazy" src="/modal/xs.jpg" alt="" />
+              <img loading="lazy" src="/landingPage/modal/xs.jpg" alt="" />
               <button onClick={() => setModalKickstarter(false)}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -267,26 +269,26 @@ const Index = ({ lang }) => {
         </>
       )}
       <Loader loader={loader}></Loader>
-      <Navbar lang={lang} isHome={true} />
+      <Navbar lang={lang} location="landing" />
       <a href="#header" className={styles.upBtn}>
-        <img loading="lazy" src="/btnUp.png" alt="" />
+        <img loading="lazy" src="/landingPage/btnUp.png" alt="" />
       </a>
       <header id="header" className={styles.header}>
         <img
           loading="lazy"
-          src="/header/axolotl.png"
+          src="/landingPage/header/axolotl.png"
           className={styles.headerAxolotl}
           alt=""
         />
         <img
           loading="lazy"
-          src="/header/cat.png"
+          src="/landingPage/header/cat.png"
           className={styles.headerCat}
           alt=""
         />
         <img
           loading="lazy"
-          src="/header/logo.png"
+          src="/landingPage/header/logo.png"
           className={styles.headerLogo}
           alt="Secret Forest Logo"
         />
@@ -318,13 +320,13 @@ const Index = ({ lang }) => {
         <img
           loading="lazy"
           className={styles.headerGame}
-          src="/header/game.png"
+          src="/landingPage/header/game.png"
           alt=""
         />
         <img
           loading="lazy"
           className={styles.headerFade}
-          src="/header/fade.png"
+          src="/landingPage/header/fade.png"
           alt=""
         />
       </header>
@@ -345,7 +347,7 @@ const Index = ({ lang }) => {
           </div>
           <div className={styles.racesImagesContainer}>
             <button className={styles.racesArrows} onClick={handlePrev}>
-              <img loading="lazy" src="/arrow.png" alt="" />
+              <img loading="lazy" src="/landingPage/arrow.png" alt="" />
             </button>
             <Swiper
               spaceBetween={50}
@@ -363,34 +365,64 @@ const Index = ({ lang }) => {
               initialSlide={5}
             >
               <SwiperSlide>
-                <img className={styles.racesImg} src="/races/dog.png"></img>
+                <img
+                  className={styles.racesImg}
+                  src="/landingPage/races/dog.png"
+                ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img className={styles.racesImg} src="/races/embear.png"></img>
+                <img
+                  className={styles.racesImg}
+                  src="/landingPage/races/embear.png"
+                ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img className={styles.racesImg} src="/races/cat.png"></img>
+                <img
+                  className={styles.racesImg}
+                  src="/landingPage/races/cat.png"
+                ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img className={styles.racesImg} src="/races/aquan.png"></img>
+                <img
+                  className={styles.racesImg}
+                  src="/landingPage/races/aquan.png"
+                ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img className={styles.racesImg} src="/races/axolotl.png"></img>
+                <img
+                  className={styles.racesImg}
+                  src="/landingPage/races/axolotl.png"
+                ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img className={styles.racesImg} src="/races/foxy.png"></img>
+                <img
+                  className={styles.racesImg}
+                  src="/landingPage/races/foxy.png"
+                ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img className={styles.racesImg} src="/races/fairan.png"></img>
+                <img
+                  className={styles.racesImg}
+                  src="/landingPage/races/fairan.png"
+                ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img className={styles.racesImg} src="/races/elve.png"></img>
+                <img
+                  className={styles.racesImg}
+                  src="/landingPage/races/elve.png"
+                ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img className={styles.racesImg} src="/races/troll.png"></img>
+                <img
+                  className={styles.racesImg}
+                  src="/landingPage/races/troll.png"
+                ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img className={styles.racesImg} src="/races/goblin.png"></img>
+                <img
+                  className={styles.racesImg}
+                  src="/landingPage/races/goblin.png"
+                ></img>
               </SwiperSlide>
             </Swiper>
             <Swiper
@@ -409,34 +441,64 @@ const Index = ({ lang }) => {
               initialSlide={5}
             >
               <SwiperSlide>
-                <img className={styles.racesImg} src="/races/dog.png"></img>
+                <img
+                  className={styles.racesImg}
+                  src="/landingPage/races/dog.png"
+                ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img className={styles.racesImg} src="/races/embear.png"></img>
+                <img
+                  className={styles.racesImg}
+                  src="/landingPage/races/embear.png"
+                ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img className={styles.racesImg} src="/races/cat.png"></img>
+                <img
+                  className={styles.racesImg}
+                  src="/landingPage/races/cat.png"
+                ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img className={styles.racesImg} src="/races/aquan.png"></img>
+                <img
+                  className={styles.racesImg}
+                  src="/landingPage/races/aquan.png"
+                ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img className={styles.racesImg} src="/races/axolotl.png"></img>
+                <img
+                  className={styles.racesImg}
+                  src="/landingPage/races/axolotl.png"
+                ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img className={styles.racesImg} src="/races/foxy.png"></img>
+                <img
+                  className={styles.racesImg}
+                  src="/landingPage/races/foxy.png"
+                ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img className={styles.racesImg} src="/races/fairan.png"></img>
+                <img
+                  className={styles.racesImg}
+                  src="/landingPage/races/fairan.png"
+                ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img className={styles.racesImg} src="/races/elve.png"></img>
+                <img
+                  className={styles.racesImg}
+                  src="/landingPage/races/elve.png"
+                ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img className={styles.racesImg} src="/races/troll.png"></img>
+                <img
+                  className={styles.racesImg}
+                  src="/landingPage/races/troll.png"
+                ></img>
               </SwiperSlide>
               <SwiperSlide>
-                <img className={styles.racesImg} src="/races/goblin.png"></img>
+                <img
+                  className={styles.racesImg}
+                  src="/landingPage/races/goblin.png"
+                ></img>
               </SwiperSlide>
             </Swiper>
             <Swiper
@@ -457,66 +519,66 @@ const Index = ({ lang }) => {
               <SwiperSlide>
                 <img
                   className={styles.racesImg}
-                  src="/races/mobileDog.png"
+                  src="/landingPage/races/mobileDog.png"
                 ></img>
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   className={styles.racesImg}
-                  src="/races/mobileEmbear.png"
+                  src="/landingPage/races/mobileEmbear.png"
                 ></img>
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   className={styles.racesImg}
-                  src="/races/mobileCat.png"
+                  src="/landingPage/races/mobileCat.png"
                 ></img>
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   className={styles.racesImg}
-                  src="/races/mobileAquan.png"
+                  src="/landingPage/races/mobileAquan.png"
                 ></img>
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   className={styles.racesImg}
-                  src="/races/mobileAxolotl.png"
+                  src="/landingPage/races/mobileAxolotl.png"
                 ></img>
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   className={styles.racesImg}
-                  src="/races/mobileFoxy.png"
+                  src="/landingPage/races/mobileFoxy.png"
                 ></img>
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   className={styles.racesImg}
-                  src="/races/mobileFairan.png"
+                  src="/landingPage/races/mobileFairan.png"
                 ></img>
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   className={styles.racesImg}
-                  src="/races/mobileElve.png"
+                  src="/landingPage/races/mobileElve.png"
                 ></img>
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   className={styles.racesImg}
-                  src="/races/mobileTroll.png"
+                  src="/landingPage/races/mobileTroll.png"
                 ></img>
               </SwiperSlide>
               <SwiperSlide>
                 <img
                   className={styles.racesImg}
-                  src="/races/mobileGoblin.png"
+                  src="/landingPage/races/mobileGoblin.png"
                 ></img>
               </SwiperSlide>
             </Swiper>
             <button className={styles.racesArrows} onClick={handleNext}>
-              <img src="/arrow.png" alt="" />
+              <img src="/landingPage/arrow.png" alt="" />
             </button>
           </div>
         </div>
@@ -540,13 +602,13 @@ const Index = ({ lang }) => {
       <section className={styles.professions}>
         <img
           loading="lazy"
-          src="/professions/image.png"
+          src="/landingPage/professions/image.png"
           alt=""
           className={styles.professionsImage}
         />
         <img
           loading="lazy"
-          src="/professions/mobileImage.png"
+          src="/landingPage/professions/mobileImage.png"
           alt=""
           className={styles.professionsMobileImage}
         />
@@ -579,7 +641,7 @@ const Index = ({ lang }) => {
       </section>
       <section className={styles.gameplay}>
         <div className={styles.gameplayAlufis}>
-          <img loading="lazy" src="/gameplay/alufis.png" alt="" />
+          <img loading="lazy" src="/landingPage/gameplay/alufis.png" alt="" />
         </div>
         <div className={styles.gameplayTitle}>
           <h3>150</h3>
@@ -645,37 +707,69 @@ const Index = ({ lang }) => {
           <div className={styles.elementsContainer}>
             <div>
               <div className={styles.element}>
-                <img loading="lazy" src="/elements/light.png" alt="" />
+                <img
+                  loading="lazy"
+                  src="/landingPage/elements/light.png"
+                  alt=""
+                />
                 <p>{lang.elements.light}</p>
               </div>
               <div className={styles.element}>
-                <img loading="lazy" src="/elements/darkness.png" alt="" />
+                <img
+                  loading="lazy"
+                  src="/landingPage/elements/darkness.png"
+                  alt=""
+                />
                 <p>{lang.elements.darkness}</p>
               </div>
               <div className={styles.element}>
-                <img loading="lazy" src="/elements/water.png" alt="" />
+                <img
+                  loading="lazy"
+                  src="/landingPage/elements/water.png"
+                  alt=""
+                />
                 <p>{lang.elements.water}</p>
               </div>
               <div className={styles.element}>
-                <img loading="lazy" src="/elements/fire.png" alt="" />
+                <img
+                  loading="lazy"
+                  src="/landingPage/elements/fire.png"
+                  alt=""
+                />
                 <p>{lang.elements.fire}</p>
               </div>
             </div>
             <div>
               <div className={styles.element}>
-                <img loading="lazy" src="/elements/earth.png" alt="" />
+                <img
+                  loading="lazy"
+                  src="/landingPage/elements/earth.png"
+                  alt=""
+                />
                 <p>{lang.elements.earth}</p>
               </div>
               <div className={styles.element}>
-                <img loading="lazy" src="/elements/plant.png" alt="" />
+                <img
+                  loading="lazy"
+                  src="/landingPage/elements/plant.png"
+                  alt=""
+                />
                 <p>{lang.elements.plant}</p>
               </div>
               <div className={styles.element}>
-                <img loading="lazy" src="/elements/ice.png" alt="" />
+                <img
+                  loading="lazy"
+                  src="/landingPage/elements/ice.png"
+                  alt=""
+                />
                 <p>{lang.elements.ice}</p>
               </div>
               <div className={styles.element}>
-                <img loading="lazy" src="/elements/poison.png" alt="" />
+                <img
+                  loading="lazy"
+                  src="/landingPage/elements/poison.png"
+                  alt=""
+                />
                 <p>{lang.elements.poison}</p>
               </div>
             </div>
@@ -683,41 +777,73 @@ const Index = ({ lang }) => {
           <div className={styles.mobileElementsContainer}>
             <div>
               <div className={styles.element}>
-                <img loading="lazy" src="/elements/light.png" alt="" />
+                <img
+                  loading="lazy"
+                  src="/landingPage/elements/light.png"
+                  alt=""
+                />
                 <p>{lang.elements.light}</p>
               </div>
               <div className={styles.element}>
-                <img loading="lazy" src="/elements/darkness.png" alt="" />
+                <img
+                  loading="lazy"
+                  src="/landingPage/elements/darkness.png"
+                  alt=""
+                />
                 <p>{lang.elements.darkness}</p>
               </div>
             </div>
             <div>
               <div className={styles.element}>
-                <img loading="lazy" src="/elements/water.png" alt="" />
+                <img
+                  loading="lazy"
+                  src="/landingPage/elements/water.png"
+                  alt=""
+                />
                 <p>{lang.elements.water}</p>
               </div>
               <div className={styles.element}>
-                <img loading="lazy" src="/elements/fire.png" alt="" />
+                <img
+                  loading="lazy"
+                  src="/landingPage/elements/fire.png"
+                  alt=""
+                />
                 <p>{lang.elements.fire}</p>
               </div>
             </div>
             <div>
               <div className={styles.element}>
-                <img loading="lazy" src="/elements/earth.png" alt="" />
+                <img
+                  loading="lazy"
+                  src="/landingPage/elements/earth.png"
+                  alt=""
+                />
                 <p>{lang.elements.earth}</p>
               </div>
               <div className={styles.element}>
-                <img loading="lazy" src="/elements/plant.png" alt="" />
+                <img
+                  loading="lazy"
+                  src="/landingPage/elements/plant.png"
+                  alt=""
+                />
                 <p>{lang.elements.plant}</p>
               </div>
             </div>
             <div>
               <div className={styles.element}>
-                <img loading="lazy" src="/elements/ice.png" alt="" />
+                <img
+                  loading="lazy"
+                  src="/landingPage/elements/ice.png"
+                  alt=""
+                />
                 <p>{lang.elements.ice}</p>
               </div>
               <div className={styles.element}>
-                <img loading="lazy" src="/elements/poison.png" alt="" />
+                <img
+                  loading="lazy"
+                  src="/landingPage/elements/poison.png"
+                  alt=""
+                />
                 <p>{lang.elements.poison}</p>
               </div>
             </div>
@@ -777,12 +903,12 @@ const Index = ({ lang }) => {
           </div>
         </div>
         <div className={styles.formRight}>
-          <img loading="lazy" src="/form/aquan.png" alt="" />
+          <img loading="lazy" src="/landingPage/form/aquan.png" alt="" />
         </div>
         <div className={styles.formUpFade}></div>
         <img
           loading="lazy"
-          src="/form/overlay.png"
+          src="/landingPage/form/overlay.png"
           className={styles.formOverlay}
           alt=""
         />
@@ -790,8 +916,12 @@ const Index = ({ lang }) => {
       <footer className={styles.footer}>
         <div className={styles.footerMain}>
           <h4>{lang.footer.title}</h4>
-          <button>
-            <img loading="lazy" src="/btnDiscord.png" alt="" />
+          <button
+            onClick={() =>
+              (window.location.href = "https://discord.com/invite/wwf6XgeHKh")
+            }
+          >
+            <img loading="lazy" src="/landingPage/btnDiscord.png" alt="" />
           </button>
         </div>
       </footer>
@@ -799,4 +929,4 @@ const Index = ({ lang }) => {
   );
 };
 
-export default Index;
+export default LandingPage;

@@ -155,7 +155,7 @@ $subtitle: 700;
       left: 0;
       width: 100%;
       height: 100%;
-      background-image: url("../../../public/header/bg2.png");
+      background-image: url("../../../public/landingPage/header/bg2.png");
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -163,7 +163,7 @@ $subtitle: 700;
     }
     width: 100%;
     height: 125vh;
-    background-image: url("../../../public/header/bg1.png");
+    background-image: url("../../../public/landingPage/header/bg1.png");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -329,7 +329,7 @@ $subtitle: 700;
     flex-direction: column;
     width: 100%;
     height: 100%;
-    background-image: url("../../../public/races/bg.png");
+    background-image: url("../../../public/landingPage/races/bg.png");
     background-position: 0% 0%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -415,7 +415,7 @@ $subtitle: 700;
   .biomes {
     width: 100%;
     height: 100%;
-    background-image: url("../../../public/biomes/bg.png");
+    background-image: url("../../../public/landingPage/biomes/bg.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -472,7 +472,7 @@ $subtitle: 700;
     .professionsTexts {
       width: 100%;
       padding: 70px 0;
-      background-image: url("../../../public/professions/bg.png");
+      background-image: url("../../../public/landingPage/professions/bg.png");
       background-position: center center; /* Centra la imagen en el contenedor */
       background-size: cover; /* Cubre completamente el contenedor sin distorsionar la imagen */
       background-repeat: no-repeat;
@@ -484,7 +484,7 @@ $subtitle: 700;
   .skills {
     width: 100%;
     height: 100vh;
-    background-image: url("../../../public/skills/bg.png");
+    background-image: url("../../../public/landingPage/skills/bg.png");
     background-position: 0% 0%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -515,7 +515,7 @@ $subtitle: 700;
   .world {
     width: 100%;
     height: 100vh;
-    background-image: url("../../../public/world/bg.png");
+    background-image: url("../../../public/landingPage/world/bg.png");
     background-position: 0% 0%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -546,7 +546,7 @@ $subtitle: 700;
   .gameplay {
     width: 100%;
     height: 100vh;
-    background-image: url("../../../public/gameplay/bg.jpg");
+    background-image: url("../../../public/landingPage/gameplay/bg.jpg");
     background-position: 100% 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -604,7 +604,7 @@ $subtitle: 700;
   .elements {
     width: 100%;
     height: 100%;
-    background-image: url("../../../public/elements/bg.jpg");
+    background-image: url("../../../public/landingPage/elements/bg.jpg");
     background-position: center;
     background-size: fill;
     background-repeat: no-repeat;
@@ -700,7 +700,7 @@ $subtitle: 700;
   .mounts {
     width: 100%;
     height: 1414px;
-    background-image: url("../../../public/mounts/bg.jpg");
+    background-image: url("../../../public/landingPage/mounts/bg.jpg");
     background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
@@ -737,7 +737,7 @@ $subtitle: 700;
     justify-content: flex-end;
     align-items: space-between;
     flex-direction: row;
-    background-image: url("../../../public/form/bg.jpg");
+    background-image: url("../../../public/landingPage/form/bg.jpg");
     background-position: center;
     background-size: fill;
     background-repeat: no-repeat;
@@ -1129,7 +1129,7 @@ $subtitle: 700;
     }
     .mounts {
       height: 2200px;
-      background-image: url("../../../public/mounts/mobileBg.jpg");
+      background-image: url("../../../public/landingPage/mounts/mobileBg.jpg");
       background-position: 0% 0%;
       background-size: cover;
       .mountsTitle {
@@ -1270,7 +1270,7 @@ $subtitle: 700;
       background-position: center 70%;
       justify-content: flex-end !important;
       height: 100vh;
-      background-image: url("../../../public/biomes/mobileBg.png");
+      background-image: url("../../../public/landingPage/biomes/mobileBg.png");
       padding-bottom: 10px;
       .biomesTitle {
         padding-right: 10px;
@@ -1300,14 +1300,14 @@ $subtitle: 700;
         display: block;
       }
       .professionsTexts {
-        background-image: url("../../../public/professions/mobileBg.png");
+        background-image: url("../../../public/landingPage/professions/mobileBg.png");
       }
     }
     .skills {
       height: 80vh;
       align-items: flex-end;
       padding-bottom: 20px;
-      background-image: url("../../../public/skills/mobileBg.png");
+      background-image: url("../../../public/landingPage/skills/mobileBg.png");
       background-position: center;
       .skillNoEnglishTitle {
         overflow: hidden;
@@ -1320,13 +1320,13 @@ $subtitle: 700;
     }
     .world {
       height: 60vh;
-      background-image: url("../../../public/world/mobileBg.png");
+      background-image: url("../../../public/landingPage/world/mobileBg.png");
       .worldTitle {
         padding-left: 15px;
       }
     }
     .gameplay {
-      background-image: url("../../../public/gameplay/mobileBg.png");
+      background-image: url("../../../public/landingPage/gameplay/mobileBg.png");
       height: 110vh;
       justify-content: center;
       align-items: flex-end;
@@ -1545,7 +1545,7 @@ $subtitle: 700;
       }
     }
     .mounts {
-      background-image: url("../../../public/mounts/mobile2Bg.jpg");
+      background-image: url("../../../public/landingPage/mounts/mobile2Bg.jpg");
       background-position: center !important;
       background-size: fill !important;
       height: 1920px;
