@@ -1,3 +1,866 @@
-.container{
-    color: white;
+.container {
+  color: white;
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.22);
+    overflow: hidden;
+    .hamBtn {
+      position: absolute;
+      left: 75px;
+      background-color: transparent;
+      border: none;
+      display: none;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      transition: all 250ms;
+      svg {
+        transition: all 250ms;
+        width: 100%;
+        fill: white;
+        height: 100%;
+      }
+      &:hover {
+        svg {
+          fill: gray;
+        }
+      }
+    }
+    .langBtn {
+      position: absolute;
+      right: 75px;
+      background-color: transparent;
+      border: none;
+
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      transition: all 250ms;
+      svg {
+        transition: all 250ms;
+        width: 100%;
+        fill: white;
+        height: 100%;
+      }
+      &:hover {
+        svg {
+          fill: gray;
+        }
+      }
+    }
+    .navUl {
+      width: 80%;
+      height: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: row;
+      li {
+        list-style: none;
+        transition: all 250ms;
+        a {
+          font-size: 18px;
+          color: white;
+          text-decoration: none;
+          cursor: pointer;
+          transition: all 250ms;
+        }
+        &:hover {
+          a {
+            color: gray;
+          }
+        }
+      }
+    }
+  }
+  .langUl {
+    z-index: 5;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.22);
+    position: fixed;
+    width: 500px;
+    top: 50px;
+    right: 0px;
+    padding: 20px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 250ms;
+    transform: translateY(-600px);
+    li {
+      list-style: none;
+      transition: all 250ms;
+      a {
+        text-decoration: none;
+        cursor: pointer;
+        color: white;
+        transition: all 250ms;
+        font-size: 18px;
+      }
+
+      &:hover {
+        a {
+          color: gray;
+        }
+      }
+    }
+  }
+  .mobileNavUl {
+    z-index: 5;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.469);
+    position: fixed;
+    width: 90%;
+    top: 50px;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 250ms;
+    transform: translateY(-600px);
+    li {
+      list-style: none;
+      transition: all 250ms;
+      a {
+        text-decoration: none;
+        cursor: pointer;
+        color: white;
+        transition: all 250ms;
+        font-size: 18px;
+      }
+
+      &:hover {
+        a {
+          color: gray;
+        }
+      }
+    }
+  }
+
+  .mobileNavActive {
+    transform: translateY(0) !important;
+  }
+  .langActive {
+    transform: translateY(0) !important;
+  }
+  .upArrow {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) rotateX(180deg);
+    width: 50px;
+    height: 50px;
+    transition: all 250ms;
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+    &:hover {
+      bottom: 5px;
+    }
+  }
+  .header {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 100px;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-image: url("../../../public/homePage/header/bg.webp");
+    gap: 20px;
+    position: relative;
+    img {
+      width: 300px;
+    }
+    .headerFade {
+      width: 100%;
+      position: absolute;
+      // bottom: 500px;
+      bottom: -2px;
+    }
+    iframe {
+      width: 30vw;
+      height: 18vw;
+      border-radius: 10px;
+    }
+  }
+  .races {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../public/homePage/races/bg.webp");
+    background-position: 100% 0%;
+    background-size: cover;
+    padding: 50px 0;
+    h3 {
+      text-align: center;
+      font-size: 80px;
+      font-family: "MoonGet";
+      padding: 0 0 40px 0;
+    }
+    .racesSelection {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      position: relative;
+      padding-bottom: 10px;
+      .racesSelectionbacklights {
+        position: absolute;
+        width: 80%;
+        bottom: 0;
+      }
+      button {
+        width: 120px;
+        height: 120px;
+        border: none;
+        transition: all 250ms;
+        cursor: pointer;
+        position: relative;
+        background-color: transparent;
+        img {
+          width: 100%;
+        }
+        .iconBorder {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          display: none;
+          transition: all 250ms;
+        }
+        &:hover {
+          .iconBorder {
+            display: block;
+            animation: 300ms appear;
+          }
+        }
+        .iconActive {
+          display: block;
+          animation: 500ms appear;
+        }
+      }
+      .racesSelectionArrow1,
+      .racesSelectionArrow2 {
+        width: 35px;
+        height: 35px;
+        transition: all 500ms;
+        svg {
+          fill: white;
+          width: 100%;
+          height: 100%;
+        }
+        &:hover {
+          padding-left: 10px;
+          fill: gray;
+        }
+      }
+      .racesSelectionArrow1 {
+        transform: rotateY(180deg);
+      }
+    }
+    .racesContainer {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      .racesContainerMobileHabilities {
+        display: none;
+      }
+      h4 {
+        font-size: 50px;
+        margin: 40px 0 15px 0;
+        font-family: "MoonGet";
+      }
+      .racesContainerMain {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        padding-top: 75px;
+        .racesContainerLeft {
+          width: 450px;
+          height: 675px;
+          display: flex;
+          justify-content: flex-end;
+          img {
+            animation: 1s float infinite;
+            width: 100%;
+          }
+        }
+        .racesContainerRight {
+          // background: blue;
+          padding-left: 100px;
+          width: 60%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          p {
+            padding-left: 50px;
+            align-self: flex-start;
+            font-size: 25px;
+            font-weight: 200;
+            width: 70%;
+          }
+          .racesHabilitiesContainer {
+            margin-top: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 20px;
+            h5 {
+              font-size: 30px;
+              font-family: "MoonGet";
+              margin: 5px 0;
+            }
+            div {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              gap: 20px;
+              flex-direction: row;
+              width: 100%;
+
+              img {
+                border-radius: 10px;
+                width: 45%;
+              }
+            }
+          }
+        }
+      }
+      .racesGameplay {
+        margin-top: 50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        flex-direction: column;
+        h5 {
+          font-size: 30px;
+          font-family: "MoonGet";
+          margin: 5px 0;
+        }
+        iframe {
+          width: 55%;
+          height: 30vw;
+        }
+      }
+    }
+    .racesActive {
+      display: flex;
+      animation: 1s appear;
+    }
+  }
+  .professions {
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../public/homePage/professions/bg.webp");
+    background-position: 100% 0%;
+    background-size: cover;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h3 {
+      text-align: center;
+      font-size: 80px;
+      font-family: "MoonGet";
+      padding: 0 0 40px 0;
+    }
+    .professionsSelector {
+      display: flex;
+      width: 90%;
+      height: 300px;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      div {
+        height: 150px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        button {
+          width: 16.666%;
+          height: 100%;
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          transition: all 250ms;
+          border: 1px solid white;
+          position: relative;
+          p {
+            color: white;
+            font-size: 25px;
+            // background: red;]
+            word-break: break-all;
+            padding: 0 10px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 5;
+            font-family: Montserrat;
+            font-weight: 200;
+            text-shadow: 3px 3px 10px black;
+          }
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            filter: brightness(50%);
+            width: 100%;
+            object-fit: fill;
+            height: 100%;
+            transition: all 250ms;
+          }
+          &:hover {
+            filter: brightness(100%);
+            transition: all 250ms;
+          }
+        }
+        .professionActive {
+          img {
+            filter: brightness(100%);
+          }
+        }
+      }
+    }
+    .mobileProfessionsSelector {
+      display: none;
+      // display: flex;
+      width: 90%;
+      height: 300px;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      div {
+        height: 150px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        button {
+          width: 25%;
+          height: 100%;
+          background-color: transparent;
+          border: none;
+          cursor: pointer;
+          transition: all 250ms;
+          border: 1px solid white;
+          position: relative;
+          p {
+            color: white;
+            font-size: 15px;
+            // background: red;]
+            word-break: break-all;
+            padding: 0 10px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 5;
+            font-family: Montserrat;
+            font-weight: 200;
+            text-shadow: 3px 3px 10px black;
+          }
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            filter: brightness(50%);
+            width: 100%;
+            object-fit: fill;
+            height: 100%;
+            transition: all 250ms;
+          }
+          &:hover {
+            filter: brightness(100%);
+            transition: all 250ms;
+          }
+        }
+        .professionActive {
+          img {
+            filter: brightness(100%);
+          }
+        }
+      }
+    }
+    .professionsContainer {
+      display: none;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+
+      h4 {
+        font-size: 50px;
+        margin: 50px 0 30px 0;
+        font-family: "MoonGet";
+      }
+      iframe {
+        width: 75%;
+
+        height: 550px;
+      }
+    }
+
+    .professionsActive {
+      display: flex;
+      animation: 1s appear;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    .races {
+      .racesSelection {
+        button {
+          width: 80px;
+          height: 80px;
+        }
+      }
+      .racesContainer {
+        .racesContainerMain {
+          .racesContainerRight {
+            p {
+              text-align: center;
+              align-self: center;
+              padding-left: 0;
+            }
+          }
+        }
+      }
+    }
+    .professions {
+      .professionsSelector {
+        height: 200px;
+        div {
+          height: 100px;
+        }
+      }
+      .professionsContainer {
+        iframe {
+          width: 70%;
+          height: 45vw;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .container {
+    .header {
+      iframe {
+        width: 45vw;
+        height: 25vw;
+      }
+    }
+    .races {
+      .racesContainer {
+        .racesContainerMain {
+          padding-top: 20px;
+          .racesContainerRight {
+            padding-left: 0;
+            p {
+              text-align: center;
+              align-self: center;
+              font-size: 20px;
+              width: 100%;
+              padding: 0 50px;
+            }
+            .racesHabilitiesContainer {
+              width: 100%;
+            }
+          }
+        }
+        .racesGameplay {
+          iframe {
+            width: 80%;
+            height: 45vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    .nav {
+      background-color: rgba(0, 0, 0, 0.469);
+
+      .hamBtn {
+        display: flex;
+      }
+      .navUl {
+        display: none;
+      }
+    }
+    .langUl {
+      background-color: rgba(0, 0, 0, 0.469);
+      width: 90%;
+      margin: 0 auto;
+      right: 0;
+      left: 0;
+    }
+    .races {
+      .racesSelection {
+        button {
+          width: 50px;
+          height: 50px;
+        }
+      }
+      .racesContainer {
+        .racesContainerMain {
+          .racesContainerLeft {
+            width: 333px;
+            height: 500px;
+          }
+        }
+      }
+    }
+    .professions {
+      .professionsSelector {
+        height: 150px;
+        div {
+          height: 175px;
+          button {
+            p {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .professionsContainer {
+        iframe {
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 720px) {
+  .container {
+    .header {
+      height: 100%;
+      background-image: url("../../../public/homePage/header/mobileBg.png");
+      background-position: center 40%;
+      padding-top: 50px;
+      padding-bottom: 0px;
+      .logo {
+        width: 45%;
+      }
+      p {
+        background: red;
+        visibility: hidden;
+      }
+      iframe {
+        margin-top: 150px;
+        width: 80%;
+        height: 50vw;
+      }
+    }
+    .races {
+      .racesContainer {
+        .racesContainerMain {
+          .racesContainerRight {
+            p {
+              height: 100%;
+              text-align: left;
+              align-self: flex-start;
+            }
+            .racesHabilitiesContainer {
+              display: none;
+            }
+          }
+        }
+        .racesContainerMobileHabilitiesMain {
+          width: 100%;
+          h3 {
+            font-size: 40px;
+            margin-top: 30px;
+          }
+          position: relative;
+          .mobileHabilitiesArrow1 {
+            background: red;
+            transform: rotateY(180deg) !important;
+            background-color: transparent;
+            border: none;
+            fill: white;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            bottom: 135px;
+            left: 10px;
+            z-index: 5;
+            svg {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .mobileHabilitiesArrow2 {
+            background: red;
+            background-color: transparent;
+            border: none;
+            fill: white;
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            bottom: 135px;
+            right: 10px;
+            z-index: 5;
+            svg {
+              width: 100%;
+              height: 100%;
+            }
+          }
+          .racesContainerMobileHabilities {
+            display: flex;
+            width: 100%;
+            .mySwiper {
+              width: 90%;
+            }
+          }
+        }
+      }
+    }
+    .professions {
+      h3 {
+        font-size: 50px;
+      }
+      .professionsSelector {
+        display: none;
+      }
+      .mobileProfessionsSelector {
+        display: flex;
+      }
+      .professionsContainer {
+        h4 {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  .container {
+    .races {
+      .racesSelection {
+        button {
+          width: 35px;
+          height: 35px;
+        }
+        .racesSelectionArrow1,
+        .racesSelectionArrow2 {
+          display: none;
+        }
+      }
+      .racesContainer {
+        .racesContainerMain {
+          .racesContainerLeft {
+            // background: red;
+            width: 233.33px;
+            height: 350px;
+          }
+          .racesContainerRight {
+            p {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 475px) {
+  .container {
+    .races {
+      .racesContainer {
+        .racesContainerMobileHabilitiesMain {
+          .mobileHabilitiesArrow1,
+          .mobileHabilitiesArrow2 {
+            width: 25px;
+            height: 25px;
+          }
+          .racesContainerMobileHabilities {
+            .mySwiper {
+              width: 95%;
+            }
+          }
+        }
+      }
+    }
+    .professions {
+      h3 {
+        font-size: 30px;
+      }
+      .mobileProfessionsSelector{
+        height: 200px;
+      }
+      .professionsContainer {
+        h4 {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }

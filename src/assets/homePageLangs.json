@@ -1,35 +1,219 @@
 {
   "es": {
-    "id": 1
+    "id": 1,
+    "nav": {
+      "nav1": "Inicio",
+      "nav2": "Razas",
+      "nav3": "Profesiones",
+      "nav4": "Combate",
+      "nav5": "Exploración",
+      "nav6": "Arte Conceptual",
+      "nav7": "Biomas",
+      "nav8": "Hoja de Ruta"
+    },
+    "header": {
+      "trailer": "Tráiler"
+    }
   },
   "en": {
-    "id": 2
+    "id": 2,
+    "nav": {
+      "nav1": "Home",
+      "nav2": "Races",
+      "nav3": "Professions",
+      "nav4": "Combat",
+      "nav5": "Exploration",
+      "nav6": "Concept Art",
+      "nav7": "Biomes",
+      "nav8": "Roadmap"
+    },
+    "header": {
+      "trailer": "Trailer"
+    },
+    "races": {
+      "title": "RACES",
+      "habsTitle": "Habilities",
+      "gameplayTitle": "Race Gameplay",
+      "axolotlTitle": "AXOLOTLS",
+      "axolotlDesc": "Born in the magical waters of sacred lakes, these healers are bound to the Turtle Spirit. Their strong connection with water allows them to restore health to allies. They build beautiful aquatic gardens and are excellent fishermen and alchemists.",
+      "aquanTitle": "AQUANS",
+      "aquanDesc": "Born from giant oysters deep below the sea, they emerge wielding the power of the waves by the grace of the Dragon Spirit. Their fishermen harvest bounties from the ocean and alchemists imbue power into weapons using wáter and ice magic.",
+      "elveTitle": "ELVES",
+      "elveDesc": "Elves are a tranquil race caluing peace and harmony. Whit time, they’ve embraced combat and enhanced magical skills due to interactions with other species. They are the most balanced race, easily adapting to various trades.",
+      "foxyTitle": "FOXIES",
+      "foxyDesc": "Bound to the Lion Spirit, foxys retain their wild instincts. Gifted animal trainers and beast masters, their skill with bow and fire magic helps them thrive while hunting prey across grassy plains. They build sturdy camps and sell pelts as skilled carpenters.",
+      "goblinTitle": "GOBLINS",
+      "goblinDesc": "Born from the mud of cursed swamps, these mischievous beings worship the Imp Spirit. Goblin tinkers, alchemists and pranksters create strange technology and venomous concoctions in their ramshackle laboratories, while some become cunning merchants.",
+      "trollTitle": "TROLLS",
+      "trollDesc": "Emerging from ancient cocoons deep underground as servants of the Ogre Spirit, these solitary beings practice dark arts and fungalmancy to achieve immortality. Their nimbleness with swords and shields is enhanced by mastering death and rot magic.",
+      "fairanTitle": "FAIRANS",
+      "fairanDesc": "Born from crystalline eggs fallen from the stars, these cheerful pranksters overflow with fairy magic guided by the Pegasus Spirit. Talented jewelers and wand makers, their gear dazzles enemies before overwhelming them with air and Prism magic.",
+      "embearTitle": "EMBEARS",
+      "embearDesc": "Born from droplets of rainbow colored honey under the watchful eye of the Owl Spirit. Sweet natured builders and craftsmen gifted in earth and nature magic. They create cozy homes and trades using the bounty of the forests and minerals from the mountains.",
+      "catTitle": "CATTIES",
+      "catDesc": "Born from tainted moonbeams in darkened forests, these graceful nocturnal beings worship the Lion Spirit. Their occult research unlocks curses & darkness magic, while their skill with herbs enhances their hexes. Catties thrive as sages or spies.",
+      "dogTitle": "DOGGIES",
+      "dogDesc": "Guided by the Wolf Spirit, these devoted adventurers retain their wild instincts balanced by affection and bravery. Their wind magic affinity gives them speed and grace while their engineering teams sculpt mighty monuments and ingenious machinery. As guardians, their protective nature emerges, making them fierce combatants."
+    },
+    "professions": {
+      "title": "PROFESSIONS",
+      "gameplay": "GAMEPLAY",
+      "fisherman": "FISHERMAN",
+      "fungiculturist": "FUNGICULTURIST",
+      "jeweler": "JEWELER",
+      "miner": "MINER",
+      "necromancer": "NECROMANCER",
+      "alchemist": "ALCHEMIST",
+      "blacksmith": "BLACKSMITH",
+      "carpenter": "CARPENTER",
+      "cheff": "CHEFF",
+      "dressmaker": "DRESSMAKER",
+      "farmer": "FARMER",
+      "breeder": "BREEDER"
+    }
   },
   "br": {
-    "id": 3
+    "id": 3,
+    "nav": {
+      "nav1": "Início",
+      "nav2": "Raças",
+      "nav3": "Profissões",
+      "nav4": "Combate",
+      "nav5": "Exploração",
+      "nav6": "Arte Conceitual",
+      "nav7": "Biomas",
+      "nav8": "Roteiro"
+    },
+    "header": {
+      "trailer": "Trailer"
+    }
   },
   "ko": {
-    "id": 4
+    "id": 4,
+    "nav": {
+      "nav1": "홈",
+      "nav2": "종족",
+      "nav3": "직업",
+      "nav4": "전투",
+      "nav5": "탐험",
+      "nav6": "컨셉 아트",
+      "nav7": "생태계",
+      "nav8": "로드맵"
+    },
+    "header": {
+      "trailer": "트레일러"
+    }
   },
   "ja": {
-    "id": 5
+    "id": 5,
+    "nav": {
+      "nav1": "ホーム",
+      "nav2": "種族",
+      "nav3": "職業",
+      "nav4": "戦闘",
+      "nav5": "探検",
+      "nav6": "コンセプトアート",
+      "nav7": "バイオーム",
+      "nav8": "ロードマップ"
+    },
+    "header": {
+      "trailer": "トレーラー"
+    }
   },
   "de": {
-    "id": 6
+    "id": 6,
+    "nav": {
+      "nav1": "Startseite",
+      "nav2": "Rassen",
+      "nav3": "Berufe",
+      "nav4": "Kampf",
+      "nav5": "Erkundung",
+      "nav6": "Konzeptkunst",
+      "nav7": "Biomes",
+      "nav8": "Fahrplan"
+    },
+    "header": {
+      "trailer": "Trailer"
+    }
   },
   "nl": {
-    "id": 7
+    "id": 7,
+    "nav": {
+      "nav1": "Home",
+      "nav2": "Rassen",
+      "nav3": "Beroepen",
+      "nav4": "Gevecht",
+      "nav5": "Verkenning",
+      "nav6": "Conceptkunst",
+      "nav7": "Biomen",
+      "nav8": "Routekaart"
+    },
+    "header": {
+      "trailer": "Trailer"
+    }
   },
   "ru": {
-    "id": 8
+    "id": 8,
+    "nav": {
+      "nav1": "Главная",
+      "nav2": "Расы",
+      "nav3": "Профессии",
+      "nav4": "Бой",
+      "nav5": "Исследование",
+      "nav6": "Концепт-арт",
+      "nav7": "Биомы",
+      "nav8": "Дорожная карта"
+    },
+    "header": {
+      "trailer": "Трейлер"
+    }
   },
   "fr": {
-    "id": 9
+    "id": 9,
+    "nav": {
+      "nav1": "Accueil",
+      "nav2": "Races",
+      "nav3": "Professions",
+      "nav4": "Combat",
+      "nav5": "Exploration",
+      "nav6": "Art Conceptuel",
+      "nav7": "Biomes",
+      "nav8": "Feuille de route"
+    },
+    "header": {
+      "trailer": "Bande-annonce"
+    }
   },
   "zh": {
-    "id": 10
+    "id": 10,
+    "nav": {
+      "nav1": "首页",
+      "nav2": "种族",
+      "nav3": "职业",
+      "nav4": "战斗",
+      "nav5": "探索",
+      "nav6": "概念艺术",
+      "nav7": "生物群系",
+      "nav8": "路线图"
+    },
+    "header": {
+      "trailer": "预告片"
+    }
   },
   "it": {
-    "id": 11
+    "id": 11,
+    "nav": {
+      "nav1": "Home",
+      "nav2": "Razze",
+      "nav3": "Professioni",
+      "nav4": "Combattimento",
+      "nav5": "Esplorazione",
+      "nav6": "Arte Concettuale",
+      "nav7": "Biomi",
+      "nav8": "Tabella di marcia"
+    },
+    "header": {
+      "trailer": "Trailer"
+    }
   }
 }

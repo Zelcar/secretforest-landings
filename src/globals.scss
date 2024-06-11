@@ -1,5 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 
+@font-face {
+  font-family: 'MoonGet';
+  src: url('../public/homePage/fonts/MoonGet_Heavy.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +17,7 @@ html {
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
   background-color: #331052;
+  overflow-x: hidden;
 }
 img {
   -moz-user-select: none;
@@ -89,7 +97,6 @@ img {
   display: none !important;
 }
 
-
 /* width */
 ::-webkit-scrollbar {
   width: 6px;
@@ -97,17 +104,16 @@ img {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #01135D;
+  background: #01135d;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #FFBE00;
+  background: #ffbe00;
   border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #a67c00;
-
 }
