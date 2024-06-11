@@ -11,7 +11,7 @@
     top: 0;
     height: 50px;
     width: 100%;
-    z-index: 5;
+    z-index: 10;
     background-color: rgba(0, 0, 0, 0.22);
     overflow: hidden;
     .hamBtn {
@@ -84,7 +84,7 @@
     }
   }
   .langUl {
-    z-index: 5;
+    z-index: 10;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.22);
     position: fixed;
@@ -118,7 +118,7 @@
     }
   }
   .mobileNavUl {
-    z-index: 5;
+    z-index: 10;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.469);
     position: fixed;
@@ -167,6 +167,7 @@
     transform: translateX(-50%) rotateX(180deg);
     width: 50px;
     height: 50px;
+    z-index: 10;
     transition: all 250ms;
     svg {
       width: 100%;
@@ -285,7 +286,7 @@
       flex-direction: column;
       width: 100%;
       height: 100%;
-      .racesContainerMobileHabilities {
+      .racesContainerMobileHabilitiesMain {
         display: none;
       }
       h4 {
@@ -383,11 +384,32 @@
     background-image: url("../../../public/homePage/professions/bg.webp");
     background-position: 100% 0%;
     background-size: cover;
-    padding: 50px 0;
+    padding: 50px 0 150px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    .professionsAxolotl {
+      // width: 350px;
+      width: 25%;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    .professionsAquan {
+      // width: 350px;
+      width: 25%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+    .professionsFadeDown {
+      position: absolute;
+      bottom: -2px;
+      left: -5px;
+      width: 105%;
+    }
     h3 {
       text-align: center;
       font-size: 80px;
@@ -430,7 +452,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            z-index: 5;
+            z-index: 3;
             font-family: Montserrat;
             font-weight: 200;
             text-shadow: 3px 3px 10px black;
@@ -494,7 +516,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            z-index: 5;
+            z-index: 3;
             font-family: Montserrat;
             font-weight: 200;
             text-shadow: 3px 3px 10px black;
@@ -534,9 +556,9 @@
         font-family: "MoonGet";
       }
       iframe {
-        width: 75%;
+        width: 50%;
 
-        height: 550px;
+        height: 400px;
       }
     }
 
@@ -545,8 +567,255 @@
       animation: 1s appear;
     }
   }
-}
+  .combat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-image: url("../../../public/homePage/combat/bg.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .combatFadeDown {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 150px;
+      background: rgb(10, 2, 53);
+      background: linear-gradient(
+        0deg,
+        rgba(10, 2, 53, 1) 0%,
+        rgba(1, 19, 93, 0) 100%
+      );
+    }
+    .combatUpText {
+      width: 100%;
+      // background: red;
+      width: 50%;
+      font-size: 30px;
+      font-weight: 300;
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    .combatSection1,
+    .combatSection3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
+      .combatSection1Left,
+      .combatSection3Left {
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        h4 {
+          font-size: 90px;
+          font-family: MoonGet;
+          letter-spacing: 2px;
+        }
+        p {
+          font-size: 30px;
+          width: 80%;
+
+          text-align: center;
+        }
+        iframe {
+          width: 70%;
+          height: 25vw;
+        }
+      }
+      .combatSection1Right,
+      .combatSection3Right {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 500px;
+        }
+      }
+      .combatSection3Right {
+        img {
+          width: 850px;
+        }
+      }
+    }
+    .combatSeparator {
+      width: 85%;
+      margin: 50px 0;
+      img {
+        width: 100%;
+      }
+    }
+    .combatSection2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100%;
+      h4 {
+        font-size: 90px;
+        font-family: MoonGet;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+      .combatSection2Main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 85%;
+        height: 100%;
+        .combatSection2Left {
+          width: 30%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            // width: 100%;
+            width: 750px;
+          }
+        }
+        .combatSection2Right {
+          display: flex;
+          justify-content: flex-start;
+          flex-direction: column;
+          align-items: center;
+          width: 70%;
+          height: 100%;
+          gap: 30px;
+          p {
+            font-size: 30px;
+            width: 80%;
+            text-align: center;
+          }
+          iframe {
+            width: 70%;
+            height: 25vw;
+          }
+        }
+      }
+    }
+  }
+  .exploration {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding: 100px 0;
+    background-image: url("../../../public/homePage/exploration/bg.webp");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    .rightDeco {
+      position: absolute;
+      width: 18%;
+      bottom: 0;
+      right: 0;
+      z-index: 1;
+    }
+    .leftDeco {
+      position: absolute;
+      width: 18%;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+    }
+    .combatFadeUp {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100px;
+      background: rgb(10, 2, 53);
+      background: linear-gradient(
+        180deg,
+        rgba(10, 2, 53, 1) 0%,
+        rgba(1, 19, 93, 0) 100%
+      );
+    }
+    .combatFadeDown {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100px;
+      z-index: 3;
+      background: rgb(1, 6, 50);
+      background: linear-gradient(
+        0deg,
+        rgba(1, 6, 50, 1) 0%,
+        rgba(1, 19, 93, 0) 100%
+      );
+    }
+    h3 {
+      font-size: 100px;
+      font-family: MoonGet;
+    }
+    iframe {
+      width: 60%;
+      height: 30vw;
+    }
+    p {
+      font-size: 40px;
+      text-align: center;
+      width: 60%;
+      font-weight: 300;
+    }
+  }
+  .biomes {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("../../../public/homePage/biomes/bg.webp");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    .biomesFadeUp {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 50px;
+      left: 0;
+      right: 0;
+      background: rgb(1, 6, 50);
+      background: linear-gradient(
+        180deg,
+        rgba(1, 6, 50, 1) 0%,
+        rgba(1, 19, 93, 0) 100%
+      );
+    }
+    p {
+      font-size: 40px;
+      text-align: center;
+      width: 60%;
+      font-weight: 300;
+    }
+    img {
+      width: 90%;
+    }
+  }
+}
+@media (max-width: 1350px) {
+  .container {
+    .combat {
+      .combatUpText {
+        width: 80%;
+      }
+    }
+  }
+}
 @media (max-width: 1200px) {
   .container {
     .races {
@@ -572,14 +841,69 @@
       .professionsSelector {
         height: 200px;
         div {
+          button {
+            p {
+              font-size: 18px;
+            }
+          }
           height: 100px;
         }
       }
       .professionsContainer {
         iframe {
-          width: 70%;
-          height: 45vw;
+          // width: 70%;
+          height: 30vw;
         }
+      }
+    }
+    .combat {
+      .combatSection1,
+      .combatSection3 {
+        .combatSection1Left,
+        .combatSection3Left {
+          h4 {
+            font-size: 50px;
+          }
+          p {
+            font-size: 25px;
+          }
+        }
+      }
+      .combatSection3 {
+        .combatSection3Right {
+          img {
+            // width: 600px;
+            width: 50vw;
+          }
+        }
+      }
+      .combatSection2 {
+        h4 {
+          font-size: 50px;
+        }
+        .combatSection2Main {
+          .combatSection2Right {
+          }
+        }
+      }
+    }
+    .exploration {
+      h3 {
+        width: 95%;
+        font-size: 80px;
+        text-align: center;
+      }
+      p {
+        font-size: 35px;
+      }
+    }
+    .biomes {
+      p {
+        width: 90%;
+        font-size: 2.5vw;
+      }
+      img {
+        width: 80%;
       }
     }
   }
@@ -616,6 +940,42 @@
             height: 45vw;
           }
         }
+      }
+    }
+    .combat {
+      .combatSection1,
+      .combatSection3 {
+        .combatSection1Right {
+          img {
+            width: 350px;
+          }
+        }
+        // .combatSection3Right
+      }
+      .combatSection2 {
+        .combatSection2Main {
+          .combatSection2Right {
+            width: 100%;
+          }
+          .combatSection2Left {
+            img {
+              width: 600px;
+            }
+          }
+        }
+      }
+    }
+    .exploration {
+      .leftDeco,
+      .rightDeco {
+        width: 25%;
+        z-index: 2;
+      }
+      h3,
+      iframe,
+      p {
+        position: relative;
+        z-index: 4;
       }
     }
   }
@@ -670,7 +1030,22 @@
       }
       .professionsContainer {
         iframe {
-          width: 90%;
+          // width: 90%;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    .combat {
+      .combatSection2 {
+        .combatSection2Main {
+          .combatSection2Left {
+            img {
+              width: 400px;
+            }
+          }
         }
       }
     }
@@ -713,6 +1088,7 @@
         }
         .racesContainerMobileHabilitiesMain {
           width: 100%;
+          display: inline;
           h3 {
             font-size: 40px;
             margin-top: 30px;
@@ -729,7 +1105,7 @@
             height: 50px;
             bottom: 135px;
             left: 10px;
-            z-index: 5;
+            z-index: 3;
             svg {
               width: 100%;
               height: 100%;
@@ -747,7 +1123,7 @@
             height: 50px;
             bottom: 135px;
             right: 10px;
-            z-index: 5;
+            z-index: 3;
             svg {
               width: 100%;
               height: 100%;
@@ -764,8 +1140,19 @@
       }
     }
     .professions {
+      padding-bottom: 100px;
       h3 {
         font-size: 50px;
+      }
+      .professionsAquan {
+        width: 50%;
+        bottom: 30px;
+        left: -100px;
+      }
+      .professionsAxolotl {
+        width: 45%;
+        bottom: 30px;
+        right: -100px;
       }
       .professionsSelector {
         display: none;
@@ -775,7 +1162,140 @@
       }
       .professionsContainer {
         h4 {
-          font-size: 30px;
+          font-size: 70px;
+          margin: 100px 0 200px 0;
+        }
+        iframe {
+          width: 80%;
+          z-index: 3;
+          height: 300px;
+        }
+      }
+    }
+    .combat {
+      .combatSection1,
+      .combatSection3 {
+        .combatSection1Left,
+        .combatSection3Left {
+          z-index: 3;
+          position: relative;
+          left: -120px;
+          h4 {
+            font-size: 7vw;
+          }
+          p {
+            font-size: 3vw;
+          }
+          iframe {
+            width: 90%;
+            height: 225px;
+          }
+        }
+        .combatSection1Right,
+        .combatSection3Right {
+          position: absolute;
+          right: 0;
+        }
+      }
+      .combatSection3 {
+        .combatSection3Left {
+          h4 {
+            font-size: 7vw;
+          }
+          p {
+            font-size: 3vw;
+          }
+        }
+        .combatSection3Right {
+          right: 15px;
+          img {
+            width: 550px;
+          }
+        }
+      }
+      .combatSection2 {
+        h4 {
+          font-size: 7vw;
+          margin: 0;
+        }
+        .combatSection2Main {
+          .combatSection2Left {
+            img {
+              width: 500px;
+            }
+          }
+          .combatSection2Right {
+            position: relative;
+            left: 50px;
+            width: 100%;
+            p {
+              font-size: 4vw;
+              width: 95%;
+            }
+            iframe {
+              width: 90%;
+              height: 225px;
+            }
+          }
+        }
+      }
+    }
+    .exploration {
+      h3 {
+        font-size: 10vw;
+      }
+      iframe {
+        width: 80%;
+        height: 300px;
+      }
+      p {
+        font-size: 30px;
+        text-shadow: 3px 3px 10px black;
+      }
+    }
+    .biomes {
+      p {
+        width: 95%;
+        font-size: 4vw;
+      }
+      img {
+        width: 95%;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .container {
+    .combat {
+      .combatSection2 {
+        h4 {
+          position: relative;
+          text-shadow: 3px 3px 10px black;
+          z-index: 5;
+        }
+        margin-top: 80px;
+        .combatSection2Main {
+          position: relative;
+          width: 100%;
+          .combatSection2Right {
+            width: 95%;
+            left: 0;
+            z-index: 5;
+            p {
+              text-shadow: 3px 3px 10px black;
+              width: 100%;
+              margin: 5px 0;
+            }
+          }
+          .combatSection2Left {
+            // display: none;
+            position: absolute;
+            top: -175px;
+            img {
+              width: 550px;
+              z-index: 2;
+            }
+          }
         }
       }
     }
@@ -809,6 +1329,92 @@
         }
       }
     }
+    .professions {
+      .professionsAquan {
+        left: -50px;
+        width: 60%;
+      }
+      .professionsAxolotl {
+        right: -50px;
+        width: 52%;
+      }
+      .professionsContainer {
+        position: relative;
+        z-index: 3;
+        h4 {
+          font-size: 60px;
+          margin: 50px 0 125px 0;
+        }
+        iframe {
+          height: 250px;
+        }
+      }
+    }
+    .combat {
+      .combatUpText {
+        width: 100%;
+        font-size: 20px;
+        margin-bottom: 80px;
+      }
+      .combatSection1 {
+        .combatSection1Left {
+          justify-content: flex-start;
+          align-items: flex-start;
+          width: 90%;
+          left: 0;
+          p {
+            text-align: left;
+            width: 70%;
+          }
+          iframe {
+            width: 100%;
+            align-self: center;
+          }
+        }
+        .combatSection1Right {
+          top: 110px;
+        }
+      }
+      .combatSection3 {
+        position: relative;
+        .combatSection3Left {
+          justify-content: flex-start;
+          align-items: flex-start;
+          width: 90%;
+          left: 0;
+          p {
+            text-align: left;
+            width: 70%;
+          }
+          iframe {
+            width: 100%;
+            align-self: center;
+          }
+        }
+        .combatSection3Right {
+          top: -50px;
+          right: 50px;
+          img {
+            width: 550px;
+          }
+        }
+      }
+    }
+    .exploration {
+      .leftDeco {
+        width: 40%;
+        left: -75px;
+      }
+      .rightDeco {
+        width: 40%;
+        right: -75px;
+      }
+
+      p {
+        font-size: 25px;
+        width: 80%;
+      }
+    }
   }
 }
 
@@ -831,20 +1437,69 @@
       }
     }
     .professions {
-      h3 {
-        font-size: 30px;
+      padding-bottom: 75px;
+      .professionsAxolotl,
+      .professionsAquan {
+        display: none;
       }
-      .mobileProfessionsSelector{
+      h3 {
+        font-size: 10vw;
+        // font-size: 30px;
+      }
+      .mobileProfessionsSelector {
         height: 200px;
       }
       .professionsContainer {
         h4 {
-          font-size: 20px;
+          // font-size: 20px;
+          font-size: 15vw;
+          margin-bottom: 50px;
         }
+        iframe {
+          width: 90%;
+          height: 250px;
+        }
+      }
+    }
+    .combat {
+      // background: red;
+      margin-bottom: -50px;
+      .combatSection2 {
+        margin: 100px 0 30px 0;
+        .combatSection2Main {
+          .combatSection2Right {
+            p {
+              // background: red;
+              font-size: 3.3vw;
+            }
+          }
+        }
+      }
+      .combatSection3 {
+        .combatSection3Right {
+          right: 25px;
+          top: -20px;
+          img {
+            width: 400px;
+          }
+        }
+      }
+    }
+    .exploration {
+      gap: 25px;
+      .leftDeco{
+        width: 50%;
+      }
+      .rightDeco{
+        width: 50%;
+      }
+      iframe {
+        height: 210px;
       }
     }
   }
 }
+
 @keyframes appear {
   from {
     opacity: 0;

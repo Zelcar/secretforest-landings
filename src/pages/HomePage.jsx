@@ -83,28 +83,44 @@ const HomePage = ({ lang }) => {
           }`}
         >
           <li>
-            <a onClick={() => setNavActive(false)} href="#home">{lang.nav.nav1}</a>
+            <a onClick={() => setNavActive(false)} href="#home">
+              {lang.nav.nav1}
+            </a>
           </li>
           <li>
-            <a onClick={() => setNavActive(false)} href="#races">{lang.nav.nav2}</a>
+            <a onClick={() => setNavActive(false)} href="#races">
+              {lang.nav.nav2}
+            </a>
           </li>
           <li>
-            <a onClick={() => setNavActive(false)} href="#professions">{lang.nav.nav3}</a>
+            <a onClick={() => setNavActive(false)} href="#professions">
+              {lang.nav.nav3}
+            </a>
           </li>
           <li>
-            <a onClick={() => setNavActive(false)} href="#combat">{lang.nav.nav4}</a>
+            <a onClick={() => setNavActive(false)} href="#combat">
+              {lang.nav.nav4}
+            </a>
           </li>
           <li>
-            <a onClick={() => setNavActive(false)} href="#exploration">{lang.nav.nav5}</a>
+            <a onClick={() => setNavActive(false)} href="#exploration">
+              {lang.nav.nav5}
+            </a>
           </li>
           <li>
-            <a onClick={() => setNavActive(false)} href="#conceptArt">{lang.nav.nav6}</a>
+            <a onClick={() => setNavActive(false)} href="#conceptArt">
+              {lang.nav.nav6}
+            </a>
           </li>
           <li>
-            <a onClick={() => setNavActive(false)} href="#biomes">{lang.nav.nav7}</a>
+            <a onClick={() => setNavActive(false)} href="#biomes">
+              {lang.nav.nav7}
+            </a>
           </li>
           <li>
-            <a onClick={() => setNavActive(false)} href="#roadmap">{lang.nav.nav8}</a>
+            <a onClick={() => setNavActive(false)} href="#roadmap">
+              {lang.nav.nav8}
+            </a>
           </li>
         </ul>
         <nav className={styles.nav}>
@@ -891,6 +907,21 @@ const HomePage = ({ lang }) => {
       </section>
       <section className={styles.professions} id="professions">
         <h3>{lang.professions.title}</h3>
+        <img
+          className={styles.professionsAxolotl}
+          src="/homePage/professions/axolotl.webp"
+          alt=""
+        />
+        <img
+          className={styles.professionsAquan}
+          src="/homePage/professions/aquan.webp"
+          alt=""
+        />
+        <img
+          className={styles.professionsFadeDown}
+          src="/homePage/professions/fadeDown.webp"
+          alt=""
+        />
         <div className={styles.professionsSelector}>
           <div>
             <button
@@ -1363,11 +1394,107 @@ const HomePage = ({ lang }) => {
         </div>
       </section>
       <section className={styles.combat} id="combat">
-        asdasasd
+        <p className={styles.combatUpText}>{lang.combat.title}</p>
+        <div className={styles.combatFadeDown}></div>
+        <div className={styles.combatSection1}>
+          <div className={styles.combatSection1Left}>
+            <h4>{lang.combat.combat}</h4>
+            <p>{lang.combat.combatDesc}</p>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/83HM1vGdp4I?si=HRQM_pvn76Nfc6pU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div className={styles.combatSection1Right}>
+            <img src="/homePage/combat/axolotl.webp" alt="" />
+          </div>
+        </div>
+        <div className={styles.combatSeparator}>
+          <img src="/homePage/combat/division.webp" alt="" />
+        </div>
+        <div className={styles.combatSection2}>
+          <h4>{lang.combat.magicalAbilities}</h4>
+          <div className={styles.combatSection2Main}>
+            <div className={styles.combatSection2Left}>
+              <img src="/homePage/combat/fairan.webp" alt="" />
+            </div>
+            <div className={styles.combatSection2Right}>
+              <p>{lang.combat.magicalAbilitiesDesc}</p>
+              <iframe
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/83HM1vGdp4I?si=HRQM_pvn76Nfc6pU"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        <div className={styles.combatSeparator}>
+          <img src="/homePage/combat/division.webp" alt="" />
+        </div>
+        <div className={styles.combatSection3}>
+          <div className={styles.combatSection3Left}>
+            <h4>{lang.combat.versatility}</h4>
+            <p>{lang.combat.versatilityDesc}</p>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/83HM1vGdp4I?si=HRQM_pvn76Nfc6pU"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div className={styles.combatSection3Right}>
+            <img src="/homePage/combat/troll.webp" alt="" />
+          </div>
+        </div>
       </section>
-      <section className={styles.exploration} id="exploration"></section>
-      <section className={styles.conceptArt} id="conceptArt"></section>
-      <section className={styles.biomes} id="biomes"></section>
+      <section className={styles.exploration} id="exploration">
+        <div className={styles.combatFadeUp}></div>
+        <div className={styles.combatFadeDown}></div>
+        <img
+          className={styles.leftDeco}
+          src="/homePage/exploration/left.webp"
+          alt=""
+        />
+        <img
+          className={styles.rightDeco}
+          src="/homePage/exploration/right.webp"
+          alt=""
+        />
+        <h3>{lang.exploration.title}</h3>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/83HM1vGdp4I?si=HRQM_pvn76Nfc6pU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <p>{lang.exploration.text}</p>
+      </section>
+      <section className={styles.biomes} id="biomes">
+        <p>{lang.biomes.text}</p>
+        <div className={styles.biomesFadeUp}></div>
+
+        <img src="/homePage/biomes/map.webp" alt="" />
+      </section>
+      <section className={styles.conceptArt} id="conceptArt">asdasd</section>
       <section className={styles.roadmap} id="roadmap"></section>
       <footer></footer>
     </main>

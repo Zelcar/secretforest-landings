@@ -70,6 +70,22 @@
       "dressmaker": "DRESSMAKER",
       "farmer": "FARMER",
       "breeder": "BREEDER"
+    },
+    "combat": {
+      "title": "We've taken the best of several games and their combat systems and created something totally new.",
+      "combat": "COMBAT",
+      "combatDesc": "It will be dynamic and active depending on the weapong you use in melee or range. Each with its own skill tree.",
+      "magicalAbilities": "MAGICAL ABILITIES",
+      "magicalAbilitiesDesc": "There are eight nature elements each with their unique skill tree",
+      "versatility": "VERSATILITY",
+      "versatilityDesc": "Your character will be able to use any combination of weapons or magical abilities to achieve the best combat style."
+    },
+    "exploration": {
+      "title": "EXPLORATION",
+      "text": "Alufis are tiny beings full of magic that are born magically, they are a mixture of various types of forest creatures."
+    },
+    "biomes": {
+      "text": "It will be your character in Secret Forest, and you can customize it through different NFTs (Dresses, armor, weapons, etc). So that it looks and fights the way you like it the most."
     }
   },
   "br": {
