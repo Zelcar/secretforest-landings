@@ -23,6 +23,7 @@ const HomePage = ({ lang }) => {
   const swiperRef1 = useRef(null);
   const [captchaState, setCaptchaState] = useState(false);
   const [emailCounter, setEmailCounter] = useState(0);
+  const [modalKickstarter, setModalKickstarter] = useState(false);
   function navigateTo(to) {
     setLangActive(false);
     navigate(to);
@@ -88,7 +89,6 @@ const HomePage = ({ lang }) => {
       )
       .then(() => {
         getEmailsCounter();
-        fetchFixedNumber();
         toast.success(lang.toast.info1, {
           position: "top-center",
           autoClose: 2500,
@@ -121,8 +121,7 @@ const HomePage = ({ lang }) => {
           window.location.href =
             "https://www.kickstarter.com/projects/secretforest/secretforest";
         }, 7500);
-        setHeaderEmailInput("");
-        setFooterEmailInput("");
+        setFooterInput("");
       })
       .catch((error) => {
         toast.error(lang.toast.error, {
@@ -189,6 +188,66 @@ const HomePage = ({ lang }) => {
         pauseOnHover
         theme="dark"
       />
+
+      {modalKickstarter == true && (
+        <>
+          <div className={styles.kickstarterXl}>
+            <div>
+              <img loading="lazy" src="/landingPage/modal/xl.jpg" alt="" />
+              <button onClick={() => setModalKickstarter(false)}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#ffff"
+                    d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div className={styles.kickstarterMd}>
+            <div>
+              <img loading="lazy" src="/landingPage/modal/md.jpg" alt="" />
+              <button onClick={() => setModalKickstarter(false)}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#ffff"
+                    d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div className={styles.kickstarterXs}>
+            <div>
+              <img loading="lazy" src="/landingPage/modal/xs.jpg" alt="" />
+              <button onClick={() => setModalKickstarter(false)}>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="#ffff"
+                    d="M6.4 19L5 17.6l5.6-5.6L5 6.4L6.4 5l5.6 5.6L17.6 5L19 6.4L13.4 12l5.6 5.6l-1.4 1.4l-5.6-5.6z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </>
+      )}
+
       {/* Navbar */}
       <>
         <ul
@@ -2588,9 +2647,7 @@ const HomePage = ({ lang }) => {
         <p>{lang.getReady.text}</p>
         <label>{lang.getReady.label}</label>
         <label>
-          {lang.toast.counter1}
-          {" "}{emailCounter}{" "}
-          {lang.toast.counter2}
+          {lang.toast.counter1} {emailCounter} {lang.toast.counter2}
         </label>
         <div className={styles.getReadyInput}>
           <input
