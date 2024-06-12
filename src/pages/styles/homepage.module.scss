@@ -772,17 +772,17 @@
       font-weight: 300;
     }
   }
-  .biomes {
+  .world {
     padding: 50px 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background-image: url("../../../public/homePage/biomes/bg.webp");
+    background-image: url("../../../public/homePage/world/bg.webp");
     background-position: center;
     background-size: cover;
     position: relative;
-    .biomesFadeUp {
+    .worldFadeUp {
       position: absolute;
       top: 0;
       width: 100%;
@@ -806,12 +806,148 @@
       width: 90%;
     }
   }
+  .conceptArt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0;
+    background-image: url("../../../public/homePage/conceptArt/bg.webp");
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+    .conceptArtFadeUp {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 75px;
+      left: 0;
+      right: 0;
+      background: rgb(1, 6, 50);
+      background: linear-gradient(
+        180deg,
+        rgba(1, 6, 50, 1) 0%,
+        rgba(1, 19, 93, 0) 100%
+      );
+    }
+    .conceptArtFadeDown {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 50px;
+      background: rgb(39, 0, 65);
+      background: linear-gradient(
+        0deg,
+        rgba(39, 0, 65, 1) 0%,
+        rgba(39, 0, 65, 0) 100%
+      );
+    }
+    h3 {
+      font-size: 80px;
+      margin: 50px 0;
+      font-family: MoonGet;
+    }
+    .conceptArtCarousel {
+      width: 100%;
+      .conceptArtSwiper {
+        .conceptArtItem {
+          img {
+            width: 100%;
+          }
+        }
+      }
+      .mobileConceptArtSwiper {
+        display: none;
+      }
+    }
+  }
+  .biomes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0;
+    background-image: url("../../../public/homePage/biomes/bg.webp");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    .biomesFadeUp {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 50px;
+      left: 0;
+      right: 0;
+      background: rgb(39, 0, 65);
+      background: linear-gradient(
+        180deg,
+        rgba(39, 0, 65, 1) 0%,
+        rgba(39, 0, 65, 0) 100%
+      );
+    }
+    .biomesGoblin {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 20%;
+    }
+    .biomesEmbear {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 20%;
+    }
+    h3 {
+      width: 80%;
+      font-size: 100px;
+      font-family: MoonGet;
+      text-align: center;
+    }
+    p {
+      width: 60%;
+      margin: 30px 0;
+      font-size: 30px;
+      text-shadow: 3px 3px 10px black;
+      font-weight: 200;
+      text-align: center;
+    }
+    iframe {
+      width: 50%;
+      height: 60vh;
+      border-radius: 10px;
+    }
+  }
+  .roadmap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../../../public/homePage/roadmap/bg.webp");
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    .roadmapMain {
+      width: 80%;
+    }
+    .mobileRoadmap {
+      display: none;
+    }
+  }
 }
 @media (max-width: 1350px) {
   .container {
     .combat {
       .combatUpText {
         width: 80%;
+      }
+    }
+    .biomes {
+      p {
+        width: 80%;
+      }
+      iframe {
+        width: 70%;
       }
     }
   }
@@ -897,13 +1033,21 @@
         font-size: 35px;
       }
     }
-    .biomes {
+    .world {
       p {
         width: 90%;
         font-size: 2.5vw;
       }
       img {
         width: 80%;
+      }
+    }
+    .conceptArt {
+      padding: 50px 0 100px 0;
+    }
+    .roadmap {
+      .roadmapMain {
+        width: 100%;
       }
     }
   }
@@ -978,6 +1122,11 @@
         z-index: 4;
       }
     }
+    .biomes {
+      iframe {
+        height: 45vh;
+      }
+    }
   }
 }
 
@@ -1047,6 +1196,11 @@
             }
           }
         }
+      }
+    }
+    .conceptArt {
+      h3 {
+        font-size: 50px;
       }
     }
   }
@@ -1253,13 +1407,60 @@
         text-shadow: 3px 3px 10px black;
       }
     }
-    .biomes {
+    .world {
       p {
         width: 95%;
         font-size: 4vw;
       }
       img {
         width: 95%;
+      }
+    }
+    .conceptArt {
+      .conceptArtCarousel {
+        .conceptArtSwiper {
+          display: none;
+        }
+        .mobileConceptArtSwiper {
+          display: flex;
+          .conceptArtItem {
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+    .roadmap {
+      .roadmapMain {
+        display: none;
+      }
+      .mobileRoadmap {
+        display: initial;
+        width: 100%;
+      }
+    }
+    .biomes {
+      .biomesGoblin {
+        width: 40%;
+        right: -100px;
+        z-index: 2;
+      }
+      .biomesEmbear {
+        width: 40%;
+        left: -100px;
+        z-index: 2;
+      }
+      h3 {
+        font-size: 15vw;
+      }
+      p {
+        font-size: 3.5vw;
+      }
+      iframe {
+        position: relative;
+        z-index: 3;
+        height: 35vh;
       }
     }
   }
@@ -1415,6 +1616,20 @@
         width: 80%;
       }
     }
+    .conceptArt {
+      h3 {
+        font-size: 10vw;
+      }
+    }
+    .biomes {
+      padding-top: 50px;
+      h3 {
+        width: 95%;
+      }
+      p {
+        width: 95%;
+      }
+    }
   }
 }
 
@@ -1487,14 +1702,20 @@
     }
     .exploration {
       gap: 25px;
-      .leftDeco{
+      .leftDeco {
         width: 50%;
       }
-      .rightDeco{
+      .rightDeco {
         width: 50%;
       }
       iframe {
         height: 210px;
+      }
+    }
+    .biomes{
+      iframe{
+        height: 30vh;
+        width: 90%;
       }
     }
   }

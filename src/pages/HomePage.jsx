@@ -1,10 +1,10 @@
 import React, { useRef, useState } from "react";
 import styles from "./styles/homepage.module.scss";
-import Navbar from "../components/Navbar";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCards, EffectCoverflow, Pagination } from "swiper/modules";
+import { EffectCards, Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 import { useNavigate } from "react-router-dom";
 const HomePage = ({ lang }) => {
   const [langActive, setLangActive] = useState(false);
@@ -12,9 +12,10 @@ const HomePage = ({ lang }) => {
   const [selectedIcon, setSelectedIcon] = useState(1);
   const [selectedProfession, setSelectedProfession] = useState(1);
   const [mobileHabilitiesButton, setMobileHabilitiesButton] = useState(1);
+  const [swiperConceptArt, setSwiperConceptArt] = useState(null);
+
   const navigate = useNavigate();
   const swiperRef1 = useRef(null);
-
   function navigateTo(to) {
     setLangActive(false);
     navigate(to);
@@ -511,7 +512,6 @@ const HomePage = ({ lang }) => {
               </Swiper>
             </div>
           </div>
-
           <div className={styles.racesGameplay}>
             <h5>{lang.races.gameplayTitle}</h5>
             <iframe
@@ -552,6 +552,64 @@ const HomePage = ({ lang }) => {
                   <img src="/homePage/races/aquan/hab4.webp" alt="" />
                 </div>
               </div>
+            </div>
+          </div>
+          <div className={styles.racesContainerMobileHabilitiesMain}>
+            <h3>Habilities</h3>
+            <button
+              onClick={() => handlePrev()}
+              className={styles.mobileHabilitiesArrow1}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 1024 1024"
+              >
+                <path d="M271.653 1023.192c-8.685 0-17.573-3.432-24.238-10.097c-13.33-13.33-13.33-35.144 0-48.474L703.67 508.163L254.08 58.573c-13.33-13.331-13.33-35.145 0-48.475c13.33-13.33 35.143-13.33 48.473 0L776.38 483.925c13.33 13.33 13.33 35.143 0 48.473l-480.492 480.694c-6.665 6.665-15.551 10.099-24.236 10.099z" />
+              </svg>
+            </button>
+            <button
+              onClick={() => handleNext()}
+              className={styles.mobileHabilitiesArrow2}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 1024 1024"
+              >
+                <path d="M271.653 1023.192c-8.685 0-17.573-3.432-24.238-10.097c-13.33-13.33-13.33-35.144 0-48.474L703.67 508.163L254.08 58.573c-13.33-13.331-13.33-35.145 0-48.475c13.33-13.33 35.143-13.33 48.473 0L776.38 483.925c13.33 13.33 13.33 35.143 0 48.473l-480.492 480.694c-6.665 6.665-15.551 10.099-24.236 10.099z" />
+              </svg>
+            </button>
+            <div className={styles.racesContainerMobileHabilities}>
+              <Swiper
+                ref={swiperRef1}
+                effect={"cards"}
+                grabCursor={true}
+                centeredSlides={true}
+                cardsEffect={{
+                  perSlideOffset: 35,
+                  rotate: true,
+                  slideShadows: false,
+                }}
+                initialSlide={2}
+                modules={[EffectCards]}
+                className={styles.mySwiper}
+              >
+                <SwiperSlide className={styles.mobileHabilitiesItem}>
+                  <img src="/homePage/races/axolotl/hab1.webp" alt="" />
+                </SwiperSlide>
+                <SwiperSlide className={styles.mobileHabilitiesItem}>
+                  <img src="/homePage/races/axolotl/hab2.webp" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/homePage/races/axolotl/hab3.webp" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/homePage/races/axolotl/hab4.webp" alt="" />
+                </SwiperSlide>
+              </Swiper>
             </div>
           </div>
           <div className={styles.racesGameplay}>
@@ -596,6 +654,64 @@ const HomePage = ({ lang }) => {
               </div>
             </div>
           </div>
+          <div className={styles.racesContainerMobileHabilitiesMain}>
+            <h3>Habilities</h3>
+            <button
+              onClick={() => handlePrev()}
+              className={styles.mobileHabilitiesArrow1}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 1024 1024"
+              >
+                <path d="M271.653 1023.192c-8.685 0-17.573-3.432-24.238-10.097c-13.33-13.33-13.33-35.144 0-48.474L703.67 508.163L254.08 58.573c-13.33-13.331-13.33-35.145 0-48.475c13.33-13.33 35.143-13.33 48.473 0L776.38 483.925c13.33 13.33 13.33 35.143 0 48.473l-480.492 480.694c-6.665 6.665-15.551 10.099-24.236 10.099z" />
+              </svg>
+            </button>
+            <button
+              onClick={() => handleNext()}
+              className={styles.mobileHabilitiesArrow2}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 1024 1024"
+              >
+                <path d="M271.653 1023.192c-8.685 0-17.573-3.432-24.238-10.097c-13.33-13.33-13.33-35.144 0-48.474L703.67 508.163L254.08 58.573c-13.33-13.331-13.33-35.145 0-48.475c13.33-13.33 35.143-13.33 48.473 0L776.38 483.925c13.33 13.33 13.33 35.143 0 48.473l-480.492 480.694c-6.665 6.665-15.551 10.099-24.236 10.099z" />
+              </svg>
+            </button>
+            <div className={styles.racesContainerMobileHabilities}>
+              <Swiper
+                ref={swiperRef1}
+                effect={"cards"}
+                grabCursor={true}
+                centeredSlides={true}
+                cardsEffect={{
+                  perSlideOffset: 35,
+                  rotate: true,
+                  slideShadows: false,
+                }}
+                initialSlide={2}
+                modules={[EffectCards]}
+                className={styles.mySwiper}
+              >
+                <SwiperSlide className={styles.mobileHabilitiesItem}>
+                  <img src="/homePage/races/axolotl/hab1.webp" alt="" />
+                </SwiperSlide>
+                <SwiperSlide className={styles.mobileHabilitiesItem}>
+                  <img src="/homePage/races/axolotl/hab2.webp" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/homePage/races/axolotl/hab3.webp" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/homePage/races/axolotl/hab4.webp" alt="" />
+                </SwiperSlide>
+              </Swiper>
+            </div>
+          </div>
           <div className={styles.racesGameplay}>
             <h5>{lang.races.gameplayTitle}</h5>
             <iframe
@@ -636,6 +752,64 @@ const HomePage = ({ lang }) => {
                   <img src="/homePage/races/foxy/hab4.webp" alt="" />
                 </div>
               </div>
+            </div>
+          </div>
+          <div className={styles.racesContainerMobileHabilitiesMain}>
+            <h3>Habilities</h3>
+            <button
+              onClick={() => handlePrev()}
+              className={styles.mobileHabilitiesArrow1}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 1024 1024"
+              >
+                <path d="M271.653 1023.192c-8.685 0-17.573-3.432-24.238-10.097c-13.33-13.33-13.33-35.144 0-48.474L703.67 508.163L254.08 58.573c-13.33-13.331-13.33-35.145 0-48.475c13.33-13.33 35.143-13.33 48.473 0L776.38 483.925c13.33 13.33 13.33 35.143 0 48.473l-480.492 480.694c-6.665 6.665-15.551 10.099-24.236 10.099z" />
+              </svg>
+            </button>
+            <button
+              onClick={() => handleNext()}
+              className={styles.mobileHabilitiesArrow2}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 1024 1024"
+              >
+                <path d="M271.653 1023.192c-8.685 0-17.573-3.432-24.238-10.097c-13.33-13.33-13.33-35.144 0-48.474L703.67 508.163L254.08 58.573c-13.33-13.331-13.33-35.145 0-48.475c13.33-13.33 35.143-13.33 48.473 0L776.38 483.925c13.33 13.33 13.33 35.143 0 48.473l-480.492 480.694c-6.665 6.665-15.551 10.099-24.236 10.099z" />
+              </svg>
+            </button>
+            <div className={styles.racesContainerMobileHabilities}>
+              <Swiper
+                ref={swiperRef1}
+                effect={"cards"}
+                grabCursor={true}
+                centeredSlides={true}
+                cardsEffect={{
+                  perSlideOffset: 35,
+                  rotate: true,
+                  slideShadows: false,
+                }}
+                initialSlide={2}
+                modules={[EffectCards]}
+                className={styles.mySwiper}
+              >
+                <SwiperSlide className={styles.mobileHabilitiesItem}>
+                  <img src="/homePage/races/axolotl/hab1.webp" alt="" />
+                </SwiperSlide>
+                <SwiperSlide className={styles.mobileHabilitiesItem}>
+                  <img src="/homePage/races/axolotl/hab2.webp" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/homePage/races/axolotl/hab3.webp" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/homePage/races/axolotl/hab4.webp" alt="" />
+                </SwiperSlide>
+              </Swiper>
             </div>
           </div>
           <div className={styles.racesGameplay}>
@@ -680,6 +854,64 @@ const HomePage = ({ lang }) => {
               </div>
             </div>
           </div>
+          <div className={styles.racesContainerMobileHabilitiesMain}>
+            <h3>Habilities</h3>
+            <button
+              onClick={() => handlePrev()}
+              className={styles.mobileHabilitiesArrow1}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 1024 1024"
+              >
+                <path d="M271.653 1023.192c-8.685 0-17.573-3.432-24.238-10.097c-13.33-13.33-13.33-35.144 0-48.474L703.67 508.163L254.08 58.573c-13.33-13.331-13.33-35.145 0-48.475c13.33-13.33 35.143-13.33 48.473 0L776.38 483.925c13.33 13.33 13.33 35.143 0 48.473l-480.492 480.694c-6.665 6.665-15.551 10.099-24.236 10.099z" />
+              </svg>
+            </button>
+            <button
+              onClick={() => handleNext()}
+              className={styles.mobileHabilitiesArrow2}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 1024 1024"
+              >
+                <path d="M271.653 1023.192c-8.685 0-17.573-3.432-24.238-10.097c-13.33-13.33-13.33-35.144 0-48.474L703.67 508.163L254.08 58.573c-13.33-13.331-13.33-35.145 0-48.475c13.33-13.33 35.143-13.33 48.473 0L776.38 483.925c13.33 13.33 13.33 35.143 0 48.473l-480.492 480.694c-6.665 6.665-15.551 10.099-24.236 10.099z" />
+              </svg>
+            </button>
+            <div className={styles.racesContainerMobileHabilities}>
+              <Swiper
+                ref={swiperRef1}
+                effect={"cards"}
+                grabCursor={true}
+                centeredSlides={true}
+                cardsEffect={{
+                  perSlideOffset: 35,
+                  rotate: true,
+                  slideShadows: false,
+                }}
+                initialSlide={2}
+                modules={[EffectCards]}
+                className={styles.mySwiper}
+              >
+                <SwiperSlide className={styles.mobileHabilitiesItem}>
+                  <img src="/homePage/races/axolotl/hab1.webp" alt="" />
+                </SwiperSlide>
+                <SwiperSlide className={styles.mobileHabilitiesItem}>
+                  <img src="/homePage/races/axolotl/hab2.webp" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/homePage/races/axolotl/hab3.webp" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/homePage/races/axolotl/hab4.webp" alt="" />
+                </SwiperSlide>
+              </Swiper>
+            </div>
+          </div>
           <div className={styles.racesGameplay}>
             <h5>{lang.races.gameplayTitle}</h5>
             <iframe
@@ -720,6 +952,64 @@ const HomePage = ({ lang }) => {
                   <img src="/homePage/races/troll/hab4.webp" alt="" />
                 </div>
               </div>
+            </div>
+          </div>
+          <div className={styles.racesContainerMobileHabilitiesMain}>
+            <h3>Habilities</h3>
+            <button
+              onClick={() => handlePrev()}
+              className={styles.mobileHabilitiesArrow1}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 1024 1024"
+              >
+                <path d="M271.653 1023.192c-8.685 0-17.573-3.432-24.238-10.097c-13.33-13.33-13.33-35.144 0-48.474L703.67 508.163L254.08 58.573c-13.33-13.331-13.33-35.145 0-48.475c13.33-13.33 35.143-13.33 48.473 0L776.38 483.925c13.33 13.33 13.33 35.143 0 48.473l-480.492 480.694c-6.665 6.665-15.551 10.099-24.236 10.099z" />
+              </svg>
+            </button>
+            <button
+              onClick={() => handleNext()}
+              className={styles.mobileHabilitiesArrow2}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 1024 1024"
+              >
+                <path d="M271.653 1023.192c-8.685 0-17.573-3.432-24.238-10.097c-13.33-13.33-13.33-35.144 0-48.474L703.67 508.163L254.08 58.573c-13.33-13.331-13.33-35.145 0-48.475c13.33-13.33 35.143-13.33 48.473 0L776.38 483.925c13.33 13.33 13.33 35.143 0 48.473l-480.492 480.694c-6.665 6.665-15.551 10.099-24.236 10.099z" />
+              </svg>
+            </button>
+            <div className={styles.racesContainerMobileHabilities}>
+              <Swiper
+                ref={swiperRef1}
+                effect={"cards"}
+                grabCursor={true}
+                centeredSlides={true}
+                cardsEffect={{
+                  perSlideOffset: 35,
+                  rotate: true,
+                  slideShadows: false,
+                }}
+                initialSlide={2}
+                modules={[EffectCards]}
+                className={styles.mySwiper}
+              >
+                <SwiperSlide className={styles.mobileHabilitiesItem}>
+                  <img src="/homePage/races/axolotl/hab1.webp" alt="" />
+                </SwiperSlide>
+                <SwiperSlide className={styles.mobileHabilitiesItem}>
+                  <img src="/homePage/races/axolotl/hab2.webp" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/homePage/races/axolotl/hab3.webp" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/homePage/races/axolotl/hab4.webp" alt="" />
+                </SwiperSlide>
+              </Swiper>
             </div>
           </div>
           <div className={styles.racesGameplay}>
@@ -764,6 +1054,64 @@ const HomePage = ({ lang }) => {
               </div>
             </div>
           </div>
+          <div className={styles.racesContainerMobileHabilitiesMain}>
+            <h3>Habilities</h3>
+            <button
+              onClick={() => handlePrev()}
+              className={styles.mobileHabilitiesArrow1}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 1024 1024"
+              >
+                <path d="M271.653 1023.192c-8.685 0-17.573-3.432-24.238-10.097c-13.33-13.33-13.33-35.144 0-48.474L703.67 508.163L254.08 58.573c-13.33-13.331-13.33-35.145 0-48.475c13.33-13.33 35.143-13.33 48.473 0L776.38 483.925c13.33 13.33 13.33 35.143 0 48.473l-480.492 480.694c-6.665 6.665-15.551 10.099-24.236 10.099z" />
+              </svg>
+            </button>
+            <button
+              onClick={() => handleNext()}
+              className={styles.mobileHabilitiesArrow2}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 1024 1024"
+              >
+                <path d="M271.653 1023.192c-8.685 0-17.573-3.432-24.238-10.097c-13.33-13.33-13.33-35.144 0-48.474L703.67 508.163L254.08 58.573c-13.33-13.331-13.33-35.145 0-48.475c13.33-13.33 35.143-13.33 48.473 0L776.38 483.925c13.33 13.33 13.33 35.143 0 48.473l-480.492 480.694c-6.665 6.665-15.551 10.099-24.236 10.099z" />
+              </svg>
+            </button>
+            <div className={styles.racesContainerMobileHabilities}>
+              <Swiper
+                ref={swiperRef1}
+                effect={"cards"}
+                grabCursor={true}
+                centeredSlides={true}
+                cardsEffect={{
+                  perSlideOffset: 35,
+                  rotate: true,
+                  slideShadows: false,
+                }}
+                initialSlide={2}
+                modules={[EffectCards]}
+                className={styles.mySwiper}
+              >
+                <SwiperSlide className={styles.mobileHabilitiesItem}>
+                  <img src="/homePage/races/axolotl/hab1.webp" alt="" />
+                </SwiperSlide>
+                <SwiperSlide className={styles.mobileHabilitiesItem}>
+                  <img src="/homePage/races/axolotl/hab2.webp" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/homePage/races/axolotl/hab3.webp" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/homePage/races/axolotl/hab4.webp" alt="" />
+                </SwiperSlide>
+              </Swiper>
+            </div>
+          </div>
           <div className={styles.racesGameplay}>
             <h5>{lang.races.gameplayTitle}</h5>
             <iframe
@@ -804,6 +1152,64 @@ const HomePage = ({ lang }) => {
                   <img src="/homePage/races/embear/hab4.webp" alt="" />
                 </div>
               </div>
+            </div>
+          </div>
+          <div className={styles.racesContainerMobileHabilitiesMain}>
+            <h3>Habilities</h3>
+            <button
+              onClick={() => handlePrev()}
+              className={styles.mobileHabilitiesArrow1}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 1024 1024"
+              >
+                <path d="M271.653 1023.192c-8.685 0-17.573-3.432-24.238-10.097c-13.33-13.33-13.33-35.144 0-48.474L703.67 508.163L254.08 58.573c-13.33-13.331-13.33-35.145 0-48.475c13.33-13.33 35.143-13.33 48.473 0L776.38 483.925c13.33 13.33 13.33 35.143 0 48.473l-480.492 480.694c-6.665 6.665-15.551 10.099-24.236 10.099z" />
+              </svg>
+            </button>
+            <button
+              onClick={() => handleNext()}
+              className={styles.mobileHabilitiesArrow2}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 1024 1024"
+              >
+                <path d="M271.653 1023.192c-8.685 0-17.573-3.432-24.238-10.097c-13.33-13.33-13.33-35.144 0-48.474L703.67 508.163L254.08 58.573c-13.33-13.331-13.33-35.145 0-48.475c13.33-13.33 35.143-13.33 48.473 0L776.38 483.925c13.33 13.33 13.33 35.143 0 48.473l-480.492 480.694c-6.665 6.665-15.551 10.099-24.236 10.099z" />
+              </svg>
+            </button>
+            <div className={styles.racesContainerMobileHabilities}>
+              <Swiper
+                ref={swiperRef1}
+                effect={"cards"}
+                grabCursor={true}
+                centeredSlides={true}
+                cardsEffect={{
+                  perSlideOffset: 35,
+                  rotate: true,
+                  slideShadows: false,
+                }}
+                initialSlide={2}
+                modules={[EffectCards]}
+                className={styles.mySwiper}
+              >
+                <SwiperSlide className={styles.mobileHabilitiesItem}>
+                  <img src="/homePage/races/axolotl/hab1.webp" alt="" />
+                </SwiperSlide>
+                <SwiperSlide className={styles.mobileHabilitiesItem}>
+                  <img src="/homePage/races/axolotl/hab2.webp" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/homePage/races/axolotl/hab3.webp" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/homePage/races/axolotl/hab4.webp" alt="" />
+                </SwiperSlide>
+              </Swiper>
             </div>
           </div>
           <div className={styles.racesGameplay}>
@@ -848,6 +1254,64 @@ const HomePage = ({ lang }) => {
               </div>
             </div>
           </div>
+          <div className={styles.racesContainerMobileHabilitiesMain}>
+            <h3>Habilities</h3>
+            <button
+              onClick={() => handlePrev()}
+              className={styles.mobileHabilitiesArrow1}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 1024 1024"
+              >
+                <path d="M271.653 1023.192c-8.685 0-17.573-3.432-24.238-10.097c-13.33-13.33-13.33-35.144 0-48.474L703.67 508.163L254.08 58.573c-13.33-13.331-13.33-35.145 0-48.475c13.33-13.33 35.143-13.33 48.473 0L776.38 483.925c13.33 13.33 13.33 35.143 0 48.473l-480.492 480.694c-6.665 6.665-15.551 10.099-24.236 10.099z" />
+              </svg>
+            </button>
+            <button
+              onClick={() => handleNext()}
+              className={styles.mobileHabilitiesArrow2}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 1024 1024"
+              >
+                <path d="M271.653 1023.192c-8.685 0-17.573-3.432-24.238-10.097c-13.33-13.33-13.33-35.144 0-48.474L703.67 508.163L254.08 58.573c-13.33-13.331-13.33-35.145 0-48.475c13.33-13.33 35.143-13.33 48.473 0L776.38 483.925c13.33 13.33 13.33 35.143 0 48.473l-480.492 480.694c-6.665 6.665-15.551 10.099-24.236 10.099z" />
+              </svg>
+            </button>
+            <div className={styles.racesContainerMobileHabilities}>
+              <Swiper
+                ref={swiperRef1}
+                effect={"cards"}
+                grabCursor={true}
+                centeredSlides={true}
+                cardsEffect={{
+                  perSlideOffset: 35,
+                  rotate: true,
+                  slideShadows: false,
+                }}
+                initialSlide={2}
+                modules={[EffectCards]}
+                className={styles.mySwiper}
+              >
+                <SwiperSlide className={styles.mobileHabilitiesItem}>
+                  <img src="/homePage/races/axolotl/hab1.webp" alt="" />
+                </SwiperSlide>
+                <SwiperSlide className={styles.mobileHabilitiesItem}>
+                  <img src="/homePage/races/axolotl/hab2.webp" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/homePage/races/axolotl/hab3.webp" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/homePage/races/axolotl/hab4.webp" alt="" />
+                </SwiperSlide>
+              </Swiper>
+            </div>
+          </div>
           <div className={styles.racesGameplay}>
             <h5>{lang.races.gameplayTitle}</h5>
             <iframe
@@ -888,6 +1352,64 @@ const HomePage = ({ lang }) => {
                   <img src="/homePage/races/dog/hab4.webp" alt="" />
                 </div>
               </div>
+            </div>
+          </div>
+          <div className={styles.racesContainerMobileHabilitiesMain}>
+            <h3>Habilities</h3>
+            <button
+              onClick={() => handlePrev()}
+              className={styles.mobileHabilitiesArrow1}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 1024 1024"
+              >
+                <path d="M271.653 1023.192c-8.685 0-17.573-3.432-24.238-10.097c-13.33-13.33-13.33-35.144 0-48.474L703.67 508.163L254.08 58.573c-13.33-13.331-13.33-35.145 0-48.475c13.33-13.33 35.143-13.33 48.473 0L776.38 483.925c13.33 13.33 13.33 35.143 0 48.473l-480.492 480.694c-6.665 6.665-15.551 10.099-24.236 10.099z" />
+              </svg>
+            </button>
+            <button
+              onClick={() => handleNext()}
+              className={styles.mobileHabilitiesArrow2}
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="1em"
+                height="1em"
+                viewBox="0 0 1024 1024"
+              >
+                <path d="M271.653 1023.192c-8.685 0-17.573-3.432-24.238-10.097c-13.33-13.33-13.33-35.144 0-48.474L703.67 508.163L254.08 58.573c-13.33-13.331-13.33-35.145 0-48.475c13.33-13.33 35.143-13.33 48.473 0L776.38 483.925c13.33 13.33 13.33 35.143 0 48.473l-480.492 480.694c-6.665 6.665-15.551 10.099-24.236 10.099z" />
+              </svg>
+            </button>
+            <div className={styles.racesContainerMobileHabilities}>
+              <Swiper
+                ref={swiperRef1}
+                effect={"cards"}
+                grabCursor={true}
+                centeredSlides={true}
+                cardsEffect={{
+                  perSlideOffset: 35,
+                  rotate: true,
+                  slideShadows: false,
+                }}
+                initialSlide={2}
+                modules={[EffectCards]}
+                className={styles.mySwiper}
+              >
+                <SwiperSlide className={styles.mobileHabilitiesItem}>
+                  <img src="/homePage/races/axolotl/hab1.webp" alt="" />
+                </SwiperSlide>
+                <SwiperSlide className={styles.mobileHabilitiesItem}>
+                  <img src="/homePage/races/axolotl/hab2.webp" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/homePage/races/axolotl/hab3.webp" alt="" />
+                </SwiperSlide>
+                <SwiperSlide>
+                  <img src="/homePage/races/axolotl/hab4.webp" alt="" />
+                </SwiperSlide>
+              </Swiper>
             </div>
           </div>
           <div className={styles.racesGameplay}>
@@ -1488,14 +2010,125 @@ const HomePage = ({ lang }) => {
         ></iframe>
         <p>{lang.exploration.text}</p>
       </section>
-      <section className={styles.biomes} id="biomes">
-        <p>{lang.biomes.text}</p>
-        <div className={styles.biomesFadeUp}></div>
+      <section className={styles.world} id="world">
+        <p>{lang.world.text}</p>
+        <div className={styles.worldFadeUp}></div>
 
-        <img src="/homePage/biomes/map.webp" alt="" />
+        <img src="/homePage/world/map.webp" alt="" />
       </section>
-      <section className={styles.conceptArt} id="conceptArt">asdasd</section>
-      <section className={styles.roadmap} id="roadmap"></section>
+      <section className={styles.conceptArt} id="conceptArt">
+        <div className={styles.conceptArtFadeUp}></div>
+        <div className={styles.conceptArtFadeDown}></div>
+
+        <h3>{lang.conceptArt.title} </h3>
+        <div className={styles.conceptArtCarousel}>
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={30}
+            rewind={true}
+            pagination={true}
+            navigation={true}
+            modules={[Navigation, Pagination]}
+            className={styles.conceptArtSwiper}
+          >
+            <SwiperSlide className={styles.conceptArtItem}>
+              <img src="/homePage/conceptArt/1.webp" alt="" />
+            </SwiperSlide>
+            <SwiperSlide className={styles.conceptArtItem}>
+              <img src="/homePage/conceptArt/2.webp" alt="" />
+            </SwiperSlide>
+            <SwiperSlide className={styles.conceptArtItem}>
+              <img src="/homePage/conceptArt/3.webp" alt="" />
+            </SwiperSlide>
+            <SwiperSlide className={styles.conceptArtItem}>
+              <img src="/homePage/conceptArt/4.webp" alt="" />
+            </SwiperSlide>
+            <SwiperSlide className={styles.conceptArtItem}>
+              <img src="/homePage/conceptArt/5.webp" alt="" />
+            </SwiperSlide>
+            <SwiperSlide className={styles.conceptArtItem}>
+              <img src="/homePage/conceptArt/6.webp" alt="" />
+            </SwiperSlide>
+            <SwiperSlide className={styles.conceptArtItem}>
+              <img src="/homePage/conceptArt/7.webp" alt="" />
+            </SwiperSlide>
+            <SwiperSlide className={styles.conceptArtItem}>
+              <img src="/homePage/conceptArt/8.webp" alt="" />
+            </SwiperSlide>
+          </Swiper>
+          <Swiper
+            slidesPerView={2}
+            spaceBetween={10}
+            rewind={true}
+            pagination={true}
+            navigation={true}
+            modules={[Navigation, Pagination]}
+            className={styles.mobileConceptArtSwiper}
+          >
+            <SwiperSlide className={styles.conceptArtItem}>
+              <img src="/homePage/conceptArt/1.webp" alt="" />
+            </SwiperSlide>
+            <SwiperSlide className={styles.conceptArtItem}>
+              <img src="/homePage/conceptArt/2.webp" alt="" />
+            </SwiperSlide>
+            <SwiperSlide className={styles.conceptArtItem}>
+              <img src="/homePage/conceptArt/3.webp" alt="" />
+            </SwiperSlide>
+            <SwiperSlide className={styles.conceptArtItem}>
+              <img src="/homePage/conceptArt/4.webp" alt="" />
+            </SwiperSlide>
+            <SwiperSlide className={styles.conceptArtItem}>
+              <img src="/homePage/conceptArt/5.webp" alt="" />
+            </SwiperSlide>
+            <SwiperSlide className={styles.conceptArtItem}>
+              <img src="/homePage/conceptArt/6.webp" alt="" />
+            </SwiperSlide>
+            <SwiperSlide className={styles.conceptArtItem}>
+              <img src="/homePage/conceptArt/7.webp" alt="" />
+            </SwiperSlide>
+            <SwiperSlide className={styles.conceptArtItem}>
+              <img src="/homePage/conceptArt/8.webp" alt="" />
+            </SwiperSlide>
+          </Swiper>
+        </div>
+      </section>
+      <section className={styles.biomes} id="biomes">
+        <div className={styles.biomesFadeUp}></div>
+        <img
+          className={styles.biomesGoblin}
+          src="/homePage/biomes/goblin.webp"
+          alt=""
+        />
+        <img
+          className={styles.biomesEmbear}
+          src="/homePage/biomes/embear.webp"
+          alt=""
+        />
+        <h3>{lang.biomes.title}</h3>
+        <p>{lang.biomes.desc}</p>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/83HM1vGdp4I?si=HRQM_pvn76Nfc6pU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+      <section className={styles.roadmap} id="roadmap">
+        <img
+          className={styles.roadmapMain}
+          src="/homePage/roadmap/roadmap.webp"
+          alt=""
+        />
+        <img
+          className={styles.mobileRoadmap}
+          src="/homePage/roadmap/mobileRoadmap.webp"
+          alt=""
+        />
+      </section>
       <footer></footer>
     </main>
   );

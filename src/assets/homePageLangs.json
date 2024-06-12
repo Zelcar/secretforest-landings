@@ -84,8 +84,15 @@
       "title": "EXPLORATION",
       "text": "Alufis are tiny beings full of magic that are born magically, they are a mixture of various types of forest creatures."
     },
-    "biomes": {
+    "world": {
       "text": "It will be your character in Secret Forest, and you can customize it through different NFTs (Dresses, armor, weapons, etc). So that it looks and fights the way you like it the most."
+    },
+    "conceptArt": {
+      "title": "CONCEPT ART"
+    },
+    "biomes": {
+      "title": "OUR BIOMES",
+      "desc": "In the lands of the Secret Forest there will be all kinds of minerals, metals and rarestones that can be collected. Some of these will be magical and will be able to continue to grow and give resources as long as they are cared for correctly.."
     }
   },
   "br": {
