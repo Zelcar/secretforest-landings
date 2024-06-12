@@ -1,6 +1,16 @@
 {
   "es": {
-    "id": 6,
+    "id": 1,
+    "toast": {
+      "info1": "¡Gracias por registrarte!",
+      "info2": "¡Ahora regístrate en Kickstarter para estar entre los primeros en enterarte del lanzamiento de la campaña!",
+      "error": "Error interno del servidor",
+      "emailRegistered": "El correo electrónico ya está registrado",
+      "verifyCaptcha": "Por favor verifique con captcha",
+      "emailWrong": "El correo electrónico es incorrecto",
+      "counter1": "Únete a",
+      "counter2": "más personas!"
+    },
     "nav": {
       "nav1": "Inicio",
       "nav2": "Razas",
@@ -102,6 +112,16 @@
   },
   "en": {
     "id": 2,
+    "toast": {
+      "info1": "Thank you for signing up!",
+      "info2": "Now sign up for Kickstarter to be among the first to know about the campaign launch!",
+      "error": "Internal Server Error",
+      "emailRegistered": "The email is already registered",
+      "verifyCaptcha": "Please verify with captcha",
+      "emailWrong": "The email is wrong",
+      "counter1": "Join",
+      "counter2": "more people!"
+    },
     "nav": {
       "nav1": "Home",
       "nav2": "Races",
@@ -203,6 +223,16 @@
   },
   "br": {
     "id": 3,
+    "toast": {
+      "info1": "Obrigado por se inscrever!",
+      "info2": "Agora inscreva-se no Kickstarter para ser um dos primeiros a saber sobre o lançamento da campanha!",
+      "error": "Erro interno do servidor",
+      "emailRegistered": "O e-mail já está cadastrado",
+      "verifyCaptcha": "Por favor verifique com captcha",
+      "emailWrong": "O e-mail está errado",
+      "counter1": "Junte-se a",
+      "counter2": "mais pessoas!"
+    },
     "nav": {
       "nav1": "Início",
       "nav2": "Raças",
@@ -314,6 +344,16 @@
       "nav7": "생태계",
       "nav8": "로드맵"
     },
+    "toast": {
+      "info1": "가입해 주셔서 감사합니다!",
+      "info2": "이제 Kickstarter에 등록하여 캠페인 출시 소식을 가장 먼저 받아보세요!",
+      "error": "내부 서버 오류",
+      "emailRegistered": "이미 등록된 이메일입니다",
+      "verifyCaptcha": "캡차를 확인해 주세요",
+      "emailWrong": "이메일이 잘못되었습니다",
+      "counter1": "가입하세요",
+      "counter2": "더 많은 사람들!"
+    },
     "header": {
       "trailer": "트레일러"
     },
@@ -405,6 +445,16 @@
   },
   "ja": {
     "id": 5,
+    "toast": {
+      "info1": "ご登録ありがとうございます!",
+      "info2": "キャンペーンの開始情報をいち早く知るために、Kickstarterに登録してください!",
+      "error": "内部サーバーエラー",
+      "emailRegistered": "このメールアドレスは既に登録されています",
+      "verifyCaptcha": "キャプチャを確認してください",
+      "emailWrong": "メールアドレスが間違っています",
+      "counter1": "参加する",
+      "counter2": "他の人たちと!"
+    },
     "nav": {
       "nav1": "ホーム",
       "nav2": "種族",
@@ -516,6 +566,16 @@
       "nav7": "Biomes",
       "nav8": "Fahrplan"
     },
+    "toast": {
+      "info1": "Vielen Dank für Ihre Anmeldung!",
+      "info2": "Melden Sie sich jetzt bei Kickstarter an, um zu den Ersten zu gehören, die vom Kampagnenstart erfahren!",
+      "error": "Interner Serverfehler",
+      "emailRegistered": "E-Mail ist bereits registriert",
+      "verifyCaptcha": "Bitte überprüfen Sie das Captcha",
+      "emailWrong": "E-Mail ist falsch",
+      "counter1": "Treten Sie bei",
+      "counter2": "mehr Leute!"
+    },
     "header": {
       "trailer": "Trailer"
     },
@@ -607,6 +667,16 @@
   },
   "nl": {
     "id": 7,
+    "toast": {
+      "info1": "Bedankt voor je inschrijving!",
+      "info2": "Schrijf je nu in op Kickstarter om als eerste op de hoogte te zijn van de lancering van de campagne!",
+      "error": "Interne serverfout",
+      "emailRegistered": "E-mailadres is al geregistreerd",
+      "verifyCaptcha": "Verifieer met captcha alstublieft",
+      "emailWrong": "E-mailadres is onjuist",
+      "counter1": "Doe mee met",
+      "counter2": "meer mensen!"
+    },
     "nav": {
       "nav1": "Home",
       "nav2": "Rassen",
@@ -708,6 +778,16 @@
   },
   "ru": {
     "id": 8,
+    "toast": {
+      "info1": "Спасибо за регистрацию!",
+      "info2": "Зарегистрируйтесь на Kickstarter, чтобы быть в числе первых, кто узнает о запуске кампании!",
+      "error": "Внутренняя ошибка сервера",
+      "emailRegistered": "Электронная почта уже зарегистрирована",
+      "verifyCaptcha": "Пожалуйста, пройдите проверку капчи",
+      "emailWrong": "Неправильный адрес электронной почты",
+      "counter1": "Присоединяйтесь к",
+      "counter2": "другим людям!"
+    },
     "nav": {
       "nav1": "Главная",
       "nav2": "Гонки",
@@ -809,6 +889,16 @@
   },
   "fr": {
     "id": 9,
+    "toast": {
+      "info1": "Merci pour votre inscription!",
+      "info2": "Inscrivez-vous maintenant sur Kickstarter pour être parmi les premiers à être informé du lancement de la campagne!",
+      "error": "Erreur interne du serveur",
+      "emailRegistered": "E-mail déjà enregistré",
+      "verifyCaptcha": "Veuillez vérifier le captcha",
+      "emailWrong": "E-mail incorrect",
+      "counter1": "Rejoignez",
+      "counter2": "plus de gens!"
+    },
     "nav": {
       "nav1": "Accueil",
       "nav2": "Races",
@@ -910,6 +1000,16 @@
   },
   "zh": {
     "id": 10,
+    "toast": {
+      "info1": "感谢您的注册!",
+      "info2": "现在在Kickstarter上注册，以便在活动启动时率先获得消息!",
+      "error": "内部服务器错误",
+      "emailRegistered": "电子邮件已注册",
+      "verifyCaptcha": "请验证验证码",
+      "emailWrong": "电子邮件错误",
+      "counter1": "加入",
+      "counter2": "更多人!"
+    },
     "nav": {
       "nav1": "主页",
       "nav2": "种族",
@@ -1011,6 +1111,16 @@
   },
   "it": {
     "id": 11,
+    "toast": {
+      "info1": "Grazie per esserti registrato!",
+      "info2": "Iscriviti ora su Kickstarter per essere tra i primi a sapere del lancio della campagna!",
+      "error": "Errore interno del server",
+      "emailRegistered": "L'email è già registrata",
+      "verifyCaptcha": "Verifica con captcha",
+      "emailWrong": "L'email è sbagliata",
+      "counter1": "Unisciti a",
+      "counter2": "altre persone!"
+    },
     "nav": {
       "nav1": "Home",
       "nav2": "Razze",

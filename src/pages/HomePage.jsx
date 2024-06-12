@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import styles from "./styles/homepage.module.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCards, Navigation, Pagination } from "swiper/modules";
@@ -6,6 +6,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { useNavigate } from "react-router-dom";
+import ReCAPTCHA from "react-google-recaptcha";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer, toast } from "react-toastify";
+import axios from "axios";
+
 const HomePage = ({ lang }) => {
   const [langActive, setLangActive] = useState(false);
   const [navActive, setNavActive] = useState(false);
@@ -13,12 +18,146 @@ const HomePage = ({ lang }) => {
   const [selectedProfession, setSelectedProfession] = useState(1);
   const [mobileHabilitiesButton, setMobileHabilitiesButton] = useState(1);
   const [swiperConceptArt, setSwiperConceptArt] = useState(null);
-
+  const [footerInput, setFooterInput] = useState("");
   const navigate = useNavigate();
   const swiperRef1 = useRef(null);
+  const [captchaState, setCaptchaState] = useState(false);
+  const [emailCounter, setEmailCounter] = useState(0);
   function navigateTo(to) {
     setLangActive(false);
     navigate(to);
+  }
+
+  const sendFirstEmail = (e, emailInput) => {
+    e.preventDefault();
+    console.log("IsValidEmail: ", isValidEmail(emailInput));
+    if (captchaState && isValidEmail(emailInput)) {
+      axios
+        .post(
+          `https://starfish-app-licfp.ondigitalocean.app/api/auth/register`,
+          { email: emailInput }
+        )
+        .then(() => {
+          sendSecondEmail(emailInput);
+        })
+        .catch((error) => {
+          console.error("Error al enviar el email:", error);
+          toast.error(lang.toast.emailRegistered, {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
+        });
+    } else {
+      if (captchaState == false) {
+        toast.error(lang.toast.verifyCaptcha, {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
+      }
+      if (isValidEmail(emailInput) == false || emailInput == "") {
+        toast.error(lang.toast.emailWrong, {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
+      }
+    }
+  };
+  const sendSecondEmail = (emailInput) => {
+    axios
+      .post(
+        "https://starfish-app-licfp.ondigitalocean.app/api/secretForestEmails/sendEmailSFXL",
+        { emailTo: emailInput }
+      )
+      .then(() => {
+        getEmailsCounter();
+        fetchFixedNumber();
+        toast.success(lang.toast.info1, {
+          position: "top-center",
+          autoClose: 2500,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
+        // setTimeout(() => {
+        //   toast.info(
+        //     "Now sign up for Kickstarter to be among the first to know about the campaign launch!",
+        //     {
+        //       position: "top-center",
+        //       autoClose: 4000,
+        //       hideProgressBar: false,
+        //       closeOnClick: true,
+        //       pauseOnHover: true,
+        //       draggable: true,
+        //       progress: undefined,
+        //       theme: "dark",
+        //     }
+        //   );
+        // }, 2000);
+        setTimeout(() => {
+          setModalKickstarter(true);
+        }, 1000);
+        setTimeout(() => {
+          window.location.href =
+            "https://www.kickstarter.com/projects/secretforest/secretforest";
+        }, 7500);
+        setHeaderEmailInput("");
+        setFooterEmailInput("");
+      })
+      .catch((error) => {
+        toast.error(lang.toast.error, {
+          position: "top-center",
+          autoClose: 2500,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+        });
+        console.error(error);
+      });
+  };
+
+  const getEmailsCounter = () => {
+    axios
+      .get(`https://starfish-app-licfp.ondigitalocean.app/api/auth/cuantity`)
+      .then((response) => {
+        setEmailCounter(response.data.emailCuantity - 8775);
+      });
+  };
+  const isValidEmail = (email) => {
+    const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+    return emailPattern.test(email);
+  };
+
+  function onChange(value) {
+    console.log("Captcha value:", value);
+    setCaptchaState(true);
+
+    if (isValidEmail(emailFront)) {
+      setInputSubmit(false);
+    }
   }
 
   const handlePrev = () => {
@@ -32,9 +171,24 @@ const HomePage = ({ lang }) => {
       swiperRef1.current.swiper.slideNext();
     }
   };
+  useEffect(() => {
+    getEmailsCounter();
+  }, []);
 
   return (
     <main className={styles.container}>
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
       {/* Navbar */}
       <>
         <ul
@@ -2433,11 +2587,28 @@ const HomePage = ({ lang }) => {
         <h4>{lang.getReady.title}</h4>
         <p>{lang.getReady.text}</p>
         <label>{lang.getReady.label}</label>
+        <label>
+          {lang.toast.counter1}
+          {" "}{emailCounter}{" "}
+          {lang.toast.counter2}
+        </label>
         <div className={styles.getReadyInput}>
-          <input type="text" placeholder={lang.getReady.placeholder} />
-          <button>{lang.getReady.signIn}</button>
+          <input
+            type="text"
+            placeholder={lang.getReady.placeholder}
+            value={footerInput}
+            onChange={(e) => setFooterInput(e.target.value)}
+          />
+          <button onClick={(e) => sendFirstEmail(e, footerInput)}>
+            {lang.getReady.signIn}
+          </button>
         </div>
-
+        <ReCAPTCHA
+          size="normal"
+          className={styles.formCaptcha}
+          sitekey="6LcKs2MoAAAAANbEb8FgM_zGq-AZx2SegfCCegkn"
+          onChange={onChange}
+        />
         <div className={styles.getReadySocial}>
           <h5>{lang.getReady.joinBattle}</h5>
           <div className={styles.getReadySocialMain}>

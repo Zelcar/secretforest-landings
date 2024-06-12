@@ -1224,11 +1224,17 @@
       button {
         border-radius: 0 15px 15px 0;
         border: none;
+        cursor: pointer;
         background-color: #5d12e8;
         height: 100%;
         width: 20%;
         color: white;
         font-weight: 800;
+        transition: all 250ms;
+        &:hover{
+          background-color: #4807c2;
+
+        }
       }
     }
     .getReadySocial {
