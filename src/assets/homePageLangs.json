@@ -93,6 +93,27 @@
     "biomes": {
       "title": "OUR BIOMES",
       "desc": "In the lands of the Secret Forest there will be all kinds of minerals, metals and rarestones that can be collected. Some of these will be magical and will be able to continue to grow and give resources as long as they are cared for correctly.."
+    },
+    "team": {
+      "title": "TEAM",
+      "ceo": "CEO",
+      "programmer": "Programmer",
+      "webDeveloper": "Web Developer",
+      "threeDDesigner": "3D Designer",
+      "worldDesigner": "World Designer"
+    },
+    "getReady": {
+      "title": "Get Ready For Secret Forest",
+      "text": "Can we count on your pledge for our upcoming project?",
+      "label": "Add your email address",
+      "placeholder": "email@email.com",
+      "signIn": "Sign in",
+      "joinBattle": "Join the battle!"
+    },
+    "footer": {
+      "termsCondition": "Terms & Conditions",
+      "privacyPolicy": "Privacy Policy",
+      "cookiesPolicy": "Cookies Policy"
     }
   },
   "br": {
