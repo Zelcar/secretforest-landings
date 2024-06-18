@@ -2115,12 +2115,12 @@
     }
     .biomes {
       .biomesGoblin {
-        width: 40%;
+        width: 35%;
         right: -100px;
         z-index: 2;
       }
       .biomesEmbear {
-        width: 40%;
+        width: 35%;
         left: -100px;
         z-index: 2;
       }
@@ -2350,6 +2350,12 @@
     }
     .biomes {
       padding-top: 50px;
+      .biomesGoblin{
+        right: -75px;
+      }
+      .biomesEmbear{
+        left: -75px;
+      }
       h3 {
         width: 95%;
       }
@@ -2526,14 +2532,16 @@
       }
       .biomesGoblin {
         right: 50px;
+        width: 180px;
         bottom: 125px;
       }
       .biomesEmbear {
         left: 50px;
+        width: 160px;
         bottom: 175px;
       }
       iframe {
-        margin-top: 220px;
+        margin-top: 175px;
         height: 30vh;
         width: 90%;
       }
@@ -2588,6 +2596,14 @@
             }
           }
         }
+      }
+    }
+    .biomes{
+      .biomesGoblin{
+        right: 0;
+      }
+      .biomesEmbear{
+        left: 0;
       }
     }
     .footer {
