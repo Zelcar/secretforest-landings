@@ -1641,6 +1641,17 @@
 }
 @media (max-width: 1100px) {
   .container {
+    .races{
+      .racesContainer{
+        .racesContainerMain{
+          .racesContainerRight{
+            position: relative;
+            right: 50px;
+            padding-left: 0px;
+          }
+        }
+      }
+    }
     .team {
       .teamMain {
         margin-top: 150px;
@@ -1903,6 +1914,7 @@
       .racesContainer {
         .racesContainerMain {
           .racesContainerRight {
+            right: 0;
             p {
               height: 100%;
               text-align: left;
@@ -2526,21 +2538,30 @@
     .biomes {
       padding-bottom: 50px;
       padding-top: 75px;
+      align-items: flex-start;
       .biomesFadeUp {
         height: 50px;
       }
       .biomesGoblin {
-        right: 50px;
-        width: 180px;
-        bottom: 125px;
+        right: 0px;
+        // width: 210px;
+        width: 45vw;
+        bottom: initial;
+        top: 250px;
       }
       .biomesEmbear {
-        left: 50px;
-        width: 160px;
-        bottom: 175px;
+        display: none;
+      }
+      p{
+        // background: red;
+        width: 50%;
+        margin-left: 25px;
+        // font-size: 25px;
+        font-size: 5.3vw;
       }
       iframe {
-        margin-top: 175px;
+        // margin-top: 175px;
+        align-self: center;
         height: 30vh;
         width: 90%;
       }
@@ -2600,9 +2621,7 @@
     .biomes{
       .biomesGoblin{
         right: 0;
-      }
-      .biomesEmbear{
-        left: 0;
+        top: 220px;
       }
     }
     .footer {
