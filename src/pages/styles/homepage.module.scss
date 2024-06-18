@@ -2110,7 +2110,7 @@
       }
       .mobileRoadmap {
         display: initial;
-        width: 100%;
+        width:90%;
       }
     }
     .biomes {
@@ -2240,17 +2240,16 @@
         }
         .racesContainerMain {
           .racesContainerLeft {
-            // background: red;
-            width: 400px;
+            width: 350px;
             position: relative;
-            left: 10px;
+            left: 30px;
             height: initial;
           }
           .racesContainerRight {
             position: relative;
-            right: 45px;
+            right: 20px;
             p {
-              font-size: 23px;
+              font-size: 20px;
               text-align: center;
             }
           }
