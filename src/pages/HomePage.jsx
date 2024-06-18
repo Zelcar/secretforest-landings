@@ -428,11 +428,7 @@ const HomePage = ({ lang }) => {
         </svg>
       </a>
       <header id="home" className={styles.header}>
-        <img
-          className={styles.headerFade}
-          src="/homePage/header/fadeDown.webp"
-          alt=""
-        />
+        <div className={styles.headerFade}></div>
         <img className={styles.logo} src="/homePage/header/logo.webp" alt="" />
         <iframe
           width="560"
@@ -447,6 +443,7 @@ const HomePage = ({ lang }) => {
         <p>{lang.header.trailer}</p>
       </header>
       <section className={styles.races} id="races">
+        <div className={styles.racesFadeDown}></div>
         <h3>{lang.races.title}</h3>
         <div className={styles.racesSelection}>
           <img
@@ -2307,6 +2304,7 @@ const HomePage = ({ lang }) => {
       </section>
       <section className={styles.biomes} id="biomes">
         <div className={styles.biomesFadeUp}></div>
+        <div className={styles.biomesFadeDown}></div>
         <img
           className={styles.biomesGoblin}
           src="/homePage/biomes/goblin.webp"
