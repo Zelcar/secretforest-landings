@@ -2444,7 +2444,8 @@
       .professionsContainer {
         h4 {
           // font-size: 20px;
-          font-size: 15vw;
+
+          font-size: 9vw;
           margin-bottom: 50px;
         }
         iframe {
@@ -2456,6 +2457,8 @@
     .combat {
       // background: red;
       margin-bottom: -50px;
+
+      padding-bottom: 25px;
       .combatSection2 {
         .combatSection2Main {
           margin-bottom: -75px;
@@ -2489,24 +2492,58 @@
     }
     .exploration {
       gap: 25px;
+      padding-top: 125px;
+      // background: red;
       .leftDeco {
-        width: 50%;
+        width: 40%;
       }
       .rightDeco {
-        width: 50%;
+        width: 40%;
       }
       iframe {
         height: 210px;
       }
+      p {
+        font-weight: 600;
+      }
+    }
+    .world {
+      padding-bottom: 0;
+      padding-top: 50px;
+    }
+    .conceptArt {
+      padding-bottom: 0px;
+      padding-top: 0px;
+      h3 {
+        z-index: 4;
+      }
     }
     .biomes {
+      padding-bottom: 50px;
+      padding-top: 75px;
+      .biomesFadeUp {
+        height: 50px;
+      }
+      .biomesGoblin {
+        right: 50px;
+        bottom: 125px;
+      }
+      .biomesEmbear {
+        left: 50px;
+        bottom: 175px;
+      }
       iframe {
+        margin-top: 220px;
         height: 30vh;
         width: 90%;
       }
     }
+    .team{
+      padding-bottom: 70px;
+    }
     .getReady {
       padding-bottom: 120px;
+      padding-top: 0px;
       .getReadyAxolotl {
         width: 200px;
         left: -75px;
