@@ -47,7 +47,7 @@
       "catTitle": "Gatos",
       "catDesc": "Nacidos de la luz de la luna contaminada en bosques oscuros, estos elegantes seres nocturnos adoran al espíritu del león. Sus estudios secretos desatan maldiciones y magia oscura, y sus habilidades herbales mejoran las maldiciones. Los gatos prosperan como sabios o espías.",
       "dogTitle": "Perros",
-      "dogDesc": "Guiados por el espíritu del lobo, estos devotos aventureros mantienen sus instintos salvajes con amor y coraje. Su afinidad con la magia del viento les otorga velocidad y gracia, y sus equipos de ingeniería esculpen poderosos monumentos y máquinas ingeniosas. Como guardianes, su instinto protector los convierte en feroces combatientes."
+      "dogDesc": "Impulsados por el espíritu del lobo, estos aventureros caminan entre lo salvaje y lo compasivo. La agilidad y la velocidad les son otorgadas por la magia del viento. Su naturaleza protectora se enciende en defensa de los necesitados, convirƟéndolos en feroces guardianes."
     },
     "professions": {
       "title": "Profesiones",
@@ -158,7 +158,7 @@
       "catTitle": "CATTIES",
       "catDesc": "Born from tainted moonbeams in darkened forests, these graceful nocturnal beings worship the Lion Spirit. Their occult research unlocks curses & darkness magic, while their skill with herbs enhances their hexes. Catties thrive as sages or spies.",
       "dogTitle": "DOGGIES",
-      "dogDesc": "Guided by the Wolf Spirit, these devoted adventurers retain their wild instincts balanced by affection and bravery. Their wind magic affinity gives them speed and grace while their engineering teams sculpt mighty monuments and ingenious machinery. As guardians, their protective nature emerges, making them fierce combatants."
+      "dogDesc": "Driven by the spirit of the wolf, these adventurers walk between the wild and the compassionate. Agility and speed are granted to them by the magic of the wind. Their protective nature ignites in defense of those in need, making them fierce guardians."
     },
     "professions": {
       "title": "PROFESSIONS",
@@ -269,7 +269,7 @@
       "catTitle": "GATOS",
       "catDesc": "Nascidos de raios de lua corrompidos em florestas escuras, esses seres graciosos e noturnos veneram o Espírito Leão. Sua pesquisa oculta desbloqueia maldições e magia das trevas, enquanto sua habilidade com ervas melhora suas maldições. Os gatos prosperam como sábios ou espiões.",
       "dogTitle": "CÃES",
-      "dogDesc": "Guiados pelo Espírito do Lobo, esses aventureiros devotos mantêm seus instintos selvagens equilibrados por afeição e bravura. Sua afinidade com a magia do vento lhes confere velocidade e graça, enquanto suas equipes de engenharia esculpem monumentos poderosos e maquinaria engenhosa. Como guardiões, sua natureza protetora emerge, tornando-os combatentes ferozes."
+      "dogDesc": "Impulsionados pelo espírito do lobo, esses aventureiros caminham entre o selvagem e o compassivo. Agilidade e velocidade são concedidas a eles pela magia do vento. Sua natureza protetora se acende em defesa dos necessitados, tornando-os guardiões ferozes."
     },
     "professions": {
       "title": "PROFISSÕES",
@@ -380,7 +380,7 @@
       "catTitle": "고양이",
       "catDesc": "어두운 숲에서 더러워진 달빛에서 태어난 이 우아한 야행성 존재들은 사자 정령을 숭배합니다. 그들의 비밀 연구는 저주와 어둠의 마법을 열고, 허브 기술은 저주를 향상시킵니다. 고양이들은 현자 또는 스파이로 번성합니다.",
       "dogTitle": "개",
-      "dogDesc": "늑대 정령의 인도로 이 헌신적인 모험가들은 애정과 용기로 균형을 이루는 야생 본능을 유지합니다. 바람 마법에 대한 친화력은 그들에게 속도와 우아함을 부여하고, 그들의 엔지니어링 팀은 강력한 기념비와 기발한 기계를 조각합니다. 수호자로서 그들의 보호 본성이 나타나며, 그들을 맹렬한 전투원으로 만듭니다."
+      "dogDesc": "늑대의 정신에 이끌려, 이 모험가들은 야생과 자비로운 것 사이를 걷습니다. 바람의 마법으로 그들은 민첩함과 속도를 부여받습니다. 그들의 보호 본능은 도움이 필요한 사람들을 방어할 때 불타올라, 그들을 사나운 수호자로 만듭니다."
     },
     "professions": {
       "title": "직업",
@@ -491,7 +491,7 @@
       "catTitle": "キャッツ",
       "catDesc": "暗い森で汚染された月光から生まれたこれらの優雅な夜行性の存在は、ライオンの精霊を崇拝します。彼らの秘密の研究は呪いと闇の魔法を解き放ち、彼らのハーブのスキルは呪いを強化します。キャットは賢者やスパイとして繁栄します。",
       "dogTitle": "ドッグズ",
-      "dogDesc": "ウルフの精霊に導かれたこれらの献身的な冒険者は、愛情と勇気で野生の本能を維持します。風の魔法への親和性は彼らに速度と優雅さを与え、彼らのエンジニアリングチームは強力なモニュメントと巧妙な機械を彫刻します。守護者として、彼らの保護本能が現れ、彼らを猛烈な戦士にします。"
+      "dogDesc": "オオカミの精神に導かれたこれらの冒険者たちは、野生と慈悲の間を歩きます。風の魔法により、彼らには敏捷性と速度が与えられています。困っている人々を守るために、その保護本能が燃え上がり、彼らを激しい守護者にします。"
     },
     "professions": {
       "title": "職業",
@@ -602,7 +602,7 @@
       "catTitle": "KÄTZCHEN",
       "catDesc": "Geboren aus verdorbenen Mondstrahlen in dunklen Wäldern, verehren diese anmutigen nachtaktiven Wesen den Löwenspiritus. Ihre okkulte Forschung entfesselt Flüche und Dunkelheitsmagie, während ihre Kräuterkenntnisse ihre Zauber verstärken. Kätzchen gedeihen als Weisen oder Spione.",
       "dogTitle": "HUNDE",
-      "dogDesc": "Geleitet vom Wolfsspiritus, bewahren diese treuen Abenteurer ihre wilden Instinkte, ausgeglichen durch Zuneigung und Tapferkeit. Ihre Affinität zur Windmagie verleiht ihnen Geschwindigkeit und Anmut, während ihre Ingenieurteams mächtige Monumente und geniale Maschinen formen. Als Wächter kommt ihre schützende Natur zum Vorschein, was sie zu heftigen Kämpfern macht."
+      "dogDesc": "Getrieben vom Geist des Wolfes, wandern diese Abenteurer zwischen Wildnis und Mitgefühl. Beweglichkeit und Geschwindigkeit werden ihnen durch die Magie des Windes verliehen. Ihre schützende Natur entflammt in der Verteidigung der Bedürftigen, wodurch sie zu wilden Wächtern werden."
     },
     "professions": {
       "title": "BERUFE",
@@ -713,7 +713,7 @@
       "catTitle": "KATTIES",
       "catDesc": "Geboren uit besmette maanstralen in donkere bossen, aanbidden deze gracieuze nachtelijke wezens de Leeuwengeest. Hun occulte onderzoek ontgrendelt vloeken en duisternismagië, terwijl hun vaardigheden met kruiden hun vervloekingen versterken. Katties gedijen als wijzen of spionnen.",
       "dogTitle": "HONDJES",
-      "dogDesc": "Geleid door de Wolfgeest, behouden deze toegewijde avonturiers hun wilde instincten, in balans gebracht door genegenheid en moed. Hun affiniteit met windmagië geeft hen snelheid en gratie, terwijl hun technische teams machtige monumenten en ingenieuze machines creëren. Als bewakers komt hun beschermende natuur naar voren, waardoor ze felle strijders worden."
+      "dogDesc": "Gedreven door de geest van de wolf, lopen deze avonturiers tussen het wilde en het meelevende. Behendigheid en snelheid worden hun verleend door de magie van de wind. Hun beschermende natuur ontbrandt in de verdediging van de behoeftigen, waardoor ze felle bewakers worden."
     },
     "professions": {
       "title": "BEROEPEN",
@@ -824,7 +824,7 @@
       "catTitle": "КОТЫ",
       "catDesc": "Рожденные из испорченных лучей луны в затемненных лесах, эти изящные ночные существа поклоняются Духу Льва. Их оккультные исследования разблокируют проклятия и магию тьмы, а их умение с травами усиливает их заклинания. Коты процветают как мудрецы или шпионы.",
       "dogTitle": "СОБАЧКИ",
-      "dogDesc": "Руководимые Духом Волка, эти преданные искатели приключений сохраняют свои дикие инстинкты, сбалансированные любовью и храбростью. Их аффинитет к магии ветра придает им скорость и грацию, а их инженерные команды создают могучие памятники и изобретательные механизмы. Как стражи, их защитительная природа проявляется, делая их свирепыми бойцами."
+      "dogDesc": "Ведомые духом волка, эти искатели приключений ходят между дикой природой и состраданием. Ловкость и скорость дарованы им магией ветра. Их защитная природа разгорается при защите нуждающихся, превращая их в свирепых стражей."
     },
     "professions": {
       "title": "ПРОФЕССИИ",
@@ -935,7 +935,7 @@
       "catTitle": "CHATTES",
       "catDesc": "Nés des rayons lunaires contaminés dans les forêts assombries, ces êtres nocturnes gracieux vénèrent l'Esprit du Lion. Leurs recherches occultes déverrouillent les malédictions et la magie des ténèbres, tandis que leur habileté avec les herbes améliore leurs malédictions. Les chattes prospèrent en tant que sages ou espions.",
       "dogTitle": "CHIOTS",
-      "dogDesc": "Guidés par l'Esprit du Loup, ces aventuriers dévoués conservent leurs instincts sauvages équilibrés par l'affection et la bravoure. Leur affinité pour la magie du vent leur donne vitesse et grâce tandis que leurs équipes d'ingénieurs sculptent de puissants monuments et des machines ingénieuses. En tant que gardiens, leur nature protectrice émerge, les rendant féroces combattants."
+      "dogDesc": "Guidés par l'esprit du loup, ces aventuriers marchent entre la sauvagerie et la compassion. L'agilité et la vitesse leur sont accordées par la magie du vent. Leur nature protectrice s'embrase pour défendre les nécessiteux, les transformant en gardiens féroces."
     },
     "professions": {
       "title": "PROFESSIONS",
@@ -1046,7 +1046,7 @@
       "catTitle": "猫族",
       "catDesc": "诞生于黑暗森林中被污染的月光中，这些优雅的夜行生物崇拜狮子灵魂。他们的神秘研究解锁了诅咒和黑暗魔法，而他们对草药的熟练运用增强了他们的咒语。猫族作为贤者或间谍蓬勃发展。",
       "dogTitle": "狗族",
-      "dogDesc": "在狼灵魂的指引下，这些忠诚的冒险家保持着他们的野性本能，平衡了感情和勇气。他们的风魔法亲和力赋予他们速度和优雅，而他们的工程团队则雕刻着宏伟的纪念碑和巧妙的机械。作为守护者，他们的保护本性显现出来，使他们成为了凶猛的战斗者。"
+      "dogDesc": "在狼之精神的驱使下，这些冒险者在野性与仁慈之间行走。风之魔法赋予他们敏捷和速度。他们的保护本性在捍卫需要帮助的人时点燃，使他们成为凶猛的守护者。"
     },
     "professions": {
       "title": "职业",
@@ -1157,7 +1157,7 @@
       "catTitle": "GATTI",
       "catDesc": "Nati dai raggi di luna contaminati nelle foreste oscure, questi esseri notturni e aggraziati adorano lo Spirito del Leone. Le loro ricerche occulte sbloccano maledizioni e magie dell'oscurità, mentre la loro abilità con le erbe potenzia i loro sortilegi. I gatti prosperano come saggi o spie.",
       "dogTitle": "CANI",
-      "dogDesc": "Guidati dallo Spirito del Lupo, questi avventurieri devoti mantengono i loro istinti selvaggi bilanciati dall'affetto e dal coraggio. La loro affinità con la magia del vento conferisce loro velocità e grazia, mentre i loro team di ingegneria scolpiscono monumenti potenti e macchine ingegnose. Come guardiani, emergono la loro natura protettiva, rendendoli combattenti feroci."
+      "dogDesc": "Guidati dallo spirito del lupo, questi avventurieri camminano tra il selvaggio e il compassionevole. L'agilità e la velocità sono loro concesse dalla magia del vento. La loro natura protettiva si accende in difesa dei bisognosi, rendendoli feroci guardiani."
     },
     "professions": {
       "title": "PROFESSIONI",
