@@ -532,23 +532,23 @@
     background-image: url("../../../public/homePage/professions/bg.webp");
     background-position: 100% 0%;
     background-size: cover;
-    padding: 50px 0 150px 0;
+    padding: 3vw 0;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     position: relative;
     .professionsAxolotl {
-      // width: 350px;
-      width: 20%;
+      // width: 20%;
+      width: 20vw;
 
       position: absolute;
       bottom: 0;
       right: 0;
     }
     .professionsAquan {
-      // width: 350px;
-      width: 20%;
+      // width: 20%;
+      width: 20vw;
       position: absolute;
       bottom: 0;
       left: 0;
@@ -559,65 +559,56 @@
       left: -5px;
       width: 105%;
     }
-    h3 {
-      text-align: center;
-      font-size: 80px;
-      font-family: "MoonGet";
-      padding: 0 0 40px 0;
-    }
-    .professionsSelector {
+    .professionsTitle {
       display: flex;
-      width: 75%;
-      height: 300px;
+      justify-content: center;
+      align-items: center;
+      width: 95%;
+      gap: 1vw;
+      margin-bottom: 3vw;
+      div {
+        width: 40%;
+        height: 2px;
+        background-color: white;
+      }
+      h3 {
+        text-align: center;
+        font-size: 5vw;
+        font-family: "MoonGet";
+      }
+    }
+    .professionsSelector,
+    .mobileProfessionsSelector {
+      display: flex;
+      width: 90%;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      gap: 2vw;
       div {
-        height: 150px;
         width: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         flex-direction: row;
         button {
-          width: 16.666%;
-          height: 100%;
+          width: 8vw;
+          height: 8vw;
           background-color: transparent;
           border: none;
           cursor: pointer;
           transition: all 250ms;
-          border: 1px solid white;
           position: relative;
-          p {
-            color: white;
-            font-size: 25px;
-            // background: red;]
-            word-break: break-all;
-            padding: 0 10px;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 3;
-            font-family: Montserrat;
-            font-weight: 200;
-            text-shadow: 3px 3px 10px black;
-          }
           img {
-            position: absolute;
-            top: 0;
-            left: 0;
             filter: brightness(50%);
             width: 100%;
-            object-fit: fill;
             height: 100%;
             transition: all 250ms;
           }
           &:hover {
-            filter: brightness(100%);
+            img {
+              filter: brightness(100%);
+            }
             transition: all 250ms;
           }
         }
@@ -630,71 +621,11 @@
     }
     .mobileProfessionsSelector {
       display: none;
-      // display: flex;
-      width: 90%;
-      height: 300px;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      div {
-        height: 80px;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        button {
-          width: 25%;
-          height: 100%;
-          background-color: transparent;
-          border: none;
-          cursor: pointer;
-          transition: all 250ms;
-          border: 1px solid white;
-          position: relative;
-          p {
-            color: white;
-            font-size: 15px;
-            // background: red;]
-            word-break: break-all;
-            padding: 0 10px;
-            width: 100%;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 3;
-            font-family: Montserrat;
-            font-weight: 500;
-            text-shadow: 3px 3px 10px black;
-          }
-          img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            filter: brightness(50%);
-            width: 100%;
-            object-fit: fill;
-            height: 100%;
-            transition: all 250ms;
-          }
-          &:hover {
-            filter: brightness(100%);
-            transition: all 250ms;
-          }
-        }
-        .professionActive {
-          img {
-            filter: brightness(100%);
-          }
-        }
-      }
     }
     .professionsContainer {
       display: none;
-      justify-content: center;
+      height: 35vw;
+      justify-content: flex-start;
       align-items: center;
       flex-direction: column;
       width: 100%;
@@ -704,16 +635,35 @@
         margin: 50px 0 30px 0;
         font-family: "MoonGet";
       }
-      iframe {
-        width: 50%;
-
-        height: 400px;
+      p {
+        width: 65%;
+        font-size: 3vw;
+        line-height: 1;
+        font-weight: 900;
+        text-align: center;
       }
     }
-
     .professionsActive {
       display: flex;
       animation: 1s appear;
+    }
+  }
+  .professionsMinigame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #29013e;
+    padding: 30px 0;
+    iframe {
+      width: 45vw;
+      height: 25vw;
+    }
+    h3 {
+      text-align: center;
+      width: 50%;
+      font-size: 5vw;
+      font-weight: 900;
     }
   }
   .combat {
@@ -1504,14 +1454,6 @@
         width: 70%;
       }
     }
-    .professions {
-      .professionsAxolotl {
-        width: 25%;
-      }
-      .professionsAquan {
-        width: 28%;
-      }
-    }
     .getReady {
       .getReadyAxolotl {
         // width: 35%;
@@ -1547,25 +1489,7 @@
         }
       }
     }
-    .professions {
-      .professionsSelector {
-        height: 200px;
-        div {
-          button {
-            p {
-              font-size: 18px;
-            }
-          }
-          height: 100px;
-        }
-      }
-      .professionsContainer {
-        iframe {
-          // width: 70%;
-          height: 30vw;
-        }
-      }
-    }
+
     .combat {
       .combatSection1,
       .combatSection3 {
@@ -1642,15 +1566,27 @@
 }
 @media (max-width: 1100px) {
   .container {
-    .races{
-      .racesContainer{
-        .racesContainerMain{
-          .racesContainerRight{
+    .races {
+      .racesContainer {
+        .racesContainerMain {
+          .racesContainerRight {
             position: relative;
             right: 50px;
             padding-left: 0px;
           }
         }
+      }
+    }
+    .professions {
+      .professionsAquan {
+        width: 28vw;
+        left: -7vw;
+      }
+      .professionsAxolotl {
+        width: 24vw;
+      }
+      .professionsContainer {
+        height: 40vw;
       }
     }
     .team {
@@ -1818,21 +1754,11 @@
       }
     }
     .professions {
-      .professionsSelector {
-        height: 150px;
-        div {
-          height: 175px;
-          button {
-            p {
-              font-size: 12px;
-            }
-          }
-        }
+      .professionsAxolotl {
+        right: -3vw;
       }
       .professionsContainer {
-        iframe {
-          // width: 90%;
-        }
+        height: 43vw;
       }
     }
     .team {
@@ -1981,36 +1907,41 @@
       }
     }
     .professions {
-      padding-bottom: 100px;
-      h3 {
-        font-size: 50px;
-      }
-      .professionsAquan {
-        width: 50%;
-        bottom: 30px;
-        left: -100px;
-      }
-      .professionsAxolotl {
-        width: 45%;
-        bottom: 30px;
-        right: -100px;
+      .professionsFadeDown {
+        width: 101%;
+        right: 0;
+        bottom: -1px;
       }
       .professionsSelector {
         display: none;
       }
       .mobileProfessionsSelector {
         display: flex;
+        div {
+          button {
+            width: 13vw;
+            height: 13vw;
+          }
+        }
       }
       .professionsContainer {
         h4 {
-          font-size: 70px;
-          margin: 25px 0 150px 0;
+          width: 60%;
+          text-align: center;
+          font-size: 6vw;
         }
-        iframe {
-          width: 80%;
-          z-index: 3;
-          height: 300px;
-        }
+      }
+    }
+    .professionsMinigame{
+      flex-direction: column;
+      gap: 20px;
+      iframe{
+        width: 90%;
+        height: 45vw;
+      }
+      h3{
+        font-size: 9vw;
+        width: 90%;
       }
     }
     .combat {
@@ -2124,7 +2055,7 @@
       }
       .mobileRoadmap {
         display: initial;
-        width:90%;
+        width: 90%;
       }
     }
     .biomes {
@@ -2271,41 +2202,8 @@
       }
     }
     .professions {
-      h3{
-        padding-bottom: 0;
-      }
-      .professionsAquan {
-        // left: -50px;
-        // width: 60%;
-        width: 55vw;
-        left: -4vw;
-      }
-      .professionsAxolotl {
-        // right: -50px;
-        // width: 52%;
-        right: -4vw;
-        width: 50vw;
-      }
-      .mobileProfessionsSelector{
-        div{
-          height: 70px;
-          button{
-            p{
-              font-size: 13px;
-            }
-          }
-        }
-      }
       .professionsContainer {
-        position: relative;
-        z-index: 3;
-        h4 {
-          font-size: 60px;
-          // margin: 50px 0 125px 0;
-        }
-        iframe {
-          height: 250px;
-        }
+        height: 250px;
       }
     }
     .combat {
@@ -2380,10 +2278,10 @@
     }
     .biomes {
       padding-top: 50px;
-      .biomesGoblin{
+      .biomesGoblin {
         right: -75px;
       }
-      .biomesEmbear{
+      .biomesEmbear {
         left: -75px;
       }
       h3 {
@@ -2465,32 +2363,7 @@
         }
       }
     }
-    .professions {
-      padding-bottom: 75px;
-      .professionsAxolotl,
-      .professionsAquan {
-        display: none;
-      }
-      h3 {
-        font-size: 10vw;
-        // font-size: 30px;
-      }
-      .mobileProfessionsSelector {
-        height: 200px;
-      }
-      .professionsContainer {
-        h4 {
-          // font-size: 20px;
 
-          font-size: 9vw;
-          margin-bottom: 50px;
-        }
-        iframe {
-          width: 90%;
-          height: 250px;
-        }
-      }
-    }
     .combat {
       // background: red;
       margin-bottom: -50px;
@@ -2572,7 +2445,7 @@
       .biomesEmbear {
         display: none;
       }
-      p{
+      p {
         // background: red;
         width: 50%;
         margin-left: 25px;
@@ -2586,7 +2459,7 @@
         width: 90%;
       }
     }
-    .team{
+    .team {
       padding-bottom: 70px;
     }
     .getReady {
@@ -2621,6 +2494,11 @@
         }
       }
     }
+    .professions {
+      .professionsContainer {
+        height: 220px;
+      }
+    }
     .team {
       .teamMobileMain {
         .teamCol {
@@ -2638,8 +2516,8 @@
         }
       }
     }
-    .biomes{
-      .biomesGoblin{
+    .biomes {
+      .biomesGoblin {
         right: 0;
         top: 220px;
       }

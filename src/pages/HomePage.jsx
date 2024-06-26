@@ -1638,7 +1638,11 @@ const HomePage = ({ lang }) => {
         </div>
       </section>
       <section className={styles.professions} id="professions">
-        <h3>{lang.professions.title}</h3>
+        <div className={styles.professionsTitle}>
+          <div></div>
+          <h3>{lang.professions.title}</h3>
+          <div></div>
+        </div>
         <img
           className={styles.professionsAxolotl}
           src="/homePage/professions/axolotl.webp"
@@ -1662,7 +1666,6 @@ const HomePage = ({ lang }) => {
               }`}
               onClick={() => setSelectedProfession(1)}
             >
-              <p>{lang.professions.fisherman}</p>
               <img src="/homePage/professions/fisherman.webp" alt="" />
             </button>
             <button
@@ -1671,7 +1674,6 @@ const HomePage = ({ lang }) => {
               }`}
               onClick={() => setSelectedProfession(2)}
             >
-              <p>{lang.professions.fungiculturist}</p>
               <img src="/homePage/professions/fungiculturist.webp" alt="" />
             </button>
             <button
@@ -1680,7 +1682,6 @@ const HomePage = ({ lang }) => {
               }`}
               onClick={() => setSelectedProfession(3)}
             >
-              <p>{lang.professions.jeweler}</p>
               <img src="/homePage/professions/jeweler.webp" alt="" />
             </button>
             <button
@@ -1689,7 +1690,6 @@ const HomePage = ({ lang }) => {
               }`}
               onClick={() => setSelectedProfession(4)}
             >
-              <p>{lang.professions.miner}</p>
               <img src="/homePage/professions/miner.webp" alt="" />
             </button>
             <button
@@ -1698,7 +1698,6 @@ const HomePage = ({ lang }) => {
               }`}
               onClick={() => setSelectedProfession(5)}
             >
-              <p>{lang.professions.necromancer}</p>
               <img src="/homePage/professions/necromancer.webp" alt="" />
             </button>
             <button
@@ -1707,7 +1706,6 @@ const HomePage = ({ lang }) => {
               }`}
               onClick={() => setSelectedProfession(6)}
             >
-              <p>{lang.professions.alchemist}</p>
               <img src="/homePage/professions/alchemist.webp" alt="" />
             </button>
           </div>
@@ -1718,7 +1716,6 @@ const HomePage = ({ lang }) => {
               }`}
               onClick={() => setSelectedProfession(7)}
             >
-              <p>{lang.professions.blacksmith}</p>
               <img src="/homePage/professions/blacksmith.webp" alt="" />
             </button>
             <button
@@ -1727,7 +1724,6 @@ const HomePage = ({ lang }) => {
               }`}
               onClick={() => setSelectedProfession(8)}
             >
-              <p>{lang.professions.carpenter}</p>
               <img src="/homePage/professions/carpenter.webp" alt="" />
             </button>
             <button
@@ -1736,7 +1732,6 @@ const HomePage = ({ lang }) => {
               }`}
               onClick={() => setSelectedProfession(9)}
             >
-              <p>{lang.professions.cheff}</p>
               <img src="/homePage/professions/cheff.webp" alt="" />
             </button>
             <button
@@ -1745,7 +1740,6 @@ const HomePage = ({ lang }) => {
               }`}
               onClick={() => setSelectedProfession(10)}
             >
-              <p>{lang.professions.dressmaker}</p>
               <img src="/homePage/professions/dressmaker.webp" alt="" />
             </button>
             <button
@@ -1754,7 +1748,6 @@ const HomePage = ({ lang }) => {
               }`}
               onClick={() => setSelectedProfession(11)}
             >
-              <p>{lang.professions.farmer}</p>
               <img src="/homePage/professions/farmer.webp" alt="" />
             </button>
             <button
@@ -1763,7 +1756,6 @@ const HomePage = ({ lang }) => {
               }`}
               onClick={() => setSelectedProfession(12)}
             >
-              <p>{lang.professions.breeder}</p>
               <img src="/homePage/professions/breeder.webp" alt="" />
             </button>
           </div>
@@ -1776,7 +1768,6 @@ const HomePage = ({ lang }) => {
               }`}
               onClick={() => setSelectedProfession(1)}
             >
-              <p>{lang.professions.fisherman}</p>
               <img src="/homePage/professions/fisherman.webp" alt="" />
             </button>
             <button
@@ -1785,7 +1776,6 @@ const HomePage = ({ lang }) => {
               }`}
               onClick={() => setSelectedProfession(2)}
             >
-              <p>{lang.professions.fungiculturist}</p>
               <img src="/homePage/professions/fungiculturist.webp" alt="" />
             </button>
             <button
@@ -1794,7 +1784,6 @@ const HomePage = ({ lang }) => {
               }`}
               onClick={() => setSelectedProfession(3)}
             >
-              <p>{lang.professions.jeweler}</p>
               <img src="/homePage/professions/jeweler.webp" alt="" />
             </button>
             <button
@@ -1803,7 +1792,6 @@ const HomePage = ({ lang }) => {
               }`}
               onClick={() => setSelectedProfession(4)}
             >
-              <p>{lang.professions.miner}</p>
               <img src="/homePage/professions/miner.webp" alt="" />
             </button>
           </div>
@@ -1814,7 +1802,6 @@ const HomePage = ({ lang }) => {
               }`}
               onClick={() => setSelectedProfession(5)}
             >
-              <p>{lang.professions.necromancer}</p>
               <img src="/homePage/professions/necromancer.webp" alt="" />
             </button>
             <button
@@ -1823,7 +1810,6 @@ const HomePage = ({ lang }) => {
               }`}
               onClick={() => setSelectedProfession(6)}
             >
-              <p>{lang.professions.alchemist}</p>
               <img src="/homePage/professions/alchemist.webp" alt="" />
             </button>
             <button
@@ -1832,7 +1818,6 @@ const HomePage = ({ lang }) => {
               }`}
               onClick={() => setSelectedProfession(7)}
             >
-              <p>{lang.professions.blacksmith}</p>
               <img src="/homePage/professions/blacksmith.webp" alt="" />
             </button>
             <button
@@ -1841,7 +1826,6 @@ const HomePage = ({ lang }) => {
               }`}
               onClick={() => setSelectedProfession(8)}
             >
-              <p>{lang.professions.carpenter}</p>
               <img src="/homePage/professions/carpenter.webp" alt="" />
             </button>
           </div>
@@ -1852,7 +1836,6 @@ const HomePage = ({ lang }) => {
               }`}
               onClick={() => setSelectedProfession(9)}
             >
-              <p>{lang.professions.cheff}</p>
               <img src="/homePage/professions/cheff.webp" alt="" />
             </button>
             <button
@@ -1861,7 +1844,6 @@ const HomePage = ({ lang }) => {
               }`}
               onClick={() => setSelectedProfession(10)}
             >
-              <p>{lang.professions.dressmaker}</p>
               <img src="/homePage/professions/dressmaker.webp" alt="" />
             </button>
             <button
@@ -1870,7 +1852,6 @@ const HomePage = ({ lang }) => {
               }`}
               onClick={() => setSelectedProfession(11)}
             >
-              <p>{lang.professions.farmer}</p>
               <img src="/homePage/professions/farmer.webp" alt="" />
             </button>
             <button
@@ -1879,7 +1860,6 @@ const HomePage = ({ lang }) => {
               }`}
               onClick={() => setSelectedProfession(12)}
             >
-              <p>{lang.professions.breeder}</p>
               <img src="/homePage/professions/breeder.webp" alt="" />
             </button>
           </div>
@@ -1893,16 +1873,7 @@ const HomePage = ({ lang }) => {
           }`}
         >
           <h4>{lang.professions.fisherman}</h4>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/83HM1vGdp4I?si=HRQM_pvn76Nfc6pU"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+          <p>{lang.professions.fishermanDesc}</p>
         </div>
         {/* Profesion 2 */}
         <div
@@ -1913,16 +1884,7 @@ const HomePage = ({ lang }) => {
           }`}
         >
           <h4>{lang.professions.fungiculturist}</h4>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/83HM1vGdp4I?si=HRQM_pvn76Nfc6pU"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+          <p>{lang.professions.fungiculturistDesc}</p>
         </div>
         {/* Profesion 3 */}
         <div
@@ -1933,16 +1895,7 @@ const HomePage = ({ lang }) => {
           }`}
         >
           <h4>{lang.professions.jeweler}</h4>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/83HM1vGdp4I?si=HRQM_pvn76Nfc6pU"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+          <p>{lang.professions.jewelerDesc}</p>
         </div>
         {/* Profesion 4 */}
         <div
@@ -1953,16 +1906,7 @@ const HomePage = ({ lang }) => {
           }`}
         >
           <h4>{lang.professions.miner}</h4>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/83HM1vGdp4I?si=HRQM_pvn76Nfc6pU"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+          <p>{lang.professions.minerDesc}</p>
         </div>
         {/* Profesion 5 */}
         <div
@@ -1973,16 +1917,7 @@ const HomePage = ({ lang }) => {
           }`}
         >
           <h4>{lang.professions.necromancer}</h4>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/83HM1vGdp4I?si=HRQM_pvn76Nfc6pU"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+          <p>{lang.professions.necromancerDesc}</p>
         </div>
         {/* Profesion 6 */}
         <div
@@ -1993,16 +1928,7 @@ const HomePage = ({ lang }) => {
           }`}
         >
           <h4>{lang.professions.alchemist}</h4>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/83HM1vGdp4I?si=HRQM_pvn76Nfc6pU"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+          <p>{lang.professions.alchemistDesc}</p>
         </div>
         {/* Profesion 7 */}
         <div
@@ -2013,16 +1939,7 @@ const HomePage = ({ lang }) => {
           }`}
         >
           <h4>{lang.professions.blacksmith}</h4>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/83HM1vGdp4I?si=HRQM_pvn76Nfc6pU"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+          <p>{lang.professions.blacksmithDesc}</p>
         </div>
         {/* Profesion 8 */}
         <div
@@ -2033,16 +1950,7 @@ const HomePage = ({ lang }) => {
           }`}
         >
           <h4>{lang.professions.carpenter}</h4>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/83HM1vGdp4I?si=HRQM_pvn76Nfc6pU"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+          <p>{lang.professions.carpenterDesc}</p>
         </div>
         {/* Profesion 9 */}
         <div
@@ -2053,16 +1961,7 @@ const HomePage = ({ lang }) => {
           }`}
         >
           <h4>{lang.professions.cheff}</h4>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/83HM1vGdp4I?si=HRQM_pvn76Nfc6pU"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+          <p>{lang.professions.cheffDesc}</p>
         </div>
         {/* Profesion 10 */}
         <div
@@ -2073,16 +1972,7 @@ const HomePage = ({ lang }) => {
           }`}
         >
           <h4>{lang.professions.dressmaker}</h4>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/83HM1vGdp4I?si=HRQM_pvn76Nfc6pU"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+          <p>{lang.professions.dressmakerDesc}</p>
         </div>
         {/* Profesion 11 */}
         <div
@@ -2093,16 +1983,7 @@ const HomePage = ({ lang }) => {
           }`}
         >
           <h4>{lang.professions.farmer}</h4>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/83HM1vGdp4I?si=HRQM_pvn76Nfc6pU"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+          <p>{lang.professions.farmerDesc}</p>
         </div>
         {/* Profesion 12 */}
         <div
@@ -2113,17 +1994,21 @@ const HomePage = ({ lang }) => {
           }`}
         >
           <h4>{lang.professions.breeder}</h4>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/83HM1vGdp4I?si=HRQM_pvn76Nfc6pU"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
+          <p>{lang.professions.breederDesc}</p>
         </div>
+      </section>
+      <section className={styles.professionsMinigame}>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/83HM1vGdp4I?si=HRQM_pvn76Nfc6pU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <h3>{lang.professions.minigamesTitle}</h3>
       </section>
       <section className={styles.combat} id="combat">
         <p className={styles.combatUpText}>{lang.combat.title}</p>
