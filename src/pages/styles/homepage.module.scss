@@ -599,6 +599,9 @@
           cursor: pointer;
           transition: all 250ms;
           position: relative;
+
+          background-position: center;
+          background-size: cover;
           img {
             filter: brightness(50%);
             width: 100%;
@@ -606,6 +609,7 @@
             transition: all 250ms;
           }
           &:hover {
+            background-image: url("../../../public/homePage/races/show.webp");
             img {
               filter: brightness(100%);
             }
@@ -613,6 +617,8 @@
           }
         }
         .professionActive {
+          background-image: url("../../../public/homePage/races/show.webp");
+
           img {
             filter: brightness(100%);
           }
@@ -639,7 +645,7 @@
         width: 65%;
         font-size: 3vw;
         line-height: 1;
-        font-weight: 900;
+        font-weight: 600;
         text-align: center;
       }
     }
@@ -1915,6 +1921,15 @@
       .professionsSelector {
         display: none;
       }
+      .professionsTitle {
+        margin-bottom: 5vw;
+        div {
+          display: none;
+        }
+        h3 {
+          font-size: 8vw;
+        }
+      }
       .mobileProfessionsSelector {
         display: flex;
         div {
@@ -1932,14 +1947,14 @@
         }
       }
     }
-    .professionsMinigame{
+    .professionsMinigame {
       flex-direction: column;
       gap: 20px;
-      iframe{
+      iframe {
         width: 90%;
         height: 45vw;
       }
-      h3{
+      h3 {
         font-size: 9vw;
         width: 90%;
       }
@@ -2349,14 +2364,22 @@
           }
         }
         .racesContainerMain {
+          width: 100%;
           .racesContainerLeft {
-            // background: red;
-            width: 300px;
+            width: 50%;
+            left: 0;
+            img {
+              width: 100%;
+            }
           }
           .racesContainerRight {
+            width: 50%;
             left: 0;
             right: 0;
             p {
+              padding: 0;
+              padding-right: 10px;
+              margin: 0;
               font-size: 18px;
             }
           }
