@@ -1844,6 +1844,7 @@
       }
     }
     .races {
+      padding-top: 0;
       .racesContainer {
         .racesContainerMain {
           .racesContainerRight {
@@ -2354,6 +2355,13 @@
 
 @media (max-width: 475px) {
   .container {
+    .header{
+      padding-bottom: 50px;
+      .headerFade{
+        height: 50px;
+
+      }
+    }
     .races {
       .racesContainer {
         .racesContainerMobileHabilitiesMain {
