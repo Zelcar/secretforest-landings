@@ -32,7 +32,7 @@ const LandingPage = ({ lang }) => {
     if (captchaState && isValidEmail(emailInput)) {
       axios
         .post(
-          `https://starfish-app-licfp.ondigitalocean.app/api/auth/register`,
+          `https://hammerhead-app-i4xs5.ondigitalocean.app/api/auth/register`,
           { email: emailInput }
         )
         .then(() => {
@@ -81,7 +81,7 @@ const LandingPage = ({ lang }) => {
   const sendSecondEmail = (emailInput) => {
     axios
       .post(
-        "https://starfish-app-licfp.ondigitalocean.app/api/secretForestEmails/sendEmail",
+        "https://hammerhead-app-i4xs5.ondigitalocean.app/api/secretForestEmails/sendEmail",
         { emailTo: emailInput }
       )
       .then(() => {
@@ -138,9 +138,9 @@ const LandingPage = ({ lang }) => {
   };
   const getEmailsCounter = () => {
     axios
-      .get(`https://starfish-app-licfp.ondigitalocean.app/api/auth/cuantity`)
+      .get(`https://hammerhead-app-i4xs5.ondigitalocean.app/api/auth/cuantity`)
       .then((response) => {
-        setEmailCounter(response.data.emailCuantity - 8775);
+        setEmailCounter(response.data.emailCuantity + 18000);
       });
   };
   const isValidEmail = (email) => {
@@ -149,12 +149,12 @@ const LandingPage = ({ lang }) => {
   };
   const fetchFixedNumber = () => {
     const API_URL =
-      "https://starfish-app-licfp.ondigitalocean.app/api/auth/cuantity";
+      "https://hammerhead-app-i4xs5.ondigitalocean.app/api/auth/cuantity";
 
     axios
       .get(API_URL)
       .then((response) => {
-        setFixedNumber(response.data.emailCuantity - 8775);
+        setFixedNumber(response.data.emailCuantity + 18000);
       })
       .catch((error) => {});
   };

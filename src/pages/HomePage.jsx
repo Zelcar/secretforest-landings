@@ -35,7 +35,7 @@ const HomePage = ({ lang }) => {
     if (captchaState && isValidEmail(emailInput)) {
       axios
         .post(
-          `https://starfish-app-licfp.ondigitalocean.app/api/auth/register`,
+          `https://hammerhead-app-i4xs5.ondigitalocean.app/api/auth/register`,
           { email: emailInput }
         )
         .then(() => {
@@ -84,7 +84,7 @@ const HomePage = ({ lang }) => {
   const sendSecondEmail = (emailInput) => {
     axios
       .post(
-        "https://starfish-app-licfp.ondigitalocean.app/api/secretForestEmails/sendEmailSFXL",
+        "https://hammerhead-app-i4xs5.ondigitalocean.app/api/secretForestEmails/sendEmailSFXL",
         { emailTo: emailInput }
       )
       .then(() => {
@@ -140,9 +140,9 @@ const HomePage = ({ lang }) => {
 
   const getEmailsCounter = () => {
     axios
-      .get(`https://starfish-app-licfp.ondigitalocean.app/api/auth/cuantity`)
+      .get(`https://hammerhead-app-i4xs5.ondigitalocean.app/api/auth/cuantity`)
       .then((response) => {
-        setEmailCounter(response.data.emailCuantity - 8775);
+        setEmailCounter(response.data.emailCuantity + 18000);
       });
   };
   const isValidEmail = (email) => {
@@ -280,7 +280,7 @@ const HomePage = ({ lang }) => {
             <a onClick={() => navigateTo("/ru")}>Russian</a>
           </li>
           <li>
-            <a onClick={() => navigateTo("/fr")}>Frech</a>
+            <a onClick={() => navigateTo("/fr")}>French</a>
           </li>
           <li>
             <a onClick={() => navigateTo("/zh")}>Chinese</a>
