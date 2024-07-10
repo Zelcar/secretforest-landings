@@ -142,7 +142,7 @@ const HomePage = ({ lang }) => {
     axios
       .get(`https://hammerhead-app-i4xs5.ondigitalocean.app/api/auth/cuantity`)
       .then((response) => {
-        setEmailCounter(response.data.emailCuantity + 18000);
+        setEmailCounter(response.data.emailCuantity + 18450);
       });
   };
   const isValidEmail = (email) => {

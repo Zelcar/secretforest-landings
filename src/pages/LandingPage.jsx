@@ -140,7 +140,7 @@ const LandingPage = ({ lang }) => {
     axios
       .get(`https://hammerhead-app-i4xs5.ondigitalocean.app/api/auth/cuantity`)
       .then((response) => {
-        setEmailCounter(response.data.emailCuantity + 18000);
+        setEmailCounter(response.data.emailCuantity + 18450);
       });
   };
   const isValidEmail = (email) => {
@@ -154,7 +154,7 @@ const LandingPage = ({ lang }) => {
     axios
       .get(API_URL)
       .then((response) => {
-        setFixedNumber(response.data.emailCuantity + 18000);
+        setFixedNumber(response.data.emailCuantity + 18450);
       })
       .catch((error) => {});
   };
